@@ -1,0 +1,257 @@
+---
+import { t } from "i18n:astro";
+---
+<section class="hero">
+  <div class="container">
+    <h1 class="heading" set:html={t("home:hero.title")}></h1>
+
+    <p class="subtitle">
+      {t("home:hero.subtitle")}
+      <span class="cup"></span>
+    </p>
+
+    <span class="squiggly">squiggly line</span>
+
+    <div class="lead-magnet">
+      <p class="lead" set:html={t("home:hero.lead")} />
+      <ul class="features">
+        {t("home:hero.features", { returnObjects: true }).map((feature: string) => (
+          <li>{feature}</li>
+        ))}
+      </ul>
+
+      <div class="cta-group">
+        <a href="#contact" class="cta-button">{t("home:hero.cta")}</a>
+      </div>
+    </div>
+
+    <a href="#free-course" class="boost-link">
+      {t("home:hero.boostLine")}
+    </a>
+  </div>
+
+  <div class="bg-blur bg-blur-hero-1"></div>
+  <div class="bg-blur bg-blur-hero-2"></div>
+</section>
+<style lang="less" scoped>
+@blur-hero-1: rgba(249, 115, 22, 0.12);
+@blur-hero-2: rgba(245, 158, 11, 0.08);
+
+/*------------------------------
+   Hero Section
+--------------------------------*/
+
+@media only screen and (min-width: 0rem) {
+  .hero {
+    position: relative;
+    padding-top: 50px;
+    background: var(--light);
+    text-align: left;
+    overflow: hidden;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+      width: 100%;
+      padding: var(--sectionPadding);
+      position: relative;
+      z-index: 1;
+    }
+
+    .heading , .subtitle{
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .heading {
+      font-size: calc(40px + (10) * (100vw - 340px) / (1024 - 400));
+      color: var(--headerColor);
+      font-weight: 800;
+      width: 100%;
+    }
+    :global(.heading strong) { color: var(--danger) }
+
+    .subtitle { 
+      position: relative;
+      font-size: calc(35px + (10) * (100vw - 400px) / (1024 - 400));
+      font-weight: 600;
+      width: 100%;
+      z-index: 0;
+
+      .cup {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 48px;
+        background: gold;
+        border-radius: var(--spacing-xs);
+        z-index: -1;
+
+        .squiggly {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, 10px);
+          font-size: var(--bodyFontSize);
+          color: var(--primary);
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .lead {
+      font-size: var(--bodyFontSize);
+      color: var(--bodyTextColor);
+      margin-bottom: var(--spacing-sm);
+    }
+:global(.lead strong){
+  color: var(--primaryDark);
+}
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--spacing-md) 0;
+
+      li {
+        margin-bottom: var(--spacing-xs);
+        padding-left: 1.5rem;
+        position: relative;
+        font-size: var(--bodyFontSize);
+        color: var(--bodyTextColor);
+
+        &:before {
+          content: "✔";
+          position: absolute;
+          left: 0;
+          color: var(--primary);
+        }
+      }
+    }
+
+    .cta-group {
+      margin-top: var(--spacing-sm);
+
+      .cta-button {
+        display:block;
+        text-align: center;
+        background: var(--primary);
+        color: var(--bodyTextColor);
+        width:100%;
+        padding: var(--spacing-sm) var(--spacing-lg);
+        border-radius: var(--spacing-sm);
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background: var(--primaryLight);
+        }
+      }
+    }
+
+    .boost-link {
+      margin-top: var(--spacing-md);
+      font-size: 0.9rem;
+      color: var(--secondary);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .bg-blur {
+      position: absolute;
+      border-radius: 50%;
+      // filter: blur(40px);
+      animation: float 20s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    .bg-blur-hero-1 {
+      width: 300px;
+      height: 300px;
+      bottom: -200px;
+      right: -100px;
+      background: @blur-hero-1;
+      animation-delay: -7s;
+    }
+
+    .bg-blur-hero-2 {
+      width: 200px;
+      height: 200px;
+      bottom: -120px;
+      left: 70%;
+      background: @blur-hero-2;
+      animation-delay: -3s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-20px) scale(1.05); }
+    }
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .hero {
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1, .subtitle, .lead, .features, .cta-group, .boost-link {
+      width: fit-content;
+    }
+
+    .bg-blur-hero-1 {
+      width: 400px;
+      height: 400px;
+      bottom: -250px;
+      right: -150px;
+    }
+
+    .bg-blur-hero-2 {
+      width: 250px;
+      height: 250px;
+      bottom: -150px;
+      left: 75%;
+    }
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .hero {
+    .container {
+      max-width: 960px;
+    }
+
+    .bg-blur-hero-1 {
+      width: 500px;
+      height: 500px;
+      bottom: -300px;
+      right: -200px;
+    }
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    .hero {
+      background: var(--dark);
+      h1, .subtitle, .lead, .features li, .boost-link {
+        color: var(--bodyTextColorWhite);
+      }
+
+      .cta-button {
+        background: var(--primaryDark);
+        color: var(--dark);
+      }
+    }
+  }
+}
+</style>
