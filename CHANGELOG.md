@@ -1,31 +1,29 @@
-text
-- set up text for hero - done
-- load in all hero text onto hero.astro component - done
+- set up ai chatgpt to claud to qwen coder - done
+  - better prompt - done
 
-- make hero as in with my design
-  - add background blob to hero similar to design refrence #2 in notoin
-  - add loading animations
-  
-  - make cup asset
-  - load it in there
-  - squigly line svg
+projet setup
+- setup variables
+  - colors - done
+  - spacing system - done
+  - font-sizes - done
+  - copy - done
 
-- benifits 
-  - main heading + body - done
-  - make card text , consisting of headline + body 
-  - use colors heading:#E3E8FF , bg:#040A29 , icon-bg:#004AAD
-  - add background with blurry meshes
-  - add haeding , main body
-  - grab a simple 3d icon placeholder
-  - create your cards
-  - seperated with a line or just large spacing
 
-- header
-- ect
+Hero
+- heading 
+- button
+- squares
+- animations
 
-## clean up
-shouldn' take time
+why us
+hot to get started
+pricing
+header
 
-- "get you course" indicates to scroll (text , arrow when clicked)
-- add left and right lines
-- add loading animations
+
+pages : 
+about us 
+pricing
+contact
+get started
+  - after you name the sections , make the hompage section icons link to the detailed sections

@@ -1,237 +1,251 @@
 {
-    "layout":{
-      "title":"Pixel Perfect Websites",
-      "description":"Meta description for the page"
-    },
-    "hero": {
-      "title": "Never Be The <strong>Second</strong> Choice",
-      "subtitle": "Modern websites that sell 24/7",
-      "lead": "Websites that position you as the <strong>#1 choice</strong> , and automatically handle:",
-      "features": [
-        "Online booking & appointments",
-        "Sales & payments",
-        "Automated follow-ups"
-      ],
-      "cta": "Order your website",
-      "boostLine": "3.75× your sales in 7 days — FREE course (9 min)"
-    },
-  
-  
-
-    "benefits": {
-      "heading": "The benefits of a modern website <small>(with studies)</small>",
-      "body": {
-        "quote": "<strong>84% of people say they won’t trust a business without a website</strong> <small>(Verisign)</small>, Social media alone isn’t enough…",
-        "explanation": "Without it, you look <strong>small, temporary,</strong> or <strong>risky</strong> to buy from."
+  "hero": {
+    "heading_line1": "2x Cheaper Customer Support. ",
+    "heading_line2": "No Quality Loss.",
+    "body": "No more hiring headaches or settling for low-quality support just to save money, Get our elite, multilingual support agents from just <strong>$6/hour.</strong> handle calls, chats, and emails 24/7 ",
+    "primaryCta": "Free Quote",
+    "smallText": "Start Risk Free , Agent training and integration salary is on us!!!",
+    "secondaryCta": "how we save you money"
+  },
+  "testimonials": {
+    "title": "Our clients love us",
+    "caseStudyTitle": "How we saved them 7500$ the first 90days",
+    "cta": "contact us",
+    "cta2": "see case study"
+  },
+  "whyUs": {
+    "title":"why us",
+    "subtitle": "The End of Expensive Customer Support",
+    "intro": "For too long, growing businesses have faced an impossible choice: ",
+    "choice1":"hire a costly in-house team. ",
+    "choice2":"risk your brand with cheap, low-quality outsourcing.",
+    "outro":"We believe you deserve <strong>world-class support</strong> without the world-class <strong>price tag</strong>, Here’s how we make that a reality.",
+    "point1": {
+      "title": "Unbeatable Prices",
+      "subtitle":"No Quality Compromise",
+      "body": "Your customer support department should be a growth engine, not a cost center. While competitors and freelance platforms charge upwards of  2000$/Month <strong>PER AGENT</strong>, our model allows us to provide elite , hand-picked talents starting at just <strong>6$/hour</strong> , This isn't about cutting corners… it's about giving you a smarter financial advantage to reinvest in your business.",
+      "highlight":{
+        "title":"Save 50% More",
+        "subtitle":"vs. traditional outsourcing"
       },
-      "sections": [
-        {
-          "title": "Conversion:",
-          "subtitle": "Increase Sales, Lower CPA",
-          "tooltip": "Cost Per Accuasiton",
-          "points": [
-            "Landing pages that convert",
-            "Trust signals <small>(testimonials & reviews…)</small>",
-            "Lead magnets + A/B testing"
-          ]
-        },
-        {
-          "title": "Search Engine Optimization:",
-          "subtitle": "Attract Clients for Free",
-          "points": [
-            "Show up on Google when people search",
-            "Build long-term visibility, not just temporary ad spikes"
-          ]
-        },
-        {
-          "title": "Automation:",
-          "subtitle": "Scale while you sleep 😴",
-          "points": [
-            "online booking & sales",
-            "Automated offers via email & WhatsApp",
-            "Full tracking of leads and performance"
-          ]
-        },
-        {
-          "title": "Information:",
-          "subtitle": "Informed Clients Buy Faster",
-          "points": [
-            "Shiw clear e-catalog of your services/products",
-            "Detailed info, contact options, and transparent pricing",
-            "FAQs that remove doubts before they call"
-          ]
-        }
+      "features": [
+        "Slash operational costs by over 50% compared to other outsourcing solutions",
+        "No hidden fees or long-term contracts",
+        "Predictable, transparent pricing"
       ]
+    },
+    "point2": {
+      "title": "Elite Talent",
+      "subtitle":"Hand-Picked for you",
+      "body": "The biggest fear of outsourcing is a drop in quality. We solve this with our intensive, multi-stage selection process, We only hire communicative, empathetic problem-solvers who can represent your brand professionally , Our standards are so high, we even pay for their training.",
+        "highlight":{
+          "title":"Save 50% More",
+          "subtitle":"vs. traditional outsourcing"
+        },
+      "audio_proof":{
+          "title" : "Don't take our word for it. Hear the difference:",
+          "french_sample":{
+            "title":"Near-Native French Speakers :",
+            "body":"Unmatched fluency. no accent."
+          },
+          "english":{
+            "title":"Clear, Professional English :",
+            "body":"Minimal accent."
+          }
+        }
+    },
+    "point3": {
+      "title": "Flexible Scaling",
+      "subtitle":"With Your On-Demand Team.",
+      "body": "Traditional outsourcing locks you into rigid, long-term contracts for a fixed number of agents. This forces you to pay for idle time during your quiet periods, leading to wasted budget and inefficiency.\nOur model is different. We believe support should breathe with your business. We provide a flexible, scalable team that adapts to your needs in real-time, ensuring you only ever pay for what you actually use.",
+      "highlight":{
+        "title":"1 to 10+ agents",
+        "subtitle":"in an instant"
+      },
+      "examples":[
+        "<strong>Just Starting Out?</strong> : Hire a single agent to handle initial inquiries.",
+        "<strong>Facing Seasonal Peaks?</strong> : Add more agents for the holiday rush.",
+        "<strong>Launching a New Product?</strong> : Deploy a dedicated team for the launch week to manage the surge."
+      ]
+    },
+    "cta":"start now !"
+  },
+  "pricing": {
+      "title": "Pricing",
+      "subtitle": "Choose the plan that suits <span class=\"highlight\">your</span> needs",
+      "plans": {
+        "flex": {
+          "name": "Flex",
+          "description": "for solopreneur or small businesses with limited budgets.",
+          "price": "$980",
+          "billingText": "Billed monthly",
+          "spokenLanguages": "spoken languages",
+          "features": [
+            "One Dedicated Agent",
+            "Monolingual C1 language level *",
+            "37 Hours Weekly",
+            "2 Channel Support",
+            "Basic Customer Service Only"
+          ],
+          "buttonText": "Get Started Today"
+        },
+        "talent": {
+          "name": "Talent",
+          "description": "for small businesses or startups with limited budgets.",
+          "price": "$1300",
+          "billingText": "Billed <span id=\"billed-suffix\">monthly</spand>",
+          "spokenLanguages": "spoken languages",
+          "popularBadge": "Most Popular",
+          "savingsBadge": "Save <span id=\"savings-percent\">0</span>%",
+          "billingTabs":{
+            "monthly":"monthly",
+            "annually":"annually"
+          },
+          "features": [
+            "One Dedicated Agent",
+            "Bilingual C1 Language Level",
+            "40 Hours Weekly",
+            "3 Channels support",
+            "Basic Customer Service + Sales"
+          ],
+          "buttonText": "Get Started Today"
+        },
+        "business": {
+          "name": "Business",
+          "description": "for large businesses or startups with comfortable budgets.",
+          "price": "Custom Price",
+          "billingText": "Grow with a tailored plan",
+          "spokenLanguages": "spoken languages",
+          "features": [
+            "Tailor Made Teams",
+            "Multilingual C1 Language Level",
+            "40 Hours Weekly",
+            "Omni Channel Support",
+            "Advanced Technical Teams"
+          ],
+          "buttonText": "Get Started Today"
+        }
+      },
+      "billedMonthly":"Billed monthly",
+      "billedAnnually":"Billed annually",
+      "prices":{
+        "monthly":{
+          "suffix":"/month",
+          "flex":980,
+          "talent":1300,
+          "billedTypeName": "Monthly"
+        },
+        "annually":{
+          "suffix":"/year",
+          "talent":15000,
+          "billedTypeName": "Yearly"
+        }
+      },
+      "common": {
+        "noRiskText": "NO RISK, CANCEL ANYTIME",
+        "languageBadges": {
+          "en": "EN",
+          "fr": "FR",
+          "es": "ES",
+          "ar": "AR",
+          "custom": "Custom"
+        }
+      }
+    },
+  "faq": {
+    "questions": [
+      {
+        "question": "How much does this service cost?",
+        "answer": "As a benchmark, a full-time (37 - 40 hours/week) contract for one of our elite, accent-free, near-native speaking agents starts at approximately $950 USD per month. The final quote is tailored to your specific needs, such as the number of agents or required languages"
+      },
+      {
+        "question": "What languages do your agents speak?",
+        "answer": "We can provide any combination of monolingual, bilingual, or trilingual teams. \n <strong>Our agents are fluent in:</strong>",
+        "languages":["English","French" ,"Spanish","Arabic"]
+      },
+      {
+        "question": "Are there any hidden fees?",
+        "answer": "No. The monthly rate we quote is all-inclusive for a standard work week. There are no hidden setup fees or management costs. Extra requirements such as overtime are then billed separately at a pre-agreed hourly rate."
+      },
+      {
+        "question": "Who provides and trains on the necessary software (CRM, helpdesk, etc…)",
+        "answer": "You provide the licenses and train agents on your systems and processes. We pay their full salary during training, so integration costs you nothing."
+      },
+      {
+        "question": "where are we based ?",
+        "answer": "Our entire team is strategically based in Algeria. This gives us access to a deep pool of highly-educated, multilingual talent . especially for accent-free French and English , allowing us to deliver world-class quality at a fraction of the cost of other outsourcing locations."
+      }
+    ]
+  },
+  "about": {
+    "missionTitle": "Our Mission: World-Class Support Shouldn't Cost a Fortune",
+    "backstory": "My name is Guendil Zine-Eddine, and I started this business in early 2025 out of pure frustration. While working for 3 years in the call center/customer service industry , I saw firsthand how all growing businesses are trapped in the same impossible choice : pay astronomical fees for a quality in-house support team, or settle for outsourcing where the once-affordable rates have disappeared, but the quality issues remain\nIt felt like a compromise either way. You either sacrificed your budget or you sacrificed your brand's reputation.\nI knew there had to be a third option. so I took it upon myself to build a business model on providing uncompromising quality and unbeatable economics, giving growing businesses the powerful support they deserve without the crippling cost…\nThat is why this company was founded : to offer the genuine quality and fair pricing I saw was missing from the inside",
+    "difference": {
+    "title": "Our Difference is Our Approach",
+    "intro": "We're not a massive, disconnected corporation; we are a curated team of professionals obsessed with quality and results. While traditional outsourcers focus on volume, we focus on value. Our entire model is built on a philosophy of partnership, not just service provision.",
+    "points": [
+    {
+    "title": "We Invest in Our People:",
+    "body": "We have an intensive vetting process to find the best talent. But we don't stop there. We cover the full cost of training our agents on your brand and your processes, ensuring they sound like a seamless extension of your own team from day one."
+    },
+    {
+    "title": "Proof in Partnership:",
+    "body": "We believe trust is earned through tangible results. For one of our first partners, a growing SaaS company, we delivered a significant ROI in just 90 days:",
+    "subpoints": [
+    "$7,500 in Operational Savings",
+    "With a lean starting team of just 3 agents",
+    "A direct saving of $2,500 per agent",
+    "All while improving their customer satisfaction scores."
+    ]
+    }
+    ]
+    },
+    "readyTitle": "Ready to See How We Can Help You?",
+    "readyBody": "We believe our model is the smartest way for businesses to scale their support. But you don't have to take our word for it. Let us show you the numbers.\nGet a clear, no-obligation quote and see exactly how much you can save without ever compromising on quality.",
+    "cta": "Get My Free Quote"
     },
 
-    "comparison": {
-      "title": "No more junk website",
-      "subtitle": "modern website that actually look good in {currentYear}",
-      "examples": [
-        {
-          "title": "Dental Clinic",
-          "description": "Modern dental clinic website with dark mode , contact form , google maps integration"
-        },
-        {
-          "title": "Algerie Telecom Unofficial Redesign:",
-          "description": "with us, you get better, more professional looking websites than the largest companies in algeria"
-        }
-      ]
-    },
-    "features": {
-      "heading": "Why Choose Us):",
-      "list": [
-        {
-          "title": "Custom Design — Not Templates",
-          "description": "Every site is designed from scratch to fit your brand and business goals. No cookie-cutter layouts, no copy-paste themes."
-        },
-        {
-          "title": "Lightning-Fast Page Speed",
-          "description": "Our websites are hand-coded with zero bloat and zero waste — built to hit <i>near-perfect Google PageSpeed scores</i> for maximum performance."
-        },
-        {
-          "title": "Lifetime Support, Zero Headaches",
-          "description": "We don’t just deliver a site and disappear. You get a long-term partner who handles fixes, updates, and maintenance — so you stay focused on growing your business."
-        },
-        {
-          "title": "100% Secure by Design",
-          "description": "Built with static HTML & CSS, your site has no vulnerable databases or plugins — meaning there’s virtually nothing hackers can exploit."
-        },
-        {
-          "title": "SEO & Mobile Optimized",
-          "description": "From keyword-driven content structure to optimized images and flawless mobile responsiveness, your site is primed to rank higher and attract more clients."
-        },
-        {
-          "title": "Money back guarantee",
-          "description": "If we can’t design something you like, you get your money back and the contract is cancelled. We stand by our work."
-        }
-      ]
-    },
-    "packages": {
-      "heading": "Packages",
-      "tiers": [
-        {
-          "name": "🚀 Basic",
-          "for": "For starters who just need to sell 1 product/service",
-          "price": "1.45M DZD + 2000 dzd/monthly hosting fee",
-          "description": "The fastest, simplest way to get online.",
-          "features": [
-            {
-              "item": "Website in a day (1-page)",
-              "included": true
-            },
-            {
-              "item": "Quality guarantee",
-              "included": true
-            },
-            {
-              "item": "2 round <strong>Free edits</strong>",
-              "included": true
-            },
-            {
-              "item": "Lifetime support",
-              "included": true
-            },
-            {
-              "item": "No custom design",
-              "included": false
-            },
-            {
-              "item": "No A/B testing",
-              "included": false
-            },
-            {
-              "item": "No email marketing",
-              "included": false
-            },
-            {
-              "item": "No 1-on-1 call",
-              "included": false
-            }
-          ],
-          "bonuses": {
-            "title": "Bonuses (added value):",
-            "list": [
-              "Domain included <del>4,000 Dzd</del> ⇒ FREE"
-            ]
-          }
-        },
-        {
-          "name": "⭐ Standard",
-          "for": "For small & medium businesses who want to stand out",
-          "price": "1.9M DZD + 2000 dzd/monthly hosting fee",
-          "description": "The complete package to build a brand and lower your cost per client.",
-          "features": [
-            {
-              "item": "Custom-designed website (conversion-optimized to lower CPA)",
-              "included": true
-            },
-            {
-              "item": "CMS (easily add products & services)",
-              "included": true
-            },
-            {
-              "item": "Automations (booking, selling, Google Maps integration)",
-              "included": true
-            },
-            {
-              "item": "Dashboard to track performance",
-              "included": true
-            },
-            {
-              "item": "Lifetime support",
-              "included": true
-            }
-          ],
-          "bonuses": {
-            "title": "Bonuses (added value):",
-            "list": [
-              "Domain included <del>4,000 Dzd</del> ⇒ FREE",
-              "5-page website (expandable) <del>10,000 Dzd</del> ⇒ FREE",
-              "Free audit + consultation on your marketing strategy",
-              "1 concurrent A/B test (optimize conversions)",
-              "Quarterly 15-min consultation meeting",
-              "Email marketing setup",
-              "Auto-response bots"
-            ]
+      "howItWorks": {
+        "title": "How It Works",
+        "steps": {
+          "step1": {
+            "title": "Submit your form",
+            "description": "Fill out our simple form with your requirements"
           },
-          "guarantees": {
-            "title": "Guarantees (risk-free):",
-            "list": [
-              "Love it or your money back",
-              "We keep improving until your site makes you more money"
-            ]
+          "step2": {
+            "title": "We assign suitable agents",
+            "description": "Our team matches you with the perfect agents"
+          },
+          "step3": {
+            "title": "Launch your customer support",
+            "description": "Start providing excellent customer service"
           }
         },
-        {
-          "name": "🏆 Big-Shot",
-          "for": "For businesses ready to dominate",
-          "price": "3.5M DZD + 3k/month",
-          "description": "Maximize visibility. Maximize clients.",
-          "features": [
-            {
-              "item": "Everything in <strong>Standard</strong>",
-              "included": true
-            },
-            {
-              "item": "World-class custom website (designed for authority & trust)",
-              "included": true
-            },
-            {
-              "item": "20 pages included",
-              "included": true
-            },
-            {
-              "item": "SEO optimization (rank higher, get lifelong free clients)",
-              "included": true
-            },
-            {
-              "item": "Google Business Profile optimization (local area visibility boost)",
-              "included": true
-            }
-          ]
-        }
-      ]
-    }
-  
+        "primaryCta":"Go to form",
+        "secondaryCta":"See more details"
+      },
+  "getStarted": {
+    "title": "How to get started",
+    "subheading":"Your Elite Support Team, Live in 3 Simple Steps",
+    "intro": "Outsourcing doesn’t have to be slow, complex, or costly. Our streamlined process gets you a world-class support team in under a week.",
+    "step1": {
+      "title": "Step 1 : submit your form",
+      "body": "fill out the form and we’ll reach out and set up a suitable time for a discovery call so we can learn more about your needs"
+    },
+    "step2": {
+      "title": "Step 2: Your Custom Blueprint Call",
+      "body": "It all starts with a brief, no-obligation 15-minute strategy call\nWe (you and us) deep dive into your business where we map out your business’s exact needs. , brand tone, and the key metrics for making this a success.\nWhat you get: You'll leave the call with a crystal-clear, customized plan with an all-inclusive quote showing you exactly how much you'll save. No surprises, ever."
+    },
+    "step3": {
+      "title": "Step 3: Train Your Elite Team (On Us)",
+      "body": "While others charge for training, we pay it in full. We hand-pick vetted pros, you walk them through your products and systems, and we cover their salary during the entire training phase. The result: fully prepared agents at a fraction of the market rate, ready to operate like part of your in-house team."
+    },
+    "step4": {
+      "title": "Step 4: Go Live & Make Your Customers Satisfied",
+      "body": "Your trained team is ready to deliver faster responses, smoother resolutions, and consistent service without the overhead. You manage the agents; we handle HR, contracts, and payroll. The result: happier customers, lower costs, and freedom to focus on growth."
+    },
+    "ready": "Ready to Start Your Blueprint?\nThe first step is a simple conversation. Let's build your no-obligation plan and show you exactly how easy and affordable world-class support can be.",
+    "cta": "Book My Free Strategy Call",
+    "noCommitment": "No commitment. No pressure. Just a clear path to savings."
   }
+}

@@ -1,0 +1,592 @@
+---
+import { t } from "i18n:astro";
+---
+
+<section class="customer-support-section">
+    <!-- Background Pattern -->
+    <div class="background-pattern">
+      <div class="pattern-overlay"></div>
+    </div>
+  
+    <!-- Floating Abstract Shapes -->
+    <div class="floating-shapes">
+      <div class="shape-1"></div>
+      <div class="shape-2"></div>
+      <div class="shape-3"></div>
+      <div class="shape-4"></div>
+    </div>
+  
+  <div class="container">
+    <!-- Headline & Intro (from i18n) -->
+    <div class="intro-text">
+      <h1 class="headline" set:html={t('home:whyUs.title')}></h1>
+      <h1 class="subtitle" set:html={t('home:whyUs.subtitle')}></h1>
+      <div class="intro-paragraphs">
+        <p set:html={t('home:whyUs.intro') }></p>
+        <p class="list-item" >
+          <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
+          { t('home:whyUs.choice1')}
+        </p>
+        <p class="list-item" >
+          <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
+          {t('home:whyUs.choice2') }
+        </p>
+
+        <p set:html={ t('home:whyUs.outro')}></p>
+      </div>
+    </div>
+
+    <div class="features-list">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-grid">
+          <div class="icon-wrapper">
+            <div class="icon-background">
+              <!-- DollarSign SVG Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <line x1="12" x2="12" y1="2" y2="22"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="card-title" set:html={t('home:whyUs.point1.title')}></h2>
+            <div class="card-subtitle" set:html={t('home:whyUs.point1.subtitle')}></div>
+            <p class="card-text" set:html={t('home:whyUs.point1.body')}></p>
+
+            <div class="highlight-box">
+              <div class="highlight-title">{t('home:whyUs.point1.highlight.title')}</div>
+              <div class="highlight-subtitle">{t('home:whyUs.point1.highlight.subtitle')}</div>
+            </div>
+
+            <div class="checklist">
+              <div class="check-item">
+                <div class="check-icon-bg">
+                  <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <span>{t('home:whyUs.point1.features.0')}</span>
+              </div>
+
+              <div class="check-item">
+                <div class="check-icon-bg">
+                  <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <span>{t('home:whyUs.point1.features.1')}</span>
+              </div>
+
+              <div class="check-item">
+                <div class="check-icon-bg">
+                  <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <span>{t('home:whyUs.point1.features.2')}</span>
+              </div>
+            </div>
+
+            <div class="card-cta-row">
+              <a href="/contact" class="cta" type="button" set:html={t('home:whyUs.cta')}></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-grid">
+          <div class="icon-wrapper">
+            <div class="icon-background">
+              <!-- Mic -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line>
+              </svg>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="card-title" set:html={t('home:whyUs.point2.title')}></h2>
+            <div class="card-subtitle" set:html={t('home:whyUs.point2.subtitle')}></div>
+            <p class="card-text" set:html={t('home:whyUs.point2.body')}></p>
+
+            <div class="audio-players">
+              <div class="audio-player">
+                <div class="player-header">
+                  <span class="player-title" set:html={t('home:whyUs.point2.audio_proof.french_sample.title')}></span>
+                </div>
+                <div class="player-subtitle" set:html={t('home:whyUs.point2.audio_proof.french_sample.body')}></div>
+              </div>
+
+              <div class="audio-player">
+                <div class="player-header">
+                  <span class="player-title" set:html={t('home:whyUs.point2.audio_proof.english.title')}></span>
+                </div>
+                <div class="player-subtitle" set:html={t('home:whyUs.point2.audio_proof.english.body')}></div>
+              </div>
+            </div>
+            <div class="card-cta-row">
+              <a href="/contact" class="cta" type="button" set:html={t('home:whyUs.cta')}></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-grid">
+          <div class="icon-wrapper">
+            <div class="icon-background">
+              <!-- Users -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="card-title" set:html={t('home:whyUs.point3.title')}></h2>
+            <div class="card-subtitle" set:html={t('home:whyUs.point3.subtitle')}></div>
+            <p class="card-text" set:html={t('home:whyUs.point3.body')}></p>
+
+            <div class="highlight-box">
+              <div class="highlight-title" set:html={t('home:whyUs.point3.highlight.title')}></div>
+              <div class="highlight-subtitle" set:html={t('home:whyUs.point3.highlight.subtitle')}></div>
+            </div>
+
+            <div class="checklist">
+              <div class="check-item">
+                <div class="check-icon-bg">
+                  <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <span set:html={t('home:whyUs.point3.examples.0')}></span>
+              </div>
+
+              <div class="check-item">
+                <div class="check-icon-bg">
+                  <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <span set:html={t('home:whyUs.point3.examples.1')}></span>
+              </div>
+
+              <div class="check-item">
+                <div class="check-icon-bg">
+                  <svg class="check-icon" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+                <span set:html={t('home:whyUs.point3.examples.2')}></span>
+              </div>
+            </div>
+            <div class="card-cta-row">
+              <a href="/contact" class="cta" type="button" set:html={t('home:whyUs.cta')}></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style lang="less">
+  /* -------------------------
+     Color variables (map to :root)
+     ------------------------- */
+  @primary-900:        var(--primary-900);
+  @primary-800:        var(--primary-800);
+  @primary-700:        var(--primary-700);
+  @secondary-700:      var(--secondary-700);
+
+  /* Tailwind grays (expected to be defined in :root) */
+  @gray-50:  var(--gray-50);
+  @gray-100: var(--gray-100);
+  @gray-200: var(--gray-200);
+  @gray-300: var(--gray-300);
+  @gray-400: var(--gray-400);
+  @gray-500: var(--gray-500);
+  @gray-600: var(--gray-600);
+  @gray-700: var(--gray-700);
+  @gray-800: var(--gray-800);
+  @gray-900: var(--gray-900);
+
+  /* Checkmark control variables */
+  @check-bg:      var(--checkmark-bg, var(--secondary-700));   /* circle background */
+  @check-stroke:  var(--checkmark-stroke, var(--gray-50));     /* checkmark color */
+
+  /* spacing / layout tokens */
+  @container-max: 1280px;
+
+  .customer-support-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: @primary-900;
+    padding: 3rem 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+    max-width: @container-max;
+
+
+  }
+
+  /* Intro */
+  .intro-text {
+    padding:   calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
+    margin-bottom: 3.25rem;
+  }
+  .headline {
+    text-align: center;
+
+    font-size: calc(36px + (10) * (100vw - 400px) / (1024 - 400));
+    font-weight: 700;
+    color: @gray-50;
+    margin-bottom: 0.75rem;
+    text-wrap: balance;
+    margin-bottom: 2.25em;
+  }
+  .subtitle{
+    font-size: calc(24px + (5) * (100vw - 400px) / (1024 - 400));
+
+    font-weight: 700;
+    color: @gray-100;
+    margin-bottom: 0.5rem;
+
+  }
+
+  .intro-paragraphs {
+    max-width: 56rem;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: @gray-400;
+
+
+      .list-item-icon{
+        display:inline-block;
+        margin-inline:8px;
+      }
+      &:not(:has(.list-item-icon)){
+        margin-top: var(--spacing-lg);
+      }
+
+      @media (min-width: 768px) {
+        font-size: 1.0625rem;
+      }
+    }
+  }
+
+  /* Features list */
+  .features-list {
+    display: grid;
+    gap: 1.5rem;
+
+    margin: 0 auto;
+  }
+
+  /* Card */
+  .card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 1.75rem;
+    border-radius: .5rem;
+    box-shadow: 0 18px 40px rgba(2,6,23,0.6);
+    isolation: isolate;
+
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .icon-wrapper {
+    .icon-background {
+      width: 3.75rem;
+      height: 3.75rem;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.75rem;
+      background-color: var(--secondary-700); 
+
+      .icon {
+        transform: rotate(-45deg);
+        width: 1.4rem;
+        height: 1.4rem;
+        color: @gray-50; 
+      }
+    }
+  }
+
+  .card-content {
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: @gray-50;
+      text-transform: capitalize;
+
+    }
+    .card-subtitle {
+      color: @gray-300;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-transform: capitalize;
+
+    }
+    .card-text {
+      color: @gray-400;
+
+      font-size: 0.98rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+
+    }
+  }
+
+
+
+  /* Checklist */
+  .checklist {
+    display: grid;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+
+  }
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: @gray-100;
+    font-size: 0.95rem;
+  }
+  .check-icon-bg {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex:0 0 auto;
+    background-color: @check-bg; /* controlled variable */
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .check-icon {
+    width: 0.95rem;
+    height: 0.95rem;
+    color: @check-stroke; /* checkmark color */
+    fill: currentColor;
+  }
+
+  /* CTA */
+  .card-cta-row {
+    margin-top: 2rem;
+  }
+  .cta {
+    display: inline-block;
+    background-color: @secondary-700; /* CTA colored with secondary-700 */
+    color: @gray-50;
+    border: none;
+    padding: 0.65rem 1.15rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.7rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transition: transform 150ms ease, filter 150ms ease;
+    &:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+  }
+
+    /* Highlight box (keeps visual hierarchy like the mock) */
+    .highlight-box {
+      border-radius: 0.75rem;
+      padding: 1rem ;
+      margin-bottom: 2rem;
+      background-color: var(--gray-100);
+      .highlight-title {
+      text-transform: capitalize;
+
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: @gray-900;
+        margin-bottom: 0.25rem;
+      }
+      .highlight-subtitle {
+        color: @gray-700;
+      }
+    }
+  /* Audio player panel (kept but styled to fit the darker cards) */
+  .audio-players {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+  .audio-player {
+    background-color: var(--gray-100);
+    border-radius: 0.6rem;
+    padding: 1rem;
+  }
+  .player-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    
+  }
+  .player-title {
+    color: @gray-700;
+    text-transform: capitalize;
+
+    font-weight: 600;
+  }
+  .player-subtitle {
+    color: @gray-500;
+
+    font-size: 0.86rem;
+    margin-bottom: 0.25rem;
+  }
+  .play-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: @gray-50;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+  }
+
+  // animation
+  /* Floating background / pattern (subtle version) */
+@keyframes subtlePulse {
+  50% { opacity: 0.35; } /* softer pulse */
+}
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(-10%); /* smaller travel */
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.background-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  pointer-events: none;
+  .pattern-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 25% 25%, @gray-50 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, @gray-50 1px, transparent 1px);
+    background-size: 40px 40px;
+    mix-blend-mode: overlay;
+  }
+}
+
+.floating-shapes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  div { position: absolute; animation-iteration-count: infinite; }
+
+  .shape-1 {
+    top: 4.5rem;
+    left: 2.25rem;
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--primary-700);
+    opacity: 0.04; /* lighter */
+    border-radius: 9999px;
+    animation: subtlePulse 4s infinite; /* slower */
+  }
+  .shape-2 {
+    top: 9.5rem;
+    right: 4.5rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: @secondary-700;
+    opacity: 0.06;
+    border-radius: 0.5rem;
+    transform: rotate(45deg);
+    animation: subtleBounce 6s infinite; /* slower bounce */
+  }
+  .shape-3 {
+    bottom: 7.5rem;
+    left: 24%;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--primary-700);
+    opacity: 0.04;
+    border-radius: 9999px;
+    animation: subtlePulse 5s infinite;
+    animation-delay: 1.2s;
+  }
+  .shape-4 {
+    bottom: 4.5rem;
+    right: 33.33%;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: @secondary-700;
+    opacity: 0.06;
+    border-radius: 0.5rem;
+    animation: subtleBounce 7s infinite;
+    animation-delay: 1.5s;
+  }
+}
+
+
+
+  /* Responsive adjustments — same LESS schema / breakpoints as original */
+  @media (min-width: 768px) {
+    .features-list {
+      gap: 2rem;
+    }
+    .card {
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    .card-grid {
+      gap: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container{
+      width:fit-content;
+      margin:auto;
+    }
+    .intro-text{
+      padding:0;
+    }
+    .features-list {
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+
+      .card-text{
+        width:80ch;
+        text-wrap:balance;
+      }
+      .highlight-box ,.audio-players{
+        max-width:30rem;
+      }
+    }
+    .container { padding-left: 2.5rem; padding-right: 2.5rem; }
+  }
+</style>

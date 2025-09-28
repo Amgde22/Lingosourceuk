@@ -1,0 +1,459 @@
+---
+
+import { t } from "i18n:astro";
+
+const title = t('home:howItWorks.title');
+const step1Title = t('home:howItWorks.steps.step1.title');
+const step1Description = t('home:howItWorks.steps.step1.description');
+const step2Title = t('home:howItWorks.steps.step2.title');
+const step2Description = t('home:howItWorks.steps.step2.description');
+const step3Title = t('home:howItWorks.steps.step3.title');
+const step3Description = t('home:howItWorks.steps.step3.description');
+const primaryCta = t('home:howItWorks.primaryCta');
+const secondaryCta = t('home:howItWorks.secondaryCta');
+---
+
+<section class="how-it-works">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="heading">
+        <h2>{title}</h2>
+      </div>
+  
+      <!-- Steps Container -->
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-item" data-step="1">
+          <div class="step-content">
+            <!-- Icon Circle with Number Badge -->
+            <div class="icon-wrapper">
+              <!-- Animated Dashed Ring -->
+              <div class="dashed-ring"></div>
+              
+              <!-- Main Icon Circle -->
+              <div class="icon-circle">
+                <svg class="icon" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="8" height="4" x="8" y="2" rx="1" ry="1"/>
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                  <path d="M12 11h4"/>
+                  <path d="M12 16h4"/>
+                  <path d="M8 11h.01"/>
+                  <path d="M8 16h.01"/>
+                </svg>
+              </div>
+              
+              <!-- Number Badge -->
+              <div class="number-badge">
+                <span>1</span>
+              </div>
+            </div>
+  
+            <!-- Step Title -->
+            <h3>{step1Title}</h3>
+  
+            <!-- Step Description -->
+            <p>{step1Description}</p>
+          </div>
+  
+          <!-- Desktop Arrow -->
+          <div class="arrow-desktop">
+            <svg width="32" height="24" viewBox="0 0 24 24">
+              <g fill="none">
+                <path fill="#94a3b8" d="M4 11.25a.75.75 0 0 0 0 1.5zm0 1.5h16v-1.5H4z" opacity="0.3"/>
+                <path stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 6l6 6l-6 6"/>
+              </g>
+            </svg>
+          </div>
+  
+          <!-- Mobile Divider -->
+          <div class="arrow-mobile">
+            <div class="divider-line">
+              <div class="divider-arrow">
+                <svg width="24" height="32" viewBox="0 0 24 24">
+                  <g fill="none" transform="rotate(90 12 12)">
+                    <path fill="#94a3b8" d="M4 11.25a.75.75 0 0 0 0 1.5zm0 1.5h16v-1.5H4z" opacity="0.3"/>
+                    <path stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 6l6 6l-6 6"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Step 2 -->
+        <div class="step-item" data-step="2">
+          <div class="step-content">
+            <div class="icon-wrapper">
+              <div class="dashed-ring"></div>
+              <div class="icon-circle">
+                <svg class="icon" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <circle cx="9" cy="7" r="4"/>
+                </svg>
+              </div>
+              <div class="number-badge">
+                <span>2</span>
+              </div>
+            </div>
+            <h3>{step2Title}</h3>
+            <p>{step2Description}</p>
+          </div>
+  
+          <div class="arrow-desktop">
+            <svg width="32" height="24" viewBox="0 0 24 24">
+              <g fill="none">
+                <path fill="#94a3b8" d="M4 11.25a.75.75 0 0 0 0 1.5zm0 1.5h16v-1.5H4z" opacity="0.3"/>
+                <path stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 6l6 6l-6 6"/>
+              </g>
+            </svg>
+          </div>
+  
+          <div class="arrow-mobile">
+            <div class="divider-line">
+              <div class="divider-arrow">
+                <svg width="24" height="32" viewBox="0 0 24 24">
+                  <g fill="none" transform="rotate(90 12 12)">
+                    <path fill="#94a3b8" d="M4 11.25a.75.75 0 0 0 0 1.5zm0 1.5h16v-1.5H4z" opacity="0.3"/>
+                    <path stroke="#94a3b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m14 6l6 6l-6 6"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Step 3 -->
+        <div class="step-item" data-step="3">
+          <div class="step-content">
+            <div class="icon-wrapper">
+              <div class="dashed-ring"></div>
+              <div class="icon-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="42" height="42" stroke="currentColor" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m15 14l2.045-1.533C19.469 10.648 20.542 6.98 20 4c-2.981-.542-6.649.531-8.467 2.955L10 9m5 5l-3.5 2.5l-4-4L10 9m5 5v2.667a4 4 0 0 1-.8 2.4l-.7.933l-1-1M10 9H7.333a4 4 0 0 0-2.4.8L4 10.5l1 1M8.5 18L5 19l1.166-3.5m9.334-6a1 1 0 1 0 0-2a1 1 0 0 0 0 2"/></svg>
+              </div>
+              <div class="number-badge">
+                <span>3</span>
+              </div>
+            </div>
+            <h3>{step3Title}</h3>
+            <p>{step3Description}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-container">
+        <button class="btn-primary-opacity">{primaryCta}</button>
+        <button class="btn-outline-gray">{secondaryCta}</button>
+      </div>
+    </div>
+  </section>
+  
+  <style lang="less">
+    .how-it-works {
+      width: 100%;
+      background: linear-gradient(to bottom, var(--gray-50) 0%, var(--gray-100) 100%);
+
+      padding: 80px 24px;
+  
+      @media (max-width: 768px) {
+        padding: 80px 24px;
+      }
+  
+      .container {
+        margin: 0 auto;
+        max-width: 1152px; /* 6xl equivalent */
+
+        .heading {
+          text-align: center;
+          margin-bottom: 64px;
+
+          h2 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            color:var(--gray-900);
+            font-family: sans-serif;
+            margin: 0;
+          }
+        }
+  
+        .steps-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 32px;
+          position: relative;
+  
+          @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 48px;
+          }
+  
+          .step-item {
+            position: relative;
+  
+            .step-content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              padding: 20px 0;
+              transition: all 0.3s ease-out;
+  
+              .icon-wrapper {
+                position: relative;
+                margin-bottom: 18px;
+  
+                .dashed-ring {
+                  position: absolute;
+                  inset: 0;
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 50%;
+                  border: 1.5px dashed rgba(59, 130, 246, 0.12);
+                  transform: translate(-8px, -8px);
+                  animation: rotate 8s linear infinite;
+                  transition: all 0.3s ease-out;
+                }
+  
+                .icon-circle {
+                  position: relative;
+                  width: 84px;
+                  height: 84px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: all 0.3s ease-out;
+                  box-shadow: 0 4px 8px var(--primary-600);
+  
+                  .icon {
+                    color: var(--primary);
+                  }
+                }
+  
+                .number-badge {
+                  position: absolute;
+                  top: -14px;
+                  left: -14px;
+                  width: 28px;
+                  height: 28px;
+                  background-color: var(--primary);
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transform: translate(-18%, -18%);
+  
+                  span {
+                    color: var(--gray-50);
+                    font-size: 14px;
+                    font-weight: 600;
+                  }
+                }
+              }
+  
+              h3 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #0f172a;
+                line-height: 22px;
+                margin-bottom: 8px;
+                transition: all 0.2s;
+              }
+  
+              p {
+                font-size: 14px;
+                color: #475569;
+                line-height: 20px;
+                max-width: 220px;
+                margin: 0;
+              }
+  
+              // Hover effects
+              &:hover {
+                .icon-wrapper {
+                  .dashed-ring {
+                    opacity: 0.75;
+                    transform: translate(-8px, -8px) scale(1.05);
+                  }
+  
+                  .icon-circle {
+                    transform: translateY(-8px);
+                  }
+                }
+  
+                h3 {
+                  text-decoration: underline;
+                  text-decoration-color: #3b82f6;
+                  text-underline-offset: 2px;
+                }
+              }
+            }
+  
+            // Desktop Arrow
+            .arrow-desktop {
+              display: none;
+              position: absolute;
+              top: 42px;
+              left: 100%;
+              width: 48px;
+              height: 48px;
+              pointer-events: none;
+              transition: transform 0.3s ease-out;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+  
+              svg {
+                filter: drop-shadow(0 4px 8px rgba(15, 23, 42, 0.04));
+                transition: all 0.3s ease-out;
+  
+                path {
+                  transition: all 0.3s ease-out;
+                }
+              }
+            }
+  
+            // Mobile Arrow
+            .arrow-mobile {
+              display: block;
+              justify-content: center;
+              margin: 24px 0;
+  
+              .divider-line {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+  
+                .divider-arrow {
+                  svg {
+                    filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.04));
+                  }
+                }
+              }
+            }
+  
+            // Responsive arrow display
+            .arrow-desktop {
+              display: none;
+            }
+            .arrow-mobile {
+              display: block;
+            }
+  
+            @media (min-width: 768px) {
+              .arrow-desktop {
+                display: flex;
+              }
+              .arrow-mobile {
+                display: none;
+              }
+            }
+  
+            // Hide arrows for last item
+            &:nth-child(3) {
+              .arrow-desktop,
+              .arrow-mobile {
+                display: none;
+              }
+            }
+  
+            // Hover effects using sibling selectors
+            &:hover {
+              .arrow-desktop {
+                transform: translateX(6px);
+  
+                svg {
+                  path[fill] {
+                    opacity: 0.5;
+                  }
+                  path[stroke] {
+                    stroke: #3b82f6;
+                  }
+                }
+              }
+  
+              /* target the next item's arrow */
+              & + .step-item .arrow-desktop {
+                transform: translateX(6px);
+  
+                svg {
+                  path[fill] {
+                    opacity: 0.5;
+                  }
+                  path[stroke] {
+                    stroke: #3b82f6;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .cta-container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 48px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn-primary-opacity,
+        .btn-outline-gray {
+          padding: 12px 24px;
+          border-radius: 9999px; /* pill shape */
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+
+        .btn-primary-opacity {
+          background-color: rgba(var(--primary-rgb), 0.15); /* 15% opacity of --primary */
+          color: var(--primary);
+          border: none;
+
+          &:hover {
+            background-color: rgba(var(--primary-rgb), 0.2);
+          }
+        }
+
+        .btn-outline-gray {
+          background: transparent;
+          border: 1px solid var(--gray-200);
+          color: var(--gray-600);
+
+          &:hover {
+            border-color: var(--gray-300);
+            color: var(--gray-800);
+          }
+        }
+      }
+    }
+  
+    @keyframes rotate {
+      from {
+        transform: translate(-8px, -8px) rotate(0deg);
+      }
+      to {
+        transform: translate(-8px, -8px) rotate(360deg);
+      }
+    }
+  
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>

@@ -1,9 +1,12 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import icon from "astro-icon";
 import i18n from "@astrolicious/i18n";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
+  image: {
+    service: passthroughImageService(),
+  },
   site: "https://www.yourwebsite.com", // update me!
   integrations: [
     icon(),

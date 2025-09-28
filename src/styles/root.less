@@ -1,3 +1,6 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 
 /*-- -------------------------- -->
@@ -7,22 +10,54 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
+    --primary-50: oklch(0.95 0.02 256.35);
+    --primary-100: oklch(0.90 0.05 256.35);
+    --primary-200: oklch(0.75 0.08 256.35);
+    --primary-300: oklch(0.62 0.095 256.35);
+    --primary-400: oklch(0.50 0.10 256.35);
+    --primary-500: oklch(0.438 0.1058 256.35); /*base*/
+    --primary-600: oklch(0.38 0.11 256.35);
+    --primary-700: #1A304A;
+    --primary-900: #011837;
+    --primary-rgb: 59, 130, 246; /* Tailwind blue-500 */
 
 
-    --primary: #FBC02D;
-    --primaryLight: #FFEE58;
-    --secondary: #172554;
-    --secondaryLighter: #9c9faf;
+    --secondary-50:  #F46969;
+    --secondary-100: oklch(0.90 0.05 27.52);
+    --secondary-200: #D83C3C;
+    --secondary-300: oklch(0.68 0.15 27.52);
+    --secondary-400: oklch(0.58 0.18 27.52);
+    --secondary-500: oklch(0.5054 0.1905 27.52); /* base */
+    --secondary-600: oklch(0.44 0.19 27.52);
+    --secondary-700: #980707;
+    --secondary-800: oklch(0.28 0.15 27.52);
+    --secondary-900: #6E0000;
+
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+
+    --primary: var(--primary-500);
+    --primaryLight: var(--primary-400);
+    --secondary: var(--secondary-500);
+    --secondaryLight: var(--secondary-400);
+    --secondaryLighter: var(--secondary-300);
     
-    --secondaryLight: #E3E8FF;
     --headerColor: #171717;
     --bodyTextColor: #171717;
     --bodyTextColorWhite: #fafafa;
     --danger:#dc2626;
 
     /* dark mode colors */
-    --primaryDark: #F9A825;
-    --secondaryDark: #040A29;
+    --primaryDark: var(--primary-600);
+    --secondaryDark: var(--secondary-600);
 
     --dark: #1d1715;
     --medium: #1d1715;
@@ -49,14 +84,15 @@
       --spacing-2xl: 64px;
 
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) var(--spacing-lg);
+
+    --sectionPadding: clamp(4.75rem, 6.82vw, 7.25rem) var(--spacing-md);
   }
 
 
   }
 @media only screen and (min-width: 768px) {
   :root{
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) var(--spacing-2xl);
+    --sectionPadding: clamp(3.75rem, 10.82vw, 8.25rem) var(--spacing-2xl);
   }
   // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
   .cs-topper {
@@ -200,7 +236,7 @@
 
   body,
   html {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -220,11 +256,7 @@
     transition: background-color 0.3s;
   }
 
-  .container {
-    width: 92%;
-    margin: auto;
-    position: relative;
-  }
+
 
   h1,
   h2,
@@ -239,8 +271,7 @@
   p,
   li,
   a {
-    font-size: (16/16rem);
-    line-height: 1.5em;
+    text-decoration: none;
     margin: 0;
   }
 

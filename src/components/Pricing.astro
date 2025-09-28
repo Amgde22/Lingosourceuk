@@ -1,0 +1,781 @@
+---
+import CheckIcon from '@icons/mdi--check.svg'
+
+import { t } from 'i18n:astro';
+
+// Load localization as object
+const pricingData = t('home:pricing', { returnObjects: true });
+---
+
+<section id="pricing">
+  <div class="background-blurred-elements">
+    <div class="blurred-element-1"></div>
+    <div class="blurred-element-2"></div>
+    <div class="blurred-element-3"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="header-content">
+        <h2 class="title">{pricingData.title}</h2>
+        <p class="subtitle" set:html={pricingData.subtitle}></p>
+      </div>
+    </div>
+
+    <div class="pricing-cards">
+      <!-- Flex Plan -->
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">{pricingData.plans.flex.name}</h3>
+          <p class="plan-description">{pricingData.plans.flex.description}</p>
+          
+          <div class="languages">
+            <span class="language-badge">{pricingData.common.languageBadges.en}</span>
+            <span class="language-badge">{pricingData.common.languageBadges.fr}</span>
+            <span class="language-badge">{pricingData.common.languageBadges.es}</span>
+            <p class="spoken-languages">{pricingData.plans.flex.spokenLanguages}</p>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="price-section">
+            <p class="price">$<span class="price-amount">980</span>
+              <!-- <span class="price-suffix">/mo</span> -->
+            </p>
+            <p class="billing-text">{pricingData.billedMonthly}</p>
+          </div>
+
+          <div class="features">
+            {pricingData.plans.flex.features.map((feature) => (
+              <div class="feature">
+                <CheckIcon class="check-icon" />
+                <span>{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <button class="get-started-btn">{pricingData.plans.flex.buttonText}</button>
+          <p class="no-risk">{pricingData.common.noRiskText}</p>
+        </div>
+      </div>
+
+      <!-- Talent Plan (Popular) -->
+      <div class="pricing-card popular">
+        <span class="popular-badge">{pricingData.plans.talent.popularBadge}</span>
+        <div class="card-header popular-header">
+          <h3 class="plan-name">{pricingData.plans.talent.name}</h3>
+          <p class="plan-description">{pricingData.plans.talent.description}</p>
+          
+          <div class="languages">
+            <span class="language-badge">{pricingData.common.languageBadges.en}</span>
+            <span class="language-badge">{pricingData.common.languageBadges.fr}</span>
+            <span class="language-badge">{pricingData.common.languageBadges.es}</span>
+            <span class="language-badge">{pricingData.common.languageBadges.ar}</span>
+            <p class="spoken-languages popular-text">{pricingData.plans.talent.spokenLanguages}</p>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="price-section">
+            <div class="savings-badge" id="savings-badge" set:html={pricingData.plans.talent.savingsBadge}></div>
+            <p class="price">$<span class="price-amount">1300</span><span class="price-suffix">/mo</span></p>
+            <p class="billing-text billing-text-monthly active">{pricingData.billedMonthly}</p>
+            <p class="billing-text billing-text-annually">{pricingData.billedAnnually}</p>
+
+
+            <!-- Billing tabs only for Talent card -->
+            <div class="billing-tabs">
+              <button class="tab-btn active" data-cycle="monthly">
+                {pricingData.plans.talent.billingTabs.monthly}
+              </button>
+              <button class="tab-btn" data-cycle="annually">
+                {pricingData.plans.talent.billingTabs.annually}
+              </button>
+            </div>
+          </div>
+
+          <div class="features">
+            {pricingData.plans.talent.features.map((feature) => (
+              <div class="feature">
+                <CheckIcon class="check-icon" />
+                <span>{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <button class="get-started-btn popular-btn">{pricingData.plans.talent.buttonText}</button>
+          <p class="no-risk">{pricingData.common.noRiskText}</p>
+        </div>
+      </div>
+
+      <!-- Business Plan -->
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3 class="plan-name">{pricingData.plans.business.name}</h3>
+          <p class="plan-description">{pricingData.plans.business.description}</p>
+          
+          <div class="languages">
+            <span class="language-badge">{pricingData.common.languageBadges.custom}</span>
+            <p class="spoken-languages">{pricingData.plans.business.spokenLanguages}</p>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="price-section">
+            <p class="price">{pricingData.plans.business.price}</p>
+            <p class="billing-text">{pricingData.plans.business.billingText}</p>
+          </div>
+
+          <div class="features">
+            {pricingData.plans.business.features.map((feature) => (
+              <div class="feature">
+                <CheckIcon class="check-icon" />
+                <span>{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <button class="get-started-btn">{pricingData.plans.business.buttonText}</button>
+          <p class="no-risk">{pricingData.common.noRiskText}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script define:vars={{pricingData}}>
+    // Define prices with suffixes
+    const PRICES = {
+      monthly: {
+
+        talent: { price: 1300, suffix: '' },
+
+      },
+      annually: {
+        talent: { price: 15000, suffix: '' }, // 10% saved
+      }
+    };
+
+    let billingCycle = 'monthly';
+
+    function setBillingCycle(cycle) {
+      billingCycle = cycle;
+      updatePricing();
+      updateToggleButtons();
+    }
+
+    function updateToggleButtons() {
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        if (btn.dataset.cycle === billingCycle) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      const monthlyText = document.querySelector('.billing-text-monthly');
+      const annuallyText = document.querySelector('.billing-text-annually');
+      if(billingCycle === "monthly"){
+
+        monthlyText.classList.add("active")
+        annuallyText.classList.remove("active")
+      }
+      else{
+        monthlyText.classList.remove("active")
+        annuallyText.classList.add("active")
+
+      }
+    }
+
+    function updatePricing() {
+
+
+      // Update Talent plan
+      const talentPrice = document.querySelector('.pricing-card.popular .price-amount');
+      const talentSuffix = document.querySelector('.pricing-card.popular .price-suffix');
+      talentPrice.textContent = PRICES[billingCycle].talent.price;
+      talentSuffix.textContent = PRICES[billingCycle].talent.suffix;
+
+
+      // Calculate and display savings
+      const savingsBadge = document.getElementById('savings-badge');
+      const savingsPercent = document.getElementById('savings-percent');
+      if (billingCycle === 'annually') {
+        const monthlyPrice = PRICES.monthly.talent.price
+        const annualPrice = PRICES.annually.talent.price;
+        const savings = Math.round( 100 - ( annualPrice * 100 / (monthlyPrice * 12)));
+        savingsPercent.textContent = savings;
+        savingsBadge.style.display = 'block';
+      } else {
+        savingsBadge.style.display = 'none';
+      }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePricing();
+      
+      // Add event listeners to buttons
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setBillingCycle(btn.dataset.cycle);
+        });
+      });
+    });
+  </script>
+
+<style lang="less" scoped>
+/*-- -------------------------- -->
+<---         PRICING           			-->
+<--- -------------------------- -*/
+
+#pricing {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-900) 0px,
+    var(--gray-900) 400px
+  );
+  padding: 5rem 1rem;
+  overflow: hidden;
+
+  .background-blurred-elements {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    .blurred-element-1,
+    .blurred-element-2,
+    .blurred-element-3 {
+      border-radius: 50%;
+      filter: blur(75px);
+    }
+
+    .blurred-element-1 {
+      position: absolute;
+      top: 5rem;
+      left: 2.5rem;
+      width: 16rem;
+      height: 16rem;
+      background: color-mix(in srgb, var(--primary-500), transparent 80%);
+      opacity: 0.3;
+    }
+
+    .blurred-element-2 {
+      position: absolute;
+      top: 10rem;
+      right: 5rem;
+      width: 20rem;
+      height: 20rem;
+      background: color-mix(in srgb, var(--primary-500), transparent 80%);
+      opacity: 0.2;
+    }
+
+    .blurred-element-3 {
+      position: absolute;
+      bottom: 5rem;
+      left: 33.333%;
+      width: 18rem;
+      height: 18rem;
+      background: color-mix(in srgb, var(--primary-500), transparent 80%);
+      opacity: 0.25;
+    }
+  }
+
+  .container {
+    position: relative;
+    max-width: 89.6rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .header-content {
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 0 auto 2rem;
+      max-width: 60rem;
+
+      .title {
+        font-size: calc(36px + (10) * (100vw - 400px) / (1024 - 400));
+        font-weight: 700;
+        color: var(--gray-200);
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .subtitle {
+        font-size: calc(24px + (5) * (100vw - 400px) / (1024 - 400));
+        color: var(--gray-400);
+        line-height: 1.4;
+
+        .highlight {
+          color: color-mix(in srgb, var(--gray-300), transparent 20%);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .pricing-card {
+    position: relative;
+    background: var(--gray-100);
+    border-radius: 1rem;
+    box-shadow: 0 25px 20px -12px rgba(249, 245, 245, 0.25);
+    display: flex;
+  flex-direction: column;
+    .popular-badge {
+      position: absolute;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary-400);
+      color: var(--gray-100);
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 100vw; /* less rounded */
+      z-index: 10;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    &.popular {
+      transform: none !important; /* same size */
+      box-shadow: 0 25px 20px -12px rgba(249, 245, 245, 0.25);
+    }
+
+    .card-header {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 1rem 1rem 0 0;
+      background: color-mix(in srgb, var(--gray-200), transparent 20%);
+      color: var(--gray-100);
+
+      &.popular-header {
+        background: var(--primary-600);
+
+        .plan-name {
+          color: var(--gray-50);
+        }
+        .plan-description {
+          color: color-mix(in srgb, var(--gray-200), transparent 10%);
+        }
+        .spoken-languages {
+          color: color-mix(in srgb, var(--gray-100), transparent 40%) !important;
+
+        }
+      }
+
+      .plan-name {
+        font-size: calc(20px + (6) * (100vw - 400px) / (1024 - 400));
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .plan-description {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: var(--gray-800);
+        text-transform: capitalize;
+      }
+
+      .languages {
+        .language-badge {
+          display: inline-block;
+          margin: 0 0.25rem;
+          background: var(--secondary-100);
+          color: var(--secondary-700);
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.375rem; /* less rounded */
+          font-size: 0.75rem;
+          font-weight: 700;
+        }
+
+        .spoken-languages {
+          font-size: 0.6875rem !important;
+          font-weight: 400;
+
+          color: color-mix(in srgb, var(--gray-500), transparent 5%) ;
+
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    /* Billing tabs only for Talent card */
+    .billing-tabs {
+      display: flex;
+      justify-content: center;
+      background: var(--gray-200);
+      border-radius: 0.5rem;
+      padding: 0.25rem;
+      margin: 1rem auto 2rem;
+      max-width: 14rem;
+
+      .tab-btn {
+        flex: 1;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--gray-600);
+        border: none;
+        background: transparent;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &.active {
+          background: var(--primary-500);
+          color: var(--gray-50);
+        }
+      }
+    }
+
+    .card-body {
+      padding: 2rem;
+      background: color-mix(in srgb, var(--gray-50), transparent 10%);
+      backdrop-filter: blur(1px);
+      flex: 1;
+      .price-section {
+        text-align: center;
+        margin-bottom: 2rem;
+        min-height: 8rem; 
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        position: relative;
+
+        @media (min-width: 768px) {
+          min-height: 7rem;
+        }
+        @media (min-width: 1024px) {
+          min-height: 8rem;
+        }
+
+        .savings-badge {
+          position: absolute;
+          top: -1.25rem;
+          width: 100%;
+          margin:auto;
+
+          color: #064e3b;
+          padding: 0.25rem 0.75rem;
+          border-radius: 1rem;
+          font-size: 0.75rem;
+          font-weight: 400;
+          z-index: 10;
+          display: none; /* Hidden by default */
+        }
+
+        .price {
+          font-size: calc(28px + (8) * (100vw - 400px) / (1024 - 400));
+          font-weight: 700;
+          color: var(--gray-900);
+          margin-bottom: 0.5rem;
+
+          .price-suffix {
+            font-size: calc(14px + (2) * (100vw - 400px) / (1024 - 400));
+            color: var(--gray-600);
+          }
+        }
+
+        .billing-text {
+          color: var(--gray-600);
+          &.billing-text-monthly , &.billing-text-annually{
+            display:none;
+          }
+          &.billing-text-monthly.active , &.billing-text-annually.active{
+            display:block !important;
+          }
+        }
+      }
+
+      .features {
+        .feature {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.75rem;
+          margin-bottom: 1rem;
+
+          .check-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            fill: var(--green-500);
+
+            svg {
+              width: 100%;
+              height: 100%;
+              fill: inherit;
+            }
+          }
+
+          span {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            color: var(--gray-700);
+          }
+        }
+      }
+    }
+
+    .card-footer {
+      padding: 2rem;
+      background: color-mix(in srgb, var(--gray-50), transparent 10%);
+      backdrop-filter: blur(1px);
+      border-radius: 0 0 1rem 1rem;
+
+      .get-started-btn {
+        width: 100%;
+        background: var(--primary-500);
+        color: var(--gray-50);
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        transition: background-color 0.2s;
+        border: none;
+        cursor: pointer;
+
+
+
+        &:hover {
+          background: color-mix(in srgb, var(--primary-500), black 10%);
+        }
+      }
+
+      .no-risk {
+        text-align: center;
+        font-size: 0.65rem;
+        color: var(--gray-500);
+        font-weight: 500;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing {
+    padding: 3rem 1rem;
+
+    .header {
+      .header-content {
+        padding: 1.5rem;
+
+        .title {
+          font-size: calc(36px + (10) * (100vw - 400px) / (1024 - 400));
+        }
+
+        .subtitle {
+          font-size: calc(24px + (5) * (100vw - 400px) / (1024 - 400));
+        }
+      }
+    }
+
+    .pricing-cards {
+      gap: 4rem;
+    }
+
+    .pricing-card {
+      &.popular {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #pricing {
+    padding: 5rem 2rem;
+
+    .header {
+      .header-content {
+        padding: 3rem;
+      }
+    }
+
+    .pricing-cards {
+      gap: 1.5rem;
+
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing-card {
+      &.popular {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing {
+    padding: 5rem 4rem;
+
+    .header {
+      .header-content {
+        max-width: 48rem;
+      }
+    }
+
+
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode {
+    #pricing {
+      background: linear-gradient(
+        to bottom,
+        var(--gray-900) 0px,
+        var(--gray-950) 400px
+      );
+
+      .background-blurred-elements {
+        .blurred-element-1,
+        .blurred-element-2,
+        .blurred-element-3 {
+          background: var(--gray-800);
+          opacity: 0.2;
+        }
+      }
+
+      .header {
+        .header-content {
+          background: var(--gray-700);
+
+          .title,
+          .subtitle {
+            color: var(--gray-100);
+
+            .highlight {
+              color: var(--gray-300);
+            }
+          }
+        }
+      }
+
+      .pricing-card {
+        background: color-mix(in srgb, var(--gray-800), transparent 10%);
+
+        .card-header {
+          background: color-mix(in srgb, var(--gray-800), transparent 20%);
+          color: var(--gray-100);
+
+          .plan-description {
+            color: var(--gray-300);
+          }
+
+          &.popular-header {
+            background: var(--gray-700);
+            color: var(--gray-100);
+
+            .plan-description {
+              color: color-mix(in srgb, var(--gray-100), transparent 10%);
+            }
+
+            .spoken-languages {
+              &.popular-text {
+                color: color-mix(in srgb, var(--gray-100), transparent 20%);
+              }
+            }
+          }
+
+          .spoken-languages {
+            color: var(--gray-500);
+          }
+        }
+
+        .card-body {
+          background: color-mix(in srgb, var(--gray-800), transparent 10%);
+          color: var(--gray-100);
+
+          .price {
+            color: var(--gray-100);
+
+            .price-suffix {
+              color: var(--gray-300);
+            }
+          }
+
+          .billing-text {
+            color: var(--gray-300);
+          }
+
+          .feature {
+            .check-icon {
+              fill: var(--green-400);
+            }
+
+            span {
+              color: var(--gray-200);
+            }
+          }
+        }
+
+        .card-footer {
+          background: color-mix(in srgb, var(--gray-800), transparent 10%);
+          color: var(--gray-100);
+
+          .get-started-btn {
+            background: var(--gray-700);
+            color: var(--gray-100);
+
+            &:hover {
+              background: var(--gray-600);
+            }
+          }
+
+          .no-risk {
+            color: var(--gray-500);
+          }
+        }
+      }
+
+      .tab-btn {
+        background: var(--gray-700);
+        color: var(--gray-100);
+        border-color: var(--gray-600);
+        text-transform:capitalize;
+        &.active {
+          background: var(--primary-500);
+          color: var(--gray-100);
+        }
+
+        &:hover:not(.active) {
+          color: var(--gray-100);
+          border-color: var(--gray-500);
+        }
+      }
+    }
+  }
+}
+</style>
