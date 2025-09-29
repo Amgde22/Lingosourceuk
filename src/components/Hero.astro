@@ -13,30 +13,27 @@ import dudeHalf from "@assets/images/hero-50.webp"
       <h1 class="hero-heading" set:html={t("home:hero.heading_line1")}></h1>
       <h1 class="hero-heading" set:html={t("home:hero.heading_line2")}></h1>
       <p class="hero-body" set:html={t("home:hero.body")}></p>
-      <p class="hero-small">{t("home:hero.smallText")}</p>
       <div class="hero-ctas">
         <a href="/contact" class="cta-btn btn-primary">{t("home:hero.primaryCta")}</a>
         <a href="/how-it" class="cta-btn btn-secondary">{t("home:hero.secondaryCta")}</a>
       </div>
+      <p class="hero-small">{t("home:hero.smallText")}</p>
+
     </div>
 
     <!-- Right Content -->
     <div class="hero-image">
+      <p class="language-welcom-text english">🇬🇧 Hello</p>
+      <p class="language-welcom-text french">🇫🇷 Bonjour</p>
+      <p class="language-welcom-text arabic">🇸🇦 مرحبا</p>
+      <p class="language-welcom-text spanish">🇪🇸 Hola</p>
       <div class="image-bg">
         <picture >
             <!-- Large screens or retina displays get the highest quality -->
-            <source srcset={dudeFull.src} media="(min-width: 1024px)" type="image/webp" />
+            <source srcset={dudeFull.src} media="(min-width: 824px)" type="image/webp" />
             <!-- Medium devices (tablets) -->
             <source srcset={dudeMiddle.src} media="(min-width: 640px)" type="image/webp" />
-            <!-- Small devices (default fallback) -->
-            <img 
-              src={dudeHalf.src} 
-              alt="Support agent" 
-              loading="lazy" 
-              decoding="async" 
-              width="500"
-              height="500"
-            />
+            <img loading="lazy" decoding="async" src={dudeMiddle.src} width="500px">
           </picture>
       </div>
     </div>
@@ -73,49 +70,69 @@ import dudeHalf from "@assets/images/hero-50.webp"
   }
 
   .hero-heading {
-    font-size: calc(35px + (10) * (100vw - 400px) / (1024 - 400));
+    font-size: calc(35px + (10* (100vw - 400px) / (1024 - 400)));
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 4px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    
+    &:nth-of-type(1) {
+      animation-delay: 0.2s;
+    }
+    
+    &:nth-of-type(2) {
+      animation-delay: 0.4s;
+    }
   }
 
   .hero-body {
     font-size: 1rem;
     margin: var(--spacing-lg) 0;
-
     color: #444;
-
-
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInFromLeft 0.8s ease-out forwards;
+    animation-delay: 0.6s;
   }
+
 :global(.hero-body strong){
     color: #2a2a2a;
-
-
 }
+
   .hero-small {
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-    color: #111;
+    font-size: calc(0.7rem + (2.3) * (100vw - 400px) / (1024 - 400));
+    font-weight: 400;
+    margin-top: 1rem;
+    color: var(--gray-500);
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: 1.4s;
   }
 
   .hero-ctas {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-.cta-btn{
-  padding: 0.6rem 1.4rem;
-  font-weight: 600;
-  transition: background 0.3s, color 0.3s;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius:@cta-border-radius;
 
-}
+    .cta-btn{
+      padding: 0.6rem 1.4rem;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius:@cta-border-radius;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: slideInFromBottom 0.6s ease-out forwards;
+    }
+
     .btn-primary {
       background: @primary-cta-color;
       color: #fff;
+      animation-delay: 0.8s;
     }
 
     .btn-primary:hover {
@@ -126,6 +143,7 @@ import dudeHalf from "@assets/images/hero-50.webp"
       background: transparent;
       color: var(--primary);
       border: 2px solid var(--primary);
+      animation-delay: 1.0s;
     }
 
     .btn-secondary:hover {
@@ -137,8 +155,46 @@ import dudeHalf from "@assets/images/hero-50.webp"
   .hero-image {
 
     display: none;
-    justify-content: center;
     isolation: isolate;
+    
+    .language-welcom-text{
+      position: absolute;
+      background-color: color-mix(in srgb, var(--gray-300), transparent 20%);
+      color: #2a2a2a;
+      font-weight: 800;
+      z-index: 5;
+      padding:.5em 1em;
+      border-radius: 16px;
+      opacity: 0;
+
+        animation: fadeInUp 0.8s ease-out forwards;
+
+      &:nth-of-type(1){
+        right: 0;
+        top:100px;
+        animation-delay: 2.4s;
+
+      }
+      &:nth-of-type(2){
+        right: 1rem;
+        top:200px;
+        animation-delay: 2.6s;
+
+      }
+      &:nth-of-type(3){
+        right: 4.5rem;
+        top:350px;
+        animation-delay: 2.8s;
+
+      }
+      &:nth-of-type(4){
+        right: 12.5rem;
+        bottom:50px;
+        animation-delay: 3s;
+
+      }
+    }
+
     &::before{
         content: "";
         position: absolute;
@@ -151,10 +207,12 @@ import dudeHalf from "@assets/images/hero-50.webp"
         z-index: -1;
         border-radius: 0.8rem 0.8rem 0 0 ;
         transform: rotate(@object-rotate);
+        opacity: 0;
+        animation: fadeIn 0.8s ease-out forwards;
+        animation-delay: 2.4s;
     }
     .image-bg {
       position: relative;
-    //   background: #dbeafe;
       padding: 1rem;
       border-radius: 0.8rem;
       display:flex;
@@ -175,27 +233,50 @@ import dudeHalf from "@assets/images/hero-50.webp"
   /* Decorative Squares */
   .square {
     position: absolute;
-    width: 120px;
-    height: 120px;
-    background: var(--primary);
-    opacity: 0.15;
+    width: 480px;
+    height: 480px;
+    background: transparent;
+    border:2px solid var(--primary);
+    opacity: 0;
     border-radius: 0.8rem;
-
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--primary);
+      border-radius: 0.8rem;
+      opacity: 0;
+      animation: fadeIn 0.6s ease-out forwards;
+    }
   }
 
   .square-left {
     left: 0;
     bottom: 0;
-    transform: rotate(@object-rotate) translateY(10%) translateX(-100%) ;
+    transform: rotate(150deg) translateY(10%) translateX(-300%);
+    animation: slideInLeft 1.2s ease-out forwards;
+    animation-delay: 1.6s;
+    
+    &::after {
+      animation-delay: 3.2s; /* Delay after slide-in completes */
+    }
   }
 
   .square-right {
     top: 20%;
     right: 0;
-    transform: rotate(@object-rotate) translateY(-50%) translateX(100%) ;
+    transform: rotate(150deg) translateY(-50%) translateX(300%);
+    animation: slideInRight 1.2s ease-out forwards;
+    animation-delay: 1.8s;
+    
+    &::after {
+      animation-delay: 3.4s; /* Delay after slide-in completes */
+    }
   }
-
-
 }
 
 /* Tablet */
@@ -206,19 +287,15 @@ import dudeHalf from "@assets/images/hero-50.webp"
   .hero-heading {
     font-size: calc(40px + (10 * (100vw - 400px) / (1024 - 400)));
   }
-
-
-  .square {
-    opacity: 0.75 !important;
-
-  }
-
+  
   .square-left {
-    transform: rotate(@object-rotate) translateY(10%) translateX(-100%) scale(2) !important;
+    transform: rotate(150deg) translateY(10%) translateX(-300%) scale(2);
+    animation: slideInLeftTablet 1.2s ease-out forwards;
   }
 
   .square-right {
-    transform: rotate(@object-rotate) translateY(-50%) translateX(100%) scale(2) !important;
+    transform: rotate(150deg) translateY(-50%) translateX(300%) scale(2);
+    animation: slideInRightTablet 1.2s ease-out forwards;
   }
 }
 
@@ -258,6 +335,8 @@ import dudeHalf from "@assets/images/hero-50.webp"
     z-index: -1;
     height: 75%;
     display: flex !important;
+    justify-content: center;
+
   }
 
   .image-bg {
@@ -266,6 +345,95 @@ import dudeHalf from "@assets/images/hero-50.webp"
 
   .hero-heading {
     font-size: calc(48px + (10 * (100vw - 400px) / (1440 - 400)));
+  }
+}
+
+/* Keyframes */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp{
+  from {
+    opacity: 0;
+    transform:translateY(150%);
+  }
+  to {
+    opacity: 1;
+    transform:translateY(0);
+
+  }
+}
+
+/* Square animations for mobile - animate to EXACT original positions */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: rotate(150deg) translateY(10%) translateX(-300%);
+  }
+  to {
+    opacity: 0.15;
+    transform: rotate(@object-rotate) translateY(10%) translateX(-100%);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: rotate(150deg) translateY(-50%) translateX(300%);
+  }
+  to {
+    opacity: 0.15;
+    transform: rotate(@object-rotate) translateY(-50%) translateX(100%);
+  }
+}
+
+/* Square animations for tablet+ - animate to EXACT original positions */
+@keyframes slideInLeftTablet {
+  from {
+    opacity: 0;
+    transform: rotate(150deg) translateY(10%) translateX(-300%) scale(2);
+  }
+  to {
+    opacity: 0.75;
+    transform: rotate(@object-rotate) translateY(10%) translateX(-100%) scale(2);
+  }
+}
+
+@keyframes slideInRightTablet {
+  from {
+    opacity: 0;
+    transform: rotate(150deg) translateY(-50%) translateX(300%) scale(2);
+  }
+  to {
+    opacity: 0.75;
+    transform: rotate(@object-rotate) translateY(-50%) translateX(100%) scale(2);
   }
 }
 

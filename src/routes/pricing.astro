@@ -1,17 +1,14 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Hero from "@components/Hero.astro"
-import HowItWorksSection from "@components/HowItWorksSection.astro"
-import WhyUs from "@components/WhyUs.astro"
-import Pricing from "@components/Pricing.astro"
-import Contact from "@components/Contact.astro"
-import { getLocalePath, t } from "i18n:astro";
+
+import PricingSection from "@components/Pricing.astro"
+
+import {  t } from "i18n:astro";
 import {getOptimizedImage} from "@utils/utils"
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Hero (for rendering)
-import landingImage from "@assets/images/hero.png" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 import mobileLandingImage from "@assets/images/hero.png" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
-const optimizedLandingImage = await getOptimizedImage(landingImage)
+
 const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 ---
 
@@ -22,9 +19,8 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 
 >
 
-<Hero />
-<HowItWorksSection />
-<WhyUs />
-<Pricing />
-<Contact />
+<div class="place-taker" ></div>
+<PricingSection />
+
 </BaseLayout>
+

@@ -18,7 +18,7 @@ import { t } from "i18n:astro";
   
   <div class="container">
     <!-- Headline & Intro (from i18n) -->
-    <div class="intro-text">
+    <div class="intro-text animate-on-scroll">
       <h1 class="headline" set:html={t('home:whyUs.title')}></h1>
       <h1 class="subtitle" set:html={t('home:whyUs.subtitle')}></h1>
       <div class="intro-paragraphs">
@@ -38,7 +38,7 @@ import { t } from "i18n:astro";
 
     <div class="features-list">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="card animate-on-scroll slide-left" data-card-index="0">
         <div class="card-grid">
           <div class="icon-wrapper">
             <div class="icon-background">
@@ -92,7 +92,7 @@ import { t } from "i18n:astro";
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
+      <div class="card animate-on-scroll slide-right" data-card-index="1">
         <div class="card-grid">
           <div class="icon-wrapper">
             <div class="icon-background">
@@ -133,7 +133,7 @@ import { t } from "i18n:astro";
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
+      <div class="card animate-on-scroll slide-left" data-card-index="2">
         <div class="card-grid">
           <div class="icon-wrapper">
             <div class="icon-background">
@@ -190,7 +190,54 @@ import { t } from "i18n:astro";
   </div>
 </section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Animation configuration
+    const animationConfig = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px',
+      animationDelay: 150 // ms between card animations
+    };
+
+    // Create Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
+          // Get the card index for staggered animation
+          const cardIndex = entry.target.dataset.cardIndex;
+          const delay = cardIndex ? parseInt(cardIndex) * animationConfig.animationDelay : 0;
+          
+          setTimeout(() => {
+            entry.target.classList.add('animate-in');
+          }, delay);
+        }
+      });
+    }, {
+      threshold: animationConfig.threshold,
+      rootMargin: animationConfig.rootMargin
+    });
+
+    // Observe all elements with animate-on-scroll class
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Cleanup observer on page unload
+    window.addEventListener('beforeunload', () => {
+      observer.disconnect();
+    });
+  });
+</script>
+
 <style lang="less">
+  /* -------------------------
+     Animation variables
+     ------------------------- */
+  @animation-duration: 0.8s;
+  @animation-easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  @slide-distance: 60px;
+
   /* -------------------------
      Color variables (map to :root)
      ------------------------- */
@@ -230,32 +277,57 @@ import { t } from "i18n:astro";
     position: relative;
     z-index: 10;
     max-width: @container-max;
+  }
 
+  /* -------------------------
+     Animation Classes
+     ------------------------- */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: all @animation-duration @animation-easing;
 
+    &.slide-left {
+      transform: translateX(-@slide-distance) translateY(20px);
+    }
+
+    &.slide-right {
+      transform: translateX(@slide-distance) translateY(20px);
+    }
+
+    // Intro text slides up from center
+    &.intro-text {
+      transform: translateY(40px);
+    }
+
+    &.animate-in {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+    }
   }
 
   /* Intro */
   .intro-text {
-    padding:   calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
+    padding: calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
     margin-bottom: 3.25rem;
   }
-  .headline {
-    text-align: center;
 
+  .headline {
     font-size: calc(36px + (10) * (100vw - 400px) / (1024 - 400));
     font-weight: 700;
-    color: @gray-50;
+    color: @gray-300;
     margin-bottom: 0.75rem;
     text-wrap: balance;
-    margin-bottom: 2.25em;
+    margin-bottom: .5em;
+    width: fit-content;
+    padding: 0.125em .5em;
+    border-radius: .5em;
   }
-  .subtitle{
-    font-size: calc(24px + (5) * (100vw - 400px) / (1024 - 400));
 
+  .subtitle {
+    font-size: calc(24px + (5) * (100vw - 400px) / (1024 - 400));
     font-weight: 700;
     color: @gray-100;
     margin-bottom: 0.5rem;
-
   }
 
   .intro-paragraphs {
@@ -266,12 +338,12 @@ import { t } from "i18n:astro";
       line-height: 1.6;
       color: @gray-400;
 
-
-      .list-item-icon{
-        display:inline-block;
-        margin-inline:8px;
+      .list-item-icon {
+        display: inline-block;
+        margin-inline: 8px;
       }
-      &:not(:has(.list-item-icon)){
+
+      &:not(:has(.list-item-icon)) {
         margin-top: var(--spacing-lg);
       }
 
@@ -285,7 +357,6 @@ import { t } from "i18n:astro";
   .features-list {
     display: grid;
     gap: 1.5rem;
-
     margin: 0 auto;
   }
 
@@ -296,7 +367,6 @@ import { t } from "i18n:astro";
     border-radius: .5rem;
     box-shadow: 0 18px 40px rgba(2,6,23,0.6);
     isolation: isolate;
-
   }
 
   .card-grid {
@@ -333,34 +403,30 @@ import { t } from "i18n:astro";
       margin-bottom: 0.25rem;
       color: @gray-50;
       text-transform: capitalize;
-
     }
+
     .card-subtitle {
       color: @gray-300;
       font-weight: 600;
       margin-bottom: 1.5rem;
       text-transform: capitalize;
-
     }
-    .card-text {
-      color: @gray-400;
 
+    .card-text {
+      color: @gray-300;
       font-size: 0.98rem;
       line-height: 1.6;
       margin-bottom: 3rem;
-
     }
   }
-
-
 
   /* Checklist */
   .checklist {
     display: grid;
     gap: 0.6rem;
     margin-bottom: 1.5rem;
-
   }
+
   .check-item {
     display: flex;
     align-items: center;
@@ -368,16 +434,18 @@ import { t } from "i18n:astro";
     color: @gray-100;
     font-size: 0.95rem;
   }
+
   .check-icon-bg {
     width: 1.5rem;
     height: 1.5rem;
-    flex:0 0 auto;
+    flex: 0 0 auto;
     background-color: @check-bg; /* controlled variable */
     border-radius: 9999px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .check-icon {
     width: 0.95rem;
     height: 0.95rem;
@@ -389,6 +457,7 @@ import { t } from "i18n:astro";
   .card-cta-row {
     margin-top: 2rem;
   }
+
   .cta {
     display: inline-block;
     background-color: @secondary-700; /* CTA colored with secondary-700 */
@@ -398,67 +467,70 @@ import { t } from "i18n:astro";
     border-radius: 9999px;
     font-weight: 700;
     font-size: 0.7rem;
-
     text-transform: uppercase;
-
     letter-spacing: 0.6px;
     cursor: pointer;
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     transition: transform 150ms ease, filter 150ms ease;
+
     &:hover {
       transform: translateY(-2px);
       filter: brightness(1.05);
     }
   }
 
-    /* Highlight box (keeps visual hierarchy like the mock) */
-    .highlight-box {
-      border-radius: 0.75rem;
-      padding: 1rem ;
-      margin-bottom: 2rem;
-      background-color: var(--gray-100);
-      .highlight-title {
-      text-transform: capitalize;
+  /* Highlight box (keeps visual hierarchy like the mock) */
+  .highlight-box {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--gray-100);
 
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: @gray-900;
-        margin-bottom: 0.25rem;
-      }
-      .highlight-subtitle {
-        color: @gray-700;
-      }
+    .highlight-title {
+      text-transform: capitalize;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: @gray-900;
+      margin-bottom: 0.25rem;
     }
+
+    .highlight-subtitle {
+      color: @gray-700;
+    }
+  }
+
   /* Audio player panel (kept but styled to fit the darker cards) */
   .audio-players {
     display: grid;
     gap: 0.8rem;
     margin-top: 1rem;
   }
+
   .audio-player {
     background-color: var(--gray-100);
     border-radius: 0.6rem;
     padding: 1rem;
   }
+
   .player-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.25rem;
-    
   }
+
   .player-title {
     color: @gray-700;
     text-transform: capitalize;
-
     font-weight: 600;
   }
+
   .player-subtitle {
     color: @gray-500;
-
     font-size: 0.86rem;
     margin-bottom: 0.25rem;
   }
+
   .play-button {
     background: transparent;
     border: none;
@@ -470,123 +542,145 @@ import { t } from "i18n:astro";
 
   // animation
   /* Floating background / pattern (subtle version) */
-@keyframes subtlePulse {
-  50% { opacity: 0.35; } /* softer pulse */
-}
-@keyframes subtleBounce {
-  0%, 100% {
-    transform: translateY(-10%); /* smaller travel */
-    animation-timing-function: ease-in-out;
+  @keyframes subtlePulse {
+    50% { opacity: 0.35; } /* softer pulse */
   }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: ease-in-out;
-  }
-}
 
-.background-pattern {
-  position: absolute;
-  inset: 0;
-  opacity: 0.05;
-  pointer-events: none;
-  .pattern-overlay {
+  @keyframes subtleBounce {
+    0%, 100% {
+      transform: translateY(-10%); /* smaller travel */
+      animation-timing-function: ease-in-out;
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: ease-in-out;
+    }
+  }
+
+  .background-pattern {
     position: absolute;
     inset: 0;
-    background-image:
-      radial-gradient(circle at 25% 25%, @gray-50 1px, transparent 1px),
-      radial-gradient(circle at 75% 75%, @gray-50 1px, transparent 1px);
-    background-size: 40px 40px;
-    mix-blend-mode: overlay;
-  }
-}
+    opacity: 0.05;
+    pointer-events: none;
 
-.floating-shapes {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  div { position: absolute; animation-iteration-count: infinite; }
+    .pattern-overlay {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 25% 25%, @gray-50 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, @gray-50 1px, transparent 1px);
+      background-size: 40px 40px;
+      mix-blend-mode: overlay;
+    }
+  }
 
-  .shape-1 {
-    top: 4.5rem;
-    left: 2.25rem;
-    width: 7rem;
-    height: 7rem;
-    background-color: var(--primary-700);
-    opacity: 0.04; /* lighter */
-    border-radius: 9999px;
-    animation: subtlePulse 4s infinite; /* slower */
-  }
-  .shape-2 {
-    top: 9.5rem;
-    right: 4.5rem;
-    width: 5.5rem;
-    height: 5.5rem;
-    background-color: @secondary-700;
-    opacity: 0.06;
-    border-radius: 0.5rem;
-    transform: rotate(45deg);
-    animation: subtleBounce 6s infinite; /* slower bounce */
-  }
-  .shape-3 {
-    bottom: 7.5rem;
-    left: 24%;
-    width: 4.5rem;
-    height: 4.5rem;
-    background-color: var(--primary-700);
-    opacity: 0.04;
-    border-radius: 9999px;
-    animation: subtlePulse 5s infinite;
-    animation-delay: 1.2s;
-  }
-  .shape-4 {
-    bottom: 4.5rem;
-    right: 33.33%;
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: @secondary-700;
-    opacity: 0.06;
-    border-radius: 0.5rem;
-    animation: subtleBounce 7s infinite;
-    animation-delay: 1.5s;
-  }
-}
+  .floating-shapes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 
+    div { 
+      position: absolute; 
+      animation-iteration-count: infinite; 
+    }
 
+    .shape-1 {
+      top: 4.5rem;
+      left: 2.25rem;
+      width: 7rem;
+      height: 7rem;
+      background-color: var(--primary-700);
+      opacity: 0.04; /* lighter */
+      border-radius: 9999px;
+      animation: subtlePulse 4s infinite; /* slower */
+    }
+
+    .shape-2 {
+      top: 9.5rem;
+      right: 4.5rem;
+      width: 5.5rem;
+      height: 5.5rem;
+      background-color: @secondary-700;
+      opacity: 0.06;
+      border-radius: 0.5rem;
+      transform: rotate(45deg);
+      animation: subtleBounce 6s infinite; /* slower bounce */
+    }
+
+    .shape-3 {
+      bottom: 7.5rem;
+      left: 24%;
+      width: 4.5rem;
+      height: 4.5rem;
+      background-color: var(--primary-700);
+      opacity: 0.04;
+      border-radius: 9999px;
+      animation: subtlePulse 5s infinite;
+      animation-delay: 1.2s;
+    }
+
+    .shape-4 {
+      bottom: 4.5rem;
+      right: 33.33%;
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: @secondary-700;
+      opacity: 0.06;
+      border-radius: 0.5rem;
+      animation: subtleBounce 7s infinite;
+      animation-delay: 1.5s;
+    }
+  }
 
   /* Responsive adjustments — same LESS schema / breakpoints as original */
   @media (min-width: 768px) {
     .features-list {
       gap: 2rem;
     }
+
     .card {
       padding: 2rem;
       border-radius: 1rem;
     }
+
     .card-grid {
       gap: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
-    .container{
-      width:fit-content;
-      margin:auto;
+    .container {
+      width: fit-content;
+      margin: auto;
     }
-    .intro-text{
-      padding:0;
+
+    .intro-text {
+      padding: 0;
     }
+
     .features-list {
       grid-template-columns: repeat(1, 1fr);
       margin: auto;
 
-      .card-text{
-        width:80ch;
-        text-wrap:balance;
+      .card-text {
+        width: 80ch;
+        text-wrap: balance;
       }
-      .highlight-box ,.audio-players{
-        max-width:30rem;
+
+      .highlight-box, .audio-players {
+        max-width: 30rem;
       }
     }
-    .container { padding-left: 2.5rem; padding-right: 2.5rem; }
+
+
+  }
+
+  /* Respect user's motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll {
+      transition: none;
+      opacity: 1;
+      transform: none;
+    }
   }
 </style>

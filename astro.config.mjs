@@ -7,7 +7,7 @@ export default defineConfig({
   image: {
     service: passthroughImageService(),
   },
-  site: "https://www.yourwebsite.com", // update me!
+  site: "https://www.lingosource.uk", 
   integrations: [
     icon(),
     i18n({
@@ -21,7 +21,8 @@ export default defineConfig({
       pages: {
 				"/about": {
 					fr: "/a-propos",
-				}
+				},
+
 			},
     }),
     sitemap({

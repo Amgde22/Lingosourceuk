@@ -28,8 +28,13 @@ const navData = [
     children: []
   },
   {
+    key: "Pricing",
+    url: "/pricing",
+    children: []
+  },
+  {
     key: "contact",
-    url: "/contact",
+    url: "/contact-us",
     children: []
   },
 ]

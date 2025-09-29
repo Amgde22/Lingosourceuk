@@ -1,15 +1,14 @@
 {
-	"name": "Code Stitch Web Designs",
-	"email": "help@codestitch.app",
-	"phoneForTel": "555-779-4407",
-	"phoneFormatted": "(555) 779-4407",
+	"name": "LingoSource Uk",
+	"email": "contact@lingosource.uk",
+	"phoneForTel": "+213777942185",
+	"phoneFormatted": "+213 777942185",
 	"address": {
-		"lineOne": "First Address Line",
-		"lineTwo": "Second Address Line",
-		"city": "Denver",
-		"state": "CO",
-		"zip": "80206",
-		"mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+		"lineOne": "07,belasri boumediene",
+		"lineTwo":"Sidi Bel Abbès,Algeria",
+		"city": "",
+		"state": "",
+		"zip": ""
 	},
-	"domain": "www.codestitch.app"
+	"domain": "www.lingosource.uk"
 }

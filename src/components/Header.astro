@@ -1,4 +1,6 @@
 ---
+import Logo from '@icons/logo.svg'
+
 import navData from "@data/navData";
 import { Icon } from "astro-icon/components";
 import { getLocalePath, t } from "i18n:astro";
@@ -11,7 +13,7 @@ import Settings from "./TemplateComponents/Settings.astro";
     <!--Nav Logo-->
     <a href={getLocalePath("/")} class="cs-logo" aria-label="back to home">
       <img
-        src="/assets/svgs/logo-black.svg"
+        src="/assets/images/logo.png"
         alt="logo"
         width="210"
         height="29"
@@ -138,8 +140,9 @@ import Settings from "./TemplateComponents/Settings.astro";
       width: 100%;
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
-      padding: (12/16rem) (16/16rem);
-      background-color: #fff;
+      padding: (8/16rem) (16/16rem);
+      background-color: color-mix(in srgb, var(--gray-100) , transparent 10%);
+      backdrop-filter: blur(10px);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       position: fixed;
       z-index: 10000;
@@ -735,8 +738,10 @@ import Settings from "./TemplateComponents/Settings.astro";
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
       padding: 0 (16/16rem);
-      background-color: #fff;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      background-color: color-mix(in srgb, var(--gray-100) , transparent 10%);
+
+      backdrop-filter: blur(12px);
       position: fixed;
       z-index: 10000;
 
@@ -793,7 +798,7 @@ import Settings from "./TemplateComponents/Settings.astro";
 
       .cs-li {
         list-style: none;
-        padding: (32/16rem) 0;
+        padding: (16/16rem) 0;
         /* prevent flexbox from squishing it */
         flex: none;
       }
