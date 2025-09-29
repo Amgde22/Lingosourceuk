@@ -13,7 +13,7 @@ const {email, phoneForTel , phoneFormatted} = clientData
 <section id="contact-1441">
     <div class="cs-container">
         <div class="cs-content">
-
+            <h1 class="cs-intro">{t('home:contact.intro')}</h1>
             <h2 class="cs-title">{t('home:contact.title')}</h2>
         </div>
         <div class="cs-contact-group">
@@ -26,7 +26,6 @@ const {email, phoneForTel , phoneFormatted} = clientData
                         <span class="cs-header">{t('home:contact.phoneNumber')}</span>
                         <a href={`tel:${phoneForTel}`} class="cs-link">{phoneFormatted}</a>
                     </div>
-                    
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
@@ -36,7 +35,6 @@ const {email, phoneForTel , phoneFormatted} = clientData
                         <span class="cs-header">{t('home:contact.email')}</span>
                         <a href={`mailto:${email}`} class="cs-link">{email}</a>
                     </div>
-                    
                 </li>
             </ul>
             <picture class="cs-background">
@@ -50,14 +48,37 @@ const {email, phoneForTel , phoneFormatted} = clientData
             </picture>
         </div>
         <!--Form-->
-        <form class="cs-form" id="cs-form-1441" data-netlify="true" name="Contact Form" method="post">
+        <form class="cs-form" id="cs-form-1441" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+            <!-- Hidden fields for Netlify -->
+            <input type="hidden" name="form-name" value="Contact Form" />
+            <p class="hidden">
+                <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+            </p>
+            
+            <!-- Success Message -->
+            <div class="cs-success-message" id="success-message">
+                <svg class="cs-success-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <h3 class="cs-success-title">{t('home:contact.successTitle') || 'Message Sent!'}</h3>
+                <p class="cs-success-text">{t('home:contact.successMessage') || 'Thank you for contacting us. We\'ll get back to you soon.'}</p>
+            </div>
+
+            <!-- Error Message -->
+            <div class="cs-error-message" id="error-message">
+                <p>{t('home:contact.errorMessage') || 'Something went wrong. Please try again.'}</p>
+            </div>
+
             <label class="cs-label">
                 {t('home:contact.customerName')}
                 <input class="cs-input" required type="text" id="name-1441" name="name" placeholder={t('home:contact.customerName')}>
             </label>
             <label class="cs-label cs-email">
                 {t('home:contact.email')}
-                <input class="cs-input" required type="email" id="email-1441" name="email" placeholder=contact@domain.com>
+                <input class="cs-input" required type="email" id="email-1441" name="email" placeholder="contact@domain.com">
             </label>
             <label class="cs-label cs-phone">
                 {t('home:contact.phoneNumber')}
@@ -71,6 +92,63 @@ const {email, phoneForTel , phoneFormatted} = clientData
         </form>
     </div>
 </section>
+
+<script>
+    const form = document.getElementById('cs-form-1441') as HTMLFormElement;
+    const successMessage = document.getElementById('success-message') as HTMLElement;
+    const errorMessage = document.getElementById('error-message') as HTMLElement;
+
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const submitButton = form.querySelector('.cs-submit') as HTMLButtonElement;
+            
+            // Store original button text
+            const originalButtonText = submitButton?.textContent || 'Send Message';
+            
+            // Disable submit button and show loading state
+            if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.textContent = 'Sending...';
+            }
+
+            // Hide any previous messages
+            successMessage?.classList.remove('show');
+            errorMessage?.classList.remove('show');
+
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData as any).toString()
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    successMessage?.classList.add('show');
+                    form.reset();
+                    
+                    // Scroll to success message
+                    successMessage?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Show error message
+                errorMessage?.classList.add('show');
+                console.error('Form submission error:', error);
+            } finally {
+                // Re-enable submit button with original text
+                if (submitButton) {
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalButtonText;
+                }
+            }
+        });
+    }
+</script>
 
 <style lang="less" scoped>
     /*-- -------------------------- -->
@@ -111,11 +189,19 @@ const {email, phoneForTel , phoneFormatted} = clientData
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
+            margin-bottom:1.5em;
         }
 
+        .cs-intro {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color:var(--primary-600);
+        }
         .cs-title {
-            max-width: 18ch;
+            font-size: 1.5rem;
+
             margin: 0;
+            text-transform:capitalize;
         }
 
         .cs-text {
@@ -179,7 +265,6 @@ const {email, phoneForTel , phoneFormatted} = clientData
             display: block;
             text-transform: capitalize;
         }
-
 
         .cs-link {
             font-size: (16/16rem);
@@ -248,6 +333,10 @@ const {email, phoneForTel , phoneFormatted} = clientData
             }
         }
 
+        .hidden {
+            display: none;
+        }
+
         .cs-form {
             width: 100%;
             max-width: (630/16rem);
@@ -263,6 +352,72 @@ const {email, phoneForTel , phoneFormatted} = clientData
             flex-wrap: wrap;
             align-items: center;
             gap: (12/16rem);
+            position: relative;
+        }
+
+        .cs-success-message,
+        .cs-error-message {
+            width: 100%;
+            padding: (24/16rem);
+            border-radius: (12/16rem);
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: (12/16rem);
+            animation: slideDown 0.4s ease-out;
+            text-transform:capitalize;
+
+            &.show {
+                display: flex;
+            }
+        }
+
+        .cs-success-message {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .cs-success-icon {
+            width: (48/16rem);
+            height: (48/16rem);
+            color: #28a745;
+        }
+
+        .cs-success-title {
+            font-size: (24/16rem);
+            font-weight: 700;
+            margin: 0;
+            color: #155724;
+        }
+
+        .cs-success-text {
+            font-size: (16/16rem);
+            margin: 0;
+            color: #155724;
+        }
+
+        .cs-error-message {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+
+            p {
+                margin: 0;
+                font-size: (16/16rem);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .cs-label {
@@ -349,6 +504,11 @@ const {email, phoneForTel , phoneFormatted} = clientData
                 color: #fff;
                 cursor: pointer;
             }
+
+            &:disabled {
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
         }
     }
 }
@@ -359,7 +519,7 @@ const {email, phoneForTel , phoneFormatted} = clientData
         .cs-container {
             max-width: (1280/16rem);
             flex-direction: row;
-            justify-content: space-between;
+
             flex-wrap: wrap;
             padding: 3rem 0 ;
         }

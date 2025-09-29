@@ -1,5 +1,9 @@
 ---
-import { t } from "i18n:astro";
+import { getLocalePath,t } from "i18n:astro";
+interface Props {
+  hideButtons : boolean;
+}
+const {hideButtons = false} = Astro.props
 
 const title = t('home:howItWorks.title');
 const step1Title = t('home:howItWorks.steps.step1.title');
@@ -138,10 +142,12 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
         </div>
       </div>
 
-      <div class="cta-container">
-        <button class="btn-primary-opacity">{primaryCta}</button>
-        <button class="btn-outline-gray">{secondaryCta}</button>
-      </div>
+      {!hideButtons && 
+        (<div class="cta-container">
+          <a href={getLocalePath("/contact")}  class="btn-primary-opacity">{primaryCta}</a>
+          <a href={getLocalePath("/how-it-works")} class="btn-outline-gray">{secondaryCta}</a>
+        </div>)
+      }
     </div>
   </section>
   
@@ -497,6 +503,7 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
           font-weight: 700;
           letter-spacing: 0.5px;
           text-transform: uppercase;
+          font-size: .75rem;
           cursor: pointer;
           transition: all 0.2s ease;
           opacity: 0;

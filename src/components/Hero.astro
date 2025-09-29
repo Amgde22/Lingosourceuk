@@ -1,8 +1,9 @@
 ---
-import { t } from "i18n:astro";
+import {getLocalePath, t } from "i18n:astro";
 import dudeFull from "@assets/images/hero-100.webp" 
 import dudeMiddle from "@assets/images/hero-75.webp" 
 import dudeHalf from "@assets/images/hero-50.webp" 
+
 
 ---
 
@@ -14,8 +15,8 @@ import dudeHalf from "@assets/images/hero-50.webp"
       <h1 class="hero-heading" set:html={t("home:hero.heading_line2")}></h1>
       <p class="hero-body" set:html={t("home:hero.body")}></p>
       <div class="hero-ctas">
-        <a href="/contact" class="cta-btn btn-primary">{t("home:hero.primaryCta")}</a>
-        <a href="/how-it" class="cta-btn btn-secondary">{t("home:hero.secondaryCta")}</a>
+        <a href={getLocalePath("/contact")} class="cta-btn btn-primary">{t("home:hero.primaryCta")}</a>
+        <a href={getLocalePath("/how-it-works")} class="cta-btn btn-secondary">{t("home:hero.secondaryCta")}</a>
       </div>
       <p class="hero-small">{t("home:hero.smallText")}</p>
 

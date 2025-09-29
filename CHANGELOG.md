@@ -1,29 +1,14 @@
 - set up ai chatgpt to claud to qwen coder - done
   - better prompt - done
 
-projet setup
-- setup variables
-  - colors - done
-  - spacing system - done
-  - font-sizes - done
-  - copy - done
 
-
-Hero
-- heading 
-- button
-- squares
-- animations
-
-why us
-hot to get started
-pricing
-header
+- see if links work ,even hard coded ones
+- add layout titles and descriptions to lacales
+- use layout titles and descriptions from locales in pages
+- see why mobile nav not opening
 
 
 pages : 
 about us 
-pricing
-contact
-get started
+how it works
   - after you name the sections , make the hompage section icons link to the detailed sections

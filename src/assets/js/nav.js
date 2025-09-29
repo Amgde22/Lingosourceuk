@@ -1,5 +1,6 @@
-// Astro:page-load wrapper for View Transitions purposes
-document.addEventListener('astro:page-load', () => { // Make the script controlling the <Hamburger /> mobile menu component available after navigating to a new page.
+console.log("nav.js read");
+
+
 
     const CSbody = document.querySelector('body');
     const CSnavbarMenu = document.getElementById('cs-navigation');
@@ -13,6 +14,7 @@ document.addEventListener('astro:page-load', () => { // Make the script controll
 
     // Toggles the hamburger mobile menu
     mobileMenuToggle.addEventListener('click', () => {
+        console.log("toggle clicked , event fired");
         toggleMenu()
         ariaExpanded(mobileMenuToggle);
     });
@@ -103,4 +105,3 @@ document.addEventListener('astro:page-load', () => { // Make the script controll
             } 
         });
     });   
-});

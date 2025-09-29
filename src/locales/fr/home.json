@@ -1,233 +1,267 @@
 {
-  "layout": {
-    "title": "Sites Internet au pixel près !",
-    "description": "Meta description pour la page"
-  },
   "hero": {
-    "title": "Ne soyez jamais le <strong>second</strong> choix",
-    "subtitle": "Sites modernes qui vendent 24h/24",
-    "lead": "Des sites qui vous positionnent comme le <strong>choix n°1</strong> et gèrent automatiquement :",
-    "features": [
-      "Prise de rendez-vous en ligne",
-      "Ventes & paiements",
-      "Relances automatisées"
-    ],
-    "cta": "Commandez votre site",
-    "helperNote": "(Les deux flux de prospects fonctionnent en parallèle)",
-    "boostLine": "Multipliez vos ventes par 3,75 en 7 jours — cours GRATUIT (9 min)"
+    "heading_line1": "Support Client 2x Moins Cher.",
+    "heading_line2": "Sans Perte de Qualité.",
+    "body": "Fini les tracas de recrutement ou les compromis sur la qualité pour économiser. Obtenez nos agents de support d'élite et multilingues dès <strong>6 $/heure.</strong> Ils gèrent les appels, chats et e-mails 24/7.",
+    "primaryCta": "Devis Gratuit",
+    "smallText": "Démarrez sans risque, la formation et le salaire d'intégration de l'agent sont à notre charge !!!",
+    "secondaryCta": "Comment nous vous faisons économiser"
   },
-  "benefits": {
-    "heading": "Les avantages d'un site web moderne (études à l'appui)",
-    "body": {
-      "quote": "<strong>84% des gens n'accordent pas leur confiance à une entreprise sans site web</strong> <small>(Verisign)</small>, Les réseaux sociaux seuls ne suffisent pas…",
-      "explanation": "Sans site, votre entreprise paraît <strong>petite, temporaire,</strong> ou <strong>risquée</strong>."
+  "testimonials": {
+    "title": "Nos clients nous adorent",
+    "caseStudyTitle": "Comment nous leur avons fait économiser 7500$ les 90 premiers jours",
+    "cta": "Contactez-nous",
+    "cta2": "Voir l'étude de cas"
+  },
+  "whyUs": {
+    "title": "Pourquoi nous",
+    "subtitle": "La Fin du Support Client Hors de Prix",
+    "intro": "Pendant trop longtemps, les entreprises en croissance ont fait face à un choix impossible :",
+    "choice1": "recruter une équipe interne coûteuse.",
+    "choice2": "risquer votre image de marque avec une externalisation bas de gamme.",
+    "outro": "Nous croyons que vous méritez un <strong>support de classe mondiale</strong> sans le <strong>prix</strong> qui va avec. Voici comment nous transformons cela en réalité.",
+    "point1": {
+      "title": "Prix Imbattables",
+      "subtitle": "Sans Compromis sur la Qualité",
+      "body": "Votre service client devrait être un moteur de croissance, pas un centre de coût. Alors que les concurrents et les plateformes de freelances facturent plus de 2000 $/mois <strong>PAR AGENT</strong>, notre modèle nous permet de fournir des talents d'élite, triés sur le volet, à partir de seulement <strong>6 $/heure</strong>. Il ne s'agit pas de faire des économies de bouts de chandelle... mais de vous donner un avantage financier intelligent à réinvestir dans votre entreprise.",
+      "highlight": {
+        "title": "Économisez 50% de Plus",
+        "subtitle": "vs. l'externalisation traditionnelle"
+      },
+      "features": [
+        "Réduisez les coûts opérationnels de plus de 50% par rapport à d'autres solutions d'externalisation",
+        "Aucun frais caché ni contrat à long terme",
+        "Une tarification prévisible et transparente"
+      ]
     },
-    "sections": [
-      {
-        "title": "Conversion :",
-        "subtitle": "Augmentez les Ventes, Réduisez le CPA",
-        "tooltip": "Coût Par Acquisition",
-        "points": [
-          "Des pages de destination qui convertissent",
-          "Signaux de confiance <small>(témoignages & avis…)</small>",
-          "Aimants à prospects + Tests A/B"
-        ]
+    "point2": {
+      "title": "Talents d'Élite",
+      "subtitle": "Triés sur le Volet pour Vous",
+      "body": "La plus grande crainte de l'externalisation est une baisse de qualité. Nous résolvons ce problème avec notre processus de sélection intensif en plusieurs étapes. Nous n'engageons que des communicateurs empathiques et efficaces qui peuvent représenter votre marque avec professionnalisme. <strong>Nos standards sont si élevés que nous payons même pour leur formation.</strong>",
+      "highlight": {
+        "title": "Économisez 50% de Plus",
+        "subtitle": "vs. l'externalisation traditionnelle"
       },
-      {
-        "title": "Optimisation pour les Moteurs de Recherche (SEO) :",
-        "subtitle": "Attirez des Clients Gratuitement",
-        "points": [
-          "Apparaissez sur Google lorsque les gens vous cherchent",
-          "Construisez une visibilité à long terme, pas seulement des pics publicitaires éphémères"
-        ]
-      },
-      {
-        "title": "Automatisation :",
-        "subtitle": "Évoluez pendant votre sommeil 😴",
-        "points": [
-          "Réservations et ventes en ligne",
-          "Offres automatisées par e-mail & WhatsApp",
-          "Suivi complet des prospects et des performances"
-        ]
-      },
-      {
-        "title": "Information :",
-        "subtitle": "Des Clients Bien Informés Achètent Plus Vite",
-        "points": [
-          "Présentez un e-catalogue clair de vos services/produits",
-          "Infos détaillées, options de contact et prix transparents",
-          "Une FAQ qui lève les doutes avant même l'appel"
-        ]
-      }
-    ]
-  },
-  "comparison": {
-    "title": "Fini les sites web de pacotille",
-    "subtitle": "Un site web moderne et réellement attractif en {currentYear}",
-    "examples": [
-      {
-        "title": "Clinique Dentaire",
-        "description": "Site web moderne pour clinique dentaire avec mode sombre, formulaire de contact et intégration Google Maps."
-      },
-      {
-        "title": "Refonte Non Officielle d'Algérie Télécom :",
-        "description": "Avec nous, obtenez un site plus professionnel et soigné que celui des plus grandes entreprises en Algérie."
-      }
-    ]
-  },
-  "features": {
-    "heading": "Pourquoi Nous Choisir ? :",
-    "list": [
-      {
-        "title": "Design Sur Mesure — Pas de Modèles Prédéfinis",
-        "description": "Chaque site est conçu de A à Z pour incarner votre marque et vos objectifs. Pas de mises en page génériques, pas de thèmes copier-coller."
-      },
-      {
-        "title": "Vitesse de Chargement Éclair",
-        "description": "Nos sites sont codés à la main, sans superflu, pour atteindre des <i>scores Google PageSpeed quasi parfaits</i> et une performance maximale."
-      },
-      {
-        "title": "Support à Vie, Zéro Tracas",
-        "description": "Nous ne livrons pas un site pour ensuite disparaître. Vous gagnez un partenaire à long terme qui gère les correctifs, les mises à jour et la maintenance, pour que vous restiez concentré sur votre croissance."
-      },
-      {
-        "title": "100% Sécurisé par Conception",
-        "description": "Construit en HTML & CSS statiques, votre site n'a pas de bases de données ou de plugins vulnérables. Il n'y a pratiquement rien que les hackers puissent exploiter."
-      },
-      {
-        "title": "Optimisé SEO & Mobile",
-        "description": "De la structure du contenu basée sur les mots-clés aux images optimisées et une responsivité mobile parfaite, votre site est conçu pour mieux se classer et attirer plus de clients."
-      },
-      {
-        "title": "Garantie Satisfait ou Remboursé",
-        "description": "Si nous ne parvenons pas à créer un design qui vous plaît, vous êtes remboursé et le contrat est annulé. Nous croyons en la qualité de notre travail."
-      }
-    ]
-  },
-  "packages": {
-    "heading": "Nos Formules",
-    "tiers": [
-      {
-        "name": "🚀 Essentiel",
-        "for": "Pour ceux qui débutent et ont besoin de vendre 1 produit/service.",
-        "price": "1.45M DZD + 2000 dzd/mois frais d'hébergement",
-        "description": "Le moyen le plus simple et rapide d'être en ligne.",
-        "features": [
-          {
-            "item": "Site web en un jour (1-page)",
-            "included": true
-          },
-          {
-            "item": "Garantie de qualité",
-            "included": true
-          },
-          {
-            "item": "2 séries de <strong>modifications gratuites</strong>",
-            "included": true
-          },
-          {
-            "item": "Support à vie",
-            "included": true
-          },
-          {
-            "item": "Pas de design personnalisé",
-            "included": false
-          },
-          {
-            "item": "Pas de tests A/B",
-            "included": false
-          },
-          {
-            "item": "Pas de marketing par e-mail",
-            "included": false
-          },
-          {
-            "item": "Pas d'appel individuel",
-            "included": false
-          }
-        ],
-        "bonuses": {
-          "title": "Bonus (valeur ajoutée) :",
-          "list": [
-            "Nom de domaine inclus <del>4,000 Dzd</del> ⇒ GRATUIT"
-          ]
-        }
-      },
-      {
-        "name": "⭐ Standard",
-        "for": "Pour les PME qui veulent se démarquer.",
-        "price": "1.9M DZD + 2000 dzd/mois frais d'hébergement",
-        "description": "La formule complète pour construire une marque et réduire votre coût par client.",
-        "features": [
-          {
-            "item": "Site web sur mesure (optimisé pour la conversion afin de réduire le CPA)",
-            "included": true
-          },
-          {
-            "item": "CMS (ajoutez facilement produits & services)",
-            "included": true
-          },
-          {
-            "item": "Automatisations (réservation, vente, intégration Google Maps)",
-            "included": true
-          },
-          {
-            "item": "Tableau de bord pour suivre les performances",
-            "included": true
-          },
-          {
-            "item": "Support à vie",
-            "included": true
-          }
-        ],
-        "bonuses": {
-          "title": "Bonus (valeur ajoutée) :",
-          "list": [
-            "Nom de domaine inclus <del>4,000 Dzd</del> ⇒ GRATUIT",
-            "Site de 5 pages (extensible) <del>10,000 Dzd</del> ⇒ GRATUIT",
-            "Audit gratuit + consultation sur votre stratégie marketing",
-            "1 test A/B simultané (pour optimiser les conversions)",
-            "Réunion de consultation trimestrielle de 15 min",
-            "Configuration du marketing par e-mail",
-            "Bots de réponse automatique"
-          ]
+      "audio_proof": {
+        "title": "Ne nous croyez pas sur parole. Écoutez la différence :",
+        "french_sample": {
+          "title": "Francophones Quasi-Natifs :",
+          "body": "Fluidité inégalée, sans accent."
         },
-        "guarantees": {
-          "title": "Garanties (sans risque) :",
-          "list": [
-            "Vous aimez, ou vous êtes remboursé",
-            "Nous améliorons votre site jusqu'à ce qu'il vous rapporte plus d'argent"
-          ]
+        "english": {
+          "title": "Anglais Clair et Professionnel :",
+          "body": "Accent minimal."
         }
+      }
+    },
+    "point3": {
+      "title": "Évolutivité Flexible",
+      "subtitle": "Avec Votre Équipe à la Demande.",
+      "body": "L'externalisation traditionnelle vous enferme dans des contrats rigides et à long terme pour un nombre fixe d'agents. Cela vous oblige à payer pour du temps inactif pendant vos périodes creuses, entraînant un gaspillage de budget et de l'inefficacité.\nNotre modèle est différent. Nous croyons que le support doit respirer avec votre entreprise. Nous fournissons une équipe flexible et évolutive qui s'adapte à vos besoins en temps réel, vous assurant de ne payer que pour ce que vous utilisez réellement.",
+      "highlight": {
+        "title": "1 à 10+ agents",
+        "subtitle": "en un instant"
+      },
+      "examples": [
+        "<strong>Vous débutez ?</strong> : Engagez un seul agent pour gérer les premières demandes.",
+        "<strong>Pics saisonniers en vue ?</strong> : Ajoutez plus d'agents pour le rush des fêtes.",
+        "<strong>Lancement de produit ?</strong> : Déployez une équipe dédiée pour la semaine de lancement afin de gérer l'afflux."
+      ]
+    },
+    "cta": "Commencez maintenant !"
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Choisissez le plan qui correspond à <span class=\"highlight\">vos</span> besoins",
+    "plans": {
+      "flex": {
+        "name": "Flex",
+        "description": "Pour les solopreneurs ou petites entreprises à budget limité.",
+        "price": "980 $",
+        "billingText": "Facturé mensuellement",
+        "spokenLanguages": "1 langue parlée",
+        "features": [
+          "Un agent dédié",
+          "Monolingue Niveau C1",
+          "37 heures par semaine",
+          "Support sur 2 canaux",
+          "Service client de base uniquement"
+        ],
+        "buttonText": "Commencez dès aujourd'hui"
+      },
+      "talent": {
+        "name": "Talent",
+        "description": "Pour les PME ou startups à budget limité.",
+        "price": "1300 $",
+        "billingText": "Facturé <span id=\"billed-suffix\">mensuellement</spand>",
+        "spokenLanguages": "2 langues parlées",
+        "popularBadge": "Le plus populaire",
+        "savingsBadge": "Économisez <span id=\"savings-percent\">0</span>%",
+        "billingTabs": {
+          "monthly": "mensuel",
+          "annually": "annuel"
+        },
+        "features": [
+          "Un agent dédié",
+          "Bilingue Niveau C1",
+          "40 heures par semaine",
+          "Support sur 3 canaux",
+          "Service client de base + Ventes"
+        ],
+        "buttonText": "Commencez dès aujourd'hui"
+      },
+      "business": {
+        "name": "Business",
+        "description": "Pour les grandes entreprises ou startups avec des budgets confortables.",
+        "price": "Prix Personnalisé",
+        "billingText": "Évoluez avec un plan sur mesure",
+        "spokenLanguages": "Agent multilingue",
+        "features": [
+          "Équipes sur mesure",
+          "Multilingue Niveau C1",
+          "40 heures par semaine",
+          "Support omnicanal",
+          "Équipes techniques avancées"
+        ],
+        "buttonText": "Commencez dès aujourd'hui"
+      }
+    },
+    "billedMonthly": "Facturé mensuellement",
+    "billedAnnually": "Facturé annuellement",
+    "prices": {
+      "monthly": {
+        "suffix": "/mois",
+        "flex": 980,
+        "talent": 1300,
+        "billedTypeName": "Mensuel"
+      },
+      "annually": {
+        "suffix": "/an",
+        "talent": 15000,
+        "billedTypeName": "Annuel"
+      }
+    },
+    "common": {
+      "noRiskText": "SANS RISQUE, ANNULEZ À TOUT MOMENT",
+      "languageBadges": {
+        "en": "EN",
+        "fr": "FR",
+        "es": "ES",
+        "ar": "AR",
+        "custom": "Custom"
+      }
+    }
+  },
+  "faq": {
+    "questions": [
+      {
+        "question": "Combien coûte ce service ?",
+        "answer": "À titre de référence, un contrat à temps plein (37 - 40 heures/semaine) pour l'un de nos agents d'élite, sans accent et quasi-natif, commence à environ 950 $ US par mois. Le devis final est adapté à vos besoins spécifiques, tels que le nombre d'agents ou les langues requises."
       },
       {
-        "name": "🏆 Prestige",
-        "for": "Pour les entreprises prêtes à dominer le marché.",
-        "price": "3.5M DZD + 3k/mois",
-        "description": "Maximisez votre visibilité. Maximisez vos clients.",
-        "features": [
-          {
-            "item": "Tout ce qui est inclus dans la formule <strong>Standard</strong>",
-            "included": true
-          },
-          {
-            "item": "Site web personnalisé de classe mondiale (conçu pour l'autorité & la confiance)",
-            "included": true
-          },
-          {
-            "item": "20 pages incluses",
-            "included": true
-          },
-          {
-            "item": "Optimisation SEO (meilleur classement, clients gratuits à vie)",
-            "included": true
-          },
-          {
-            "item": "Optimisation de la fiche Google Business (visibilité locale accrue)",
-            "included": true
-          }
+        "question": "Quelles langues parlent vos agents ?",
+        "answer": "Nous pouvons fournir n'importe quelle combinaison d'équipes monolingues, bilingues ou trilingues. \n <strong>Nos agents parlent couramment :</strong>",
+        "languages": [
+          "Anglais",
+          "Français",
+          "Espagnol",
+          "Arabe"
         ]
+      },
+      {
+        "question": "Y a-t-il des frais cachés ?",
+        "answer": "Non. Le tarif mensuel que nous proposons est tout compris pour une semaine de travail standard. Il n'y a pas de frais de mise en place ou de gestion cachés. Les exigences supplémentaires telles que les heures supplémentaires sont facturées séparément à un tarif horaire convenu à l'avance."
+      },
+      {
+        "question": "Qui fournit et forme sur les logiciels nécessaires (CRM, helpdesk, etc.) ?",
+        "answer": "Vous fournissez les licences et formez les agents sur vos systèmes et processus. Nous payons leur salaire intégral pendant la formation, l'intégration ne vous coûte donc rien."
+      },
+      {
+        "question": "Où sommes-nous basés ?",
+        "answer": "Toute notre équipe est stratégiquement basée en Algérie. Cela nous donne accès à un vaste bassin de talents hautement qualifiés et multilingues, en particulier pour le français et l'anglais sans accent, nous permettant de fournir une qualité de classe mondiale à une fraction du coût d'autres sites d'externalisation."
       }
     ]
+  },
+  "about": {
+    "missionTitle": "Notre Mission : Un Support de Classe Mondiale ne Devrait Pas Coûter une Fortune",
+    "backstory": "Je m'appelle Guendil Zine-Eddine, et j'ai lancé cette entreprise début 2025 par pure frustration. Ayant travaillé 3 ans dans le secteur des centres d'appels et du service client, j'ai vu de mes propres yeux comment toutes les entreprises en croissance sont piégées dans le même choix impossible : payer des frais astronomiques pour une équipe de support interne de qualité, ou se contenter d'une externalisation où les tarifs autrefois abordables ont disparu, mais où les problèmes de qualité persistent.\nC'était un compromis dans tous les cas. Soit vous sacrifiez votre budget, soit vous sacrifiez la réputation de votre marque.\nJe savais qu'il devait y avoir une troisième option. J'ai donc pris l'initiative de construire un modèle économique basé sur une qualité sans compromis et des prix imbattables, offrant aux entreprises en croissance le support puissant qu'elles méritent sans le coût paralysant...\nC'est pourquoi cette entreprise a été fondée : pour offrir la qualité authentique et les prix justes qui, selon moi, manquaient cruellement au secteur.",
+    "difference": {
+      "title": "Notre Différence, C'est Notre Approche",
+      "intro": "Nous ne sommes pas une énorme société déconnectée ; nous sommes une équipe de professionnels sélectionnés, obsédés par la qualité et les résultats. Alors que les externalisateurs traditionnels se concentrent sur le volume, nous nous concentrons sur la valeur. Notre modèle entier est construit sur une philosophie de partenariat, pas seulement de prestation de services.",
+      "points": [
+        {
+          "title": "Nous Investissons dans Nos Équipes :",
+          "body": "Nous avons un processus de sélection intensif pour trouver les meilleurs talents. Mais nous ne nous arrêtons pas là. Nous couvrons l'intégralité des coûts de formation de nos agents sur votre marque et vos processus, garantissant qu'ils s'intègrent parfaitement à votre propre équipe dès le premier jour."
+        },
+        {
+          "title": "La Preuve par le Partenariat :",
+          "body": "Nous croyons que la confiance se gagne par des résultats tangibles. Pour l'un de nos premiers partenaires, une entreprise SaaS en pleine croissance, nous avons généré un retour sur investissement significatif en seulement 90 jours :",
+          "subpoints": [
+            "7 500 $ d'économies opérationnelles",
+            "Avec une petite équipe de départ de seulement 3 agents",
+            "Une économie directe de 2 500 $ par agent",
+            "Tout en améliorant leurs scores de satisfaction client."
+          ]
+        }
+      ]
+    },
+    "readyTitle": "Prêt à Voir Comment Nous Pouvons Vous Aider ?",
+    "readyBody": "Nous pensons que notre modèle est le moyen le plus intelligent pour les entreprises de faire évoluer leur support. Mais vous n'avez pas à nous croire sur parole. Laissez-nous vous montrer les chiffres.\nObtenez un devis clair et sans engagement et voyez exactement combien vous pouvez économiser sans jamais faire de compromis sur la qualité.",
+    "cta": "Obtenir Mon Devis Gratuit"
+  },
+  "howItWorks": {
+    "title": "Comment Ça Marche",
+    "steps": {
+      "step1": {
+        "title": "Soumettez votre formulaire",
+        "description": "Remplissez notre formulaire simple avec vos besoins"
+      },
+      "step2": {
+        "title": "Nous assignons les agents adéquats",
+        "description": "Notre équipe vous met en relation avec les agents parfaits"
+      },
+      "step3": {
+        "title": "Lancez votre support client",
+        "description": "Commencez à offrir un excellent service client"
+      }
+    },
+    "primaryCta": "Aller au formulaire",
+    "secondaryCta": "Découvrez notre méthode"
+  },
+  "howItWorksPage": {
+    "title": "Comment Démarrer",
+    "subheading": "Votre Équipe de Support d'Élite, Opérationnelle en 4 Étapes Simples",
+    "intro": "L'externalisation ne doit pas être lente, complexe ou coûteuse. Notre processus simplifié vous permet d'obtenir une équipe de support de classe mondiale en moins d'une semaine.",
+    "step1": {
+      "title": "Étape 1 : Soumettez votre formulaire",
+      "body": "Remplissez le formulaire et nous vous contacterons pour fixer un moment propice à un appel de découverte afin d'en savoir plus sur vos besoins."
+    },
+    "step2": {
+      "title": "Étape 2 : Votre Appel Stratégique Personnalisé",
+      "body": "Tout commence par un bref appel stratégique de 15 minutes, sans engagement.\nNous (vous et nous) plongeons au cœur de votre activité pour définir précisément vos besoins, le ton de votre marque et les indicateurs clés de succès.\nCe que vous obtenez : Vous repartirez de l'appel avec un plan personnalisé et limpide, accompagné d'un devis tout compris vous montrant exactement combien vous économiserez. Jamais de surprises."
+    },
+    "step3": {
+      "title": "Étape 3 : Formez Votre Équipe d'Élite (À Nos Frais)",
+      "body": "Alors que d'autres facturent la formation, nous la payons intégralement. Nous sélectionnons des professionnels chevronnés, vous leur présentez vos produits et systèmes, et nous couvrons leur salaire pendant toute la phase de formation. Le résultat : des agents parfaitement préparés à une fraction du prix du marché, prêts à opérer comme une partie de votre équipe interne."
+    },
+    "step4": {
+      "title": "Étape 4 : Lancez-vous et Satisfaites Vos Clients",
+      "body": "Votre équipe formée est prête à offrir des réponses plus rapides, des résolutions plus fluides et un service constant sans les frais généraux. Vous gérez les agents ; nous nous occupons des RH, des contrats et de la paie. Le résultat : des clients plus heureux, des coûts réduits et la liberté de vous concentrer sur la croissance."
+    },
+    "ready": "Prêt à Démarrer Votre Plan ?\nLa première étape est une simple conversation. Construisons votre plan sans engagement et montrons-vous à quel point un support de classe mondiale peut être simple et abordable.",
+    "cta": "Réserver Mon Appel Stratégique Gratuit",
+    "noCommitment": "Sans engagement. Sans pression. Juste un chemin clair vers les économies."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "customerName": "Nom",
+    "companyName": "Nom de l'entreprise",
+    "phoneNumber": "Téléphone",
+    "email": "E-mail",
+    "message": "Message",
+    "sendButton": "Envoyer le message",
+    "successTitle": "Le message a été envoyé",
+    "successMessage": "Nous vous contacterons par e-mail très prochainement",
+    "errorMessage": "Une erreur s'est produite : veuillez nous contacter par e-mail ou par téléphone"
   }
 }

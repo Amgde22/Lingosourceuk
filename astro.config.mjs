@@ -20,8 +20,20 @@ export default defineConfig({
       // used to localize the routes
       pages: {
 				"/about": {
-					fr: "/a-propos",
+					"fr": "/a-propos"
 				},
+        "/contact":{
+          "fr":"/contact"
+        },
+        "/pricing":{
+          "fr":"/tarifs"
+        },
+        "/how-it-works":{
+          "fr":"/comment-ca-marche"
+        },
+        "/blog":{
+          "fr":"/blog"
+        }
 
 			},
     }),

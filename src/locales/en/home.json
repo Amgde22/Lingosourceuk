@@ -1,5 +1,12 @@
 {
+  "header":{
+    "callBtn":"Call Us"
+  },
   "hero": {
+    "layout":{
+      "title":"Home",
+      "description":"Lingosource , The best quality customer support agents at the best price"
+    },
     "heading_line1": "2x Cheaper Customer Support. ",
     "heading_line2": "No Quality Loss.",
     "body": "No more hiring headaches or settling for low-quality support just to save money, Get our elite, multilingual support agents from just <strong>$6/hour.</strong> handle calls, chats, and emails 24/7 ",
@@ -71,6 +78,10 @@
     "cta":"start now !"
   },
   "pricing": {
+    "layout":{
+      "title":"Pricing",
+      "description":"Discover our pricing model here !"
+    },
       "title": "Pricing",
       "subtitle": "Choose the plan that suits <span class=\"highlight\">your</span> needs",
       "plans": {
@@ -178,6 +189,10 @@
     ]
   },
   "about": {
+    "layout":{
+      "title":"About",
+      "description":"more about Lingosource uk and the owner"
+    },
     "missionTitle": "Our Mission: World-Class Support Shouldn't Cost a Fortune",
     "backstory": "My name is Guendil Zine-Eddine, and I started this business in early 2025 out of pure frustration. While working for 3 years in the call center/customer service industry , I saw firsthand how all growing businesses are trapped in the same impossible choice : pay astronomical fees for a quality in-house support team, or settle for outsourcing where the once-affordable rates have disappeared, but the quality issues remain\nIt felt like a compromise either way. You either sacrificed your budget or you sacrificed your brand's reputation.\nI knew there had to be a third option. so I took it upon myself to build a business model on providing uncompromising quality and unbeatable economics, giving growing businesses the powerful support they deserve without the crippling cost…\nThat is why this company was founded : to offer the genuine quality and fair pricing I saw was missing from the inside",
     "difference": {
@@ -205,27 +220,32 @@
     "cta": "Get My Free Quote"
     },
 
-      "howItWorks": {
-        "title": "How It Works",
-        "steps": {
-          "step1": {
-            "title": "Submit your form",
-            "description": "Fill out our simple form with your requirements"
-          },
-          "step2": {
-            "title": "We assign suitable agents",
-            "description": "Our team matches you with the perfect agents"
-          },
-          "step3": {
-            "title": "Launch your customer support",
-            "description": "Start providing excellent customer service"
-          }
+    "howItWorks": {
+      "title": "How It Works",
+
+      "steps": {
+        "step1": {
+          "title": "Submit your form",
+          "description": "Fill out our simple form with your requirements"
         },
-        "primaryCta":"Go to form",
-        "secondaryCta":"See more details"
+        "step2": {
+          "title": "We assign suitable agents",
+          "description": "Our team matches you with the perfect agents"
+        },
+        "step3": {
+          "title": "Launch your customer support",
+          "description": "Start providing excellent customer service"
+        }
       },
-  "getStarted": {
-    "title": "How to get started",
+      "primaryCta":"Go to form",
+      "secondaryCta":"See how we do it"
+    },
+  "howItWorksPage": {
+    "layout":{
+      "title":"How It Works",
+      "description":"Discover more about our process , advantages and more"
+    },
+    "title": "How It works",
     "subheading":"Your Elite Support Team, Live in 3 Simple Steps",
     "intro": "Outsourcing doesn’t have to be slow, complex, or costly. Our streamlined process gets you a world-class support team in under a week.",
     "step1": {
@@ -249,12 +269,20 @@
     "noCommitment": "No commitment. No pressure. Just a clear path to savings."
   },
   "contact":{
-    "title":"contact us",
+    "layout":{
+      "title":"Contact",
+      "description":"Contact us and we will hand-pick the best agents for your specific needs"
+    },
+    "intro":"contact us",
+    "title":"Hire customer support ",
     "customerName":"name",
     "companyName":"company name",
     "phoneNumber":"phone",
-    "email":"email",
-    "message":"message",
-    "sendButton":"Send message"
+    "email":"E-mail",
+    "message":"Message",
+    "sendButton":"Send message",
+    "successTitle" :"message has been sent",
+    "successMessage":"We will be contacting you through email very soon",
+    "errorMessage" :"something went wrong : please contact us through email or phone"
   }
 }
