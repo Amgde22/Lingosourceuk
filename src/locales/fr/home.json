@@ -1,5 +1,12 @@
 {
+  "header": {
+    "callBtn": "Appelez-nous"
+  },
   "hero": {
+    "layout": {
+      "title": "Accueil",
+      "description": "Lingosource, des agents de support client de la meilleure qualité au meilleur prix"
+    },
     "heading_line1": "Support Client 2x Moins Cher.",
     "heading_line2": "Sans Perte de Qualité.",
     "body": "Fini les tracas de recrutement ou les compromis sur la qualité pour économiser. Obtenez nos agents de support d'élite et multilingues dès <strong>6 $/heure.</strong> Ils gèrent les appels, chats et e-mails 24/7.",
@@ -71,6 +78,10 @@
     "cta": "Commencez maintenant !"
   },
   "pricing": {
+    "layout": {
+      "title": "Tarifs",
+      "description": "Découvrez notre modèle tarifaire ici !"
+    },
     "title": "Tarifs",
     "subtitle": "Choisissez le plan qui correspond à <span class=\"highlight\">vos</span> besoins",
     "plans": {
@@ -183,6 +194,10 @@
     ]
   },
   "about": {
+    "layout": {
+      "title": "À propos",
+      "description": "En savoir plus sur Lingosource UK et son fondateur"
+    },
     "missionTitle": "Notre Mission : Un Support de Classe Mondiale ne Devrait Pas Coûter une Fortune",
     "backstory": "Je m'appelle Guendil Zine-Eddine, et j'ai lancé cette entreprise début 2025 par pure frustration. Ayant travaillé 3 ans dans le secteur des centres d'appels et du service client, j'ai vu de mes propres yeux comment toutes les entreprises en croissance sont piégées dans le même choix impossible : payer des frais astronomiques pour une équipe de support interne de qualité, ou se contenter d'une externalisation où les tarifs autrefois abordables ont disparu, mais où les problèmes de qualité persistent.\nC'était un compromis dans tous les cas. Soit vous sacrifiez votre budget, soit vous sacrifiez la réputation de votre marque.\nJe savais qu'il devait y avoir une troisième option. J'ai donc pris l'initiative de construire un modèle économique basé sur une qualité sans compromis et des prix imbattables, offrant aux entreprises en croissance le support puissant qu'elles méritent sans le coût paralysant...\nC'est pourquoi cette entreprise a été fondée : pour offrir la qualité authentique et les prix justes qui, selon moi, manquaient cruellement au secteur.",
     "difference": {
@@ -229,7 +244,11 @@
     "secondaryCta": "Découvrez notre méthode"
   },
   "howItWorksPage": {
-    "title": "Comment Démarrer",
+    "layout": {
+      "title": "Comment Ça Marche",
+      "description": "Découvrez notre processus, nos avantages et plus encore"
+    },
+    "title": "Comment Ça Marche",
     "subheading": "Votre Équipe de Support d'Élite, Opérationnelle en 4 Étapes Simples",
     "intro": "L'externalisation ne doit pas être lente, complexe ou coûteuse. Notre processus simplifié vous permet d'obtenir une équipe de support de classe mondiale en moins d'une semaine.",
     "step1": {
@@ -253,7 +272,12 @@
     "noCommitment": "Sans engagement. Sans pression. Juste un chemin clair vers les économies."
   },
   "contact": {
-    "title": "Contactez-nous",
+    "layout": {
+      "title": "Contact",
+      "description": "Contactez-nous et nous sélectionnerons les meilleurs agents pour vos besoins spécifiques"
+    },
+    "intro": "Contactez-nous",
+    "title": "Recruter un support client",
     "customerName": "Nom",
     "companyName": "Nom de l'entreprise",
     "phoneNumber": "Téléphone",
