@@ -5,6 +5,7 @@ import HowItWorksSection from "@components/HowItWorksSection.astro"
 import WhyUs from "@components/WhyUs.astro"
 import Pricing from "@components/Pricing.astro"
 import Contact from "@components/Contact.astro"
+import Faq from "@components/Faq.astro"
 import { getLocalePath, t } from "i18n:astro";
 import {getOptimizedImage} from "@utils/utils"
 
@@ -27,5 +28,6 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 <WhyUs />
 <Pricing />
 <Contact />
+<Faq />
 
 </BaseLayout>

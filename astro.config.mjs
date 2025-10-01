@@ -33,6 +33,9 @@ export default defineConfig({
         },
         "/blog":{
           "fr":"/blog"
+        },
+        "/privacy-policy":{
+          fr:"/politique-de-confidentialite"
         }
 
 			},

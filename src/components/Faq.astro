@@ -1,0 +1,220 @@
+---
+// FAQ.astro
+import { getLocalePath, t } from "i18n:astro";
+import { email } from "@data/client.json";
+
+const faqTitle = t("home:faq.title");
+const faqBody = t("home:faq.body");
+const faqEmail = email;
+
+const faqQuestions: Array<{question: string, answer: string, languages?: string[]}> = t("home:faq.questions", {returnObjects:true});
+---
+
+<div class="faq-section">
+  <div class="container">
+    <div class="content-wrapper">
+      <h1 class="heading capitalize" set:html={faqTitle}></h1>
+      <p class="contact-text">
+        {faqBody} <a href={`mailto:${faqEmail}`}>{faqEmail}</a>
+      </p>
+      <div class="faq-container">
+        {faqQuestions.map((item, index) => (
+          <details class="faq-item" key={index}>
+            <summary class="faq-question">
+              <span>{item.question}</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                   viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                   class="lucide lucide-chevron-down chevron-icon">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p set:html={item.answer}></p>
+              {item.languages && (
+                <ul class="language-list">
+                  {item.languages.map(lang => <li key={lang}>• {lang}</li>)}
+                </ul>
+              )}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style lang="less">
+
+.faq-section {
+  background-color: var(--gray-100);
+  padding: var(--sectionPadding);
+  position: relative;
+  overflow: hidden;
+
+  // Floating question mark background elements
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--gray-200);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'/%3E%3Cpath d='M12 17h.01'/%3E%3C/svg%3E");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    opacity: 0.08;
+    animation: float 12s infinite ease-in-out;
+    z-index: 0;
+  }
+
+  &::before {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+  }
+
+  &::after {
+    bottom: 15%;
+    right: 10%;
+    animation-delay: 6s;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+  color: var(--bodyTextColor);
+  position: relative;
+}
+
+.contact-text {
+  margin-bottom: var(--spacing-xl);
+  color: var(--gray-600);
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.faq-item {
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  background-color: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &[open] {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+
+    .faq-answer {
+      opacity: 1;
+      max-height: 500px; // for smooth expand
+      transform: translateY(0);
+    }
+
+    .chevron-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.faq-question {
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--bodyTextColor);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, var(--gray-50), white);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover {
+    background-color: var(--gray-50);
+  }
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+  margin-left: var(--spacing-sm);
+}
+
+.faq-answer {
+  padding: 0 var(--spacing-lg);
+  border-top: 1px solid var(--gray-200);
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+
+  p {
+    padding: var(--spacing-md) 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--gray-700);
+  }
+}
+
+.language-list {
+  list-style: none;
+  padding: 0 0 var(--spacing-md);
+  margin: 0;
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--gray-600);
+
+  li { padding: var(--spacing-xs) 0; }
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+  .content-wrapper {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .heading,
+  .contact-text {
+    text-align: left;
+  }
+}
+</style>

@@ -1,0 +1,168 @@
+{
+    "privacyPolicy": {
+      "title": "Politique de Confidentialité",
+      "effectiveDate": "Date d’entrée en vigueur : 30 septembre 2025",
+      "lastUpdated": "Dernière mise à jour : 30 septembre 2025",
+      "introduction": "Lingosource Ltd, société enregistrée au Royaume-Uni (numéro d’immatriculation 16688081), opérant sous le nom commercial « Lingosource », propose des solutions externalisées de centre d’appels incluant le support client, l’assistance commerciale et les tâches administratives. La présente Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations personnelles et non personnelles lorsque vous utilisez nos Services.",
+      "agreementNotice": "En utilisant nos Services, vous acceptez cette Politique de Confidentialité. Si vous n’êtes pas d’accord, vous devez cesser d’utiliser nos Services.",
+      "compliance": "Cette Politique respecte la loi britannique sur la protection des données 2018, le RGPD britannique, le PECR et, le cas échéant, le RGPD européen.",
+      "sections": {
+        "informationWeCollect": {
+          "title": "1. Informations que nous collectons",
+          "subsections": [
+            {
+              "title": "1.1 Informations fournies directement",
+              "content": [
+                "Création de compte et contrats de service",
+                "Formulaires en ligne, démos, facturation et paiements",
+                "Échanges avec le support client",
+                "Campagnes promotionnelles, sondages ou témoignages",
+                "Données personnelles : nom, adresse, e-mail, téléphone, informations de paiement, détails professionnels"
+              ]
+            },
+            {
+              "title": "1.2 Informations collectées automatiquement",
+              "content": [
+                "Infos appareil : IP, navigateur, système",
+                "Données d’utilisation : pages visitées, actions, date/heure",
+                "Cookies et technologies de suivi"
+              ]
+            },
+            {
+              "title": "1.3 Données liées à la prestation de service",
+              "content": [
+                "Nom, téléphone, e-mail des appelants",
+                "Contenu des appels, notes, enregistrements",
+                "Journaux d’appels : durée, date, heure"
+              ]
+            },
+            {
+              "title": "1.4 Sources tierces",
+              "content": [
+                "Prestataires de paiement",
+                "Outils CRM ou plateformes d’appels",
+                "Fournisseurs d’analyses (Google Analytics)",
+                "Hébergeurs et opérateurs télécoms"
+              ]
+            },
+            {
+              "title": "1.5 Informations non personnelles",
+              "content": [
+                "Statistiques d’utilisation agrégées",
+                "Tendances démographiques",
+                "Données techniques (navigateur, système)"
+              ]
+            }
+          ]
+        },
+        "howWeUse": {
+          "title": "2. Utilisation de vos informations",
+          "content": [
+            "Fournir et gérer nos Services (comptes, appels, support)",
+            "Traiter factures et paiements sécurisés",
+            "Assurer le support client",
+            "Améliorer qualité et performance",
+            "Envoyer mises à jour et communications marketing (si consentement)",
+            "Respecter nos obligations légales",
+            "Sécurité et prévention des fraudes",
+            "Audits et gestion interne"
+          ]
+        },
+        "sharingInfo": {
+          "title": "3. Partage de vos informations",
+          "content": [
+            "Avec des prestataires de services (paiement, hébergement, CRM, analyses)",
+            "Pour des obligations légales et réglementaires",
+            "En cas de fusion ou cession d’activité",
+            "Avec votre consentement",
+            "Partage de données agrégées et anonymisées"
+          ]
+        },
+        "rights": {
+          "title": "5. Vos droits",
+          "content": [
+            "Accéder, corriger ou supprimer vos données",
+            "Retirer votre consentement",
+            "Refuser les communications marketing",
+            "Droits UK/UE : portabilité, limitation du traitement, opposition, plainte auprès d’une autorité"
+          ]
+        },
+        "children": {
+          "title": "6. Confidentialité des mineurs",
+          "content": [
+            "Services non destinés aux moins de 18 ans",
+            "Consentement parental requis",
+            "Suppression immédiate si données collectées sans autorisation"
+          ]
+        },
+        "cookies": {
+          "title": "8. Cookies et technologies de suivi",
+          "content": [
+            "Cookies essentiels : bon fonctionnement du site",
+            "Cookies de performance : analyses et amélioration",
+            "Cookies fonctionnels : mémorisation des préférences",
+            "Cookies marketing : publicités ciblées",
+            "Contrôles : paramètres navigateur, outils opt-out, bannière de consentement"
+          ]
+        },
+        "security": {
+          "title": "9. Sécurité des données",
+          "content": [
+            "Chiffrement TLS et sécurité des paiements",
+            "Hébergement sécurisé et accès limité",
+            "Partenaires certifiés (PCI-DSS, conformité RGPD)",
+            "Aucun système n’est 100 % sûr"
+          ]
+        },
+        "retention": {
+          "title": "10. Durée de conservation",
+          "content": [
+            "Conservation uniquement tant que nécessaire",
+            "Enregistrements d’appels : 1 an",
+            "Facturation : 6 ans",
+            "Support client : 3 ans",
+            "Données marketing : jusqu’au désabonnement"
+          ]
+        },
+        "transfers": {
+          "title": "11. Transferts internationaux",
+          "content": [
+            "Données parfois transférées hors UK/EEE (ex. US via Stripe/PayPal)",
+            "Garanties : clauses contractuelles types, protections légales",
+            "Consentement requis pour ces transferts"
+          ]
+        },
+        "marketing": {
+          "title": "12. Communications marketing et désinscription",
+          "content": [
+            "Newsletters, offres, enquêtes",
+            "Désinscription via lien ou contact direct",
+            "Messages liés au service toujours envoyés"
+          ]
+        },
+        "changes": {
+          "title": "13. Modifications de la politique",
+          "content": [
+            "Mises à jour affichées avec date de révision",
+            "Notification en cas de changements importants",
+            "Utilisation continue = acceptation des nouvelles conditions"
+          ]
+        },
+        "contact": {
+          "title": "14. Contact et réclamations",
+          "content": [
+            "Contact : contact@lingosource.uk ou par téléphone/courrier",
+            "Plainte : ICO ou autorité locale de protection des données"
+          ]
+        },
+        "law": {
+          "title": "15. Droit applicable et litiges",
+          "content": [
+            "Droit : Angleterre et Pays de Galles",
+            "Litiges : tribunaux britanniques, médiation possible"
+          ]
+        }
+      }
+    }
+  }
+  

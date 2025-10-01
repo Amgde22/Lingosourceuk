@@ -1,11 +1,8 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Hero from "@components/Hero.astro"
-import HowItWorksSection from "@components/HowItWorksSection.astro"
-import WhyUs from "@components/WhyUs.astro"
-import Pricing from "@components/Pricing.astro"
-import Contact from "@components/Contact.astro"
-import { getLocalePath, t } from "i18n:astro";
+
+import HowItWorksFull from "@components/HowItWorksFull.astro"
+import {t } from "i18n:astro";
 import {getOptimizedImage} from "@utils/utils"
 
 // Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Hero (for rendering)
@@ -16,16 +13,15 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 ---
 
 <BaseLayout
-  title={t("home:layout.title")}
-  description={t("home:layout.description")}
+  title={t("home:howItWorksPage.layout.title")}
+  description={t("home:howItWorksPage.layout.description")}
   preloadedImage = {optimizedMobileLandingImage}
 
 >
 
-<Hero />
-<HowItWorksSection />
-<WhyUs />
-<Pricing />
-<Contact />
+<HowItWorksFull />
+
+
+
 
 </BaseLayout>

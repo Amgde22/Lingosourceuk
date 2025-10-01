@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 
-import ContactForm from "@components/Contact.astro"
-import HowItWorksSection from "@components/HowItWorksSection.astro"
+import AboutSection from "@components/AboutSection.astro"
+import Contact from "@components/Contact.astro"
 
 import {  t } from "i18n:astro";
 import {getOptimizedImage} from "@utils/utils"
@@ -14,13 +14,13 @@ const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
 ---
 
 <BaseLayout
-  title={t("home:contact.layout.title")}
-  description={t("home:contact.layout.description")}
+  title={t("home:about.layout.title")}
+  description={t("home:about.layout.description")}
   preloadedImage = {optimizedMobileLandingImage}
 
 >
 
-<ContactForm />
-<HowItWorksSection hideButtons={true} />
-
+<div class="place-taker" ></div>
+<AboutSection />
 </BaseLayout>
+

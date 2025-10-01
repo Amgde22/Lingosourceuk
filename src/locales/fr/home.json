@@ -164,6 +164,8 @@
     }
   },
   "faq": {
+    "title": "Questions fréquentes",
+    "body": "Si vous avez d'autres questions, n'hésitez pas à nous envoyer un e-mail à :",
     "questions": [
       {
         "question": "Combien coûte ce service ?",
@@ -198,8 +200,15 @@
       "title": "À propos",
       "description": "En savoir plus sur Lingosource UK et son fondateur"
     },
+    "label": "à propos de Lingosource",
     "missionTitle": "Notre Mission : Un Support de Classe Mondiale ne Devrait Pas Coûter une Fortune",
-    "backstory": "Je m'appelle Guendil Zine-Eddine, et j'ai lancé cette entreprise début 2025 par pure frustration. Ayant travaillé 3 ans dans le secteur des centres d'appels et du service client, j'ai vu de mes propres yeux comment toutes les entreprises en croissance sont piégées dans le même choix impossible : payer des frais astronomiques pour une équipe de support interne de qualité, ou se contenter d'une externalisation où les tarifs autrefois abordables ont disparu, mais où les problèmes de qualité persistent.\nC'était un compromis dans tous les cas. Soit vous sacrifiez votre budget, soit vous sacrifiez la réputation de votre marque.\nJe savais qu'il devait y avoir une troisième option. J'ai donc pris l'initiative de construire un modèle économique basé sur une qualité sans compromis et des prix imbattables, offrant aux entreprises en croissance le support puissant qu'elles méritent sans le coût paralysant...\nC'est pourquoi cette entreprise a été fondée : pour offrir la qualité authentique et les prix justes qui, selon moi, manquaient cruellement au secteur.",
+    "backstory": [
+      "Je m'appelle Guendil Zine-Eddine, et j'ai lancé cette entreprise début 2025 par pure frustration. Ayant travaillé 3 ans dans le secteur des centres d'appels et du service client, j'ai vu de mes propres yeux comment toutes les entreprises en croissance sont piégées dans le même choix impossible : payer des frais astronomiques pour une équipe de support interne de qualité, ou se contenter d'une externalisation où les tarifs autrefois abordables ont disparu, mais où les problèmes de qualité persistent.",
+      "C'était un compromis dans tous les cas. Soit vous sacrifiez votre budget, soit vous sacrifiez la réputation de votre marque.",
+      "Je savais qu'il devait y avoir une troisième option. J'ai donc pris l'initiative de construire un modèle économique basé sur une qualité sans compromis et des prix imbattables, offrant aux entreprises en croissance le support puissant qu'elles méritent sans le coût paralysant...",
+      "<strong>C'est pourquoi cette entreprise a été fondée :</strong> pour offrir la qualité authentique et les prix justes qui, selon moi, manquaient cruellement au secteur."
+    ],
+  
     "difference": {
       "title": "Notre Différence, C'est Notre Approche",
       "intro": "Nous ne sommes pas une énorme société déconnectée ; nous sommes une équipe de professionnels sélectionnés, obsédés par la qualité et les résultats. Alors que les externalisateurs traditionnels se concentrent sur le volume, nous nous concentrons sur la valeur. Notre modèle entier est construit sur une philosophie de partenariat, pas seulement de prestation de services.",
@@ -245,32 +254,60 @@
   },
   "howItWorksPage": {
     "layout": {
-      "title": "Comment Ça Marche",
-      "description": "Découvrez notre processus, nos avantages et plus encore"
+      "title": "Comment ça marche",
+      "description": "Découvrez notre méthode, vos avantages et la simplicité du processus."
     },
-    "title": "Comment Ça Marche",
-    "subheading": "Votre Équipe de Support d'Élite, Opérationnelle en 4 Étapes Simples",
-    "intro": "L'externalisation ne doit pas être lente, complexe ou coûteuse. Notre processus simplifié vous permet d'obtenir une équipe de support de classe mondiale en moins d'une semaine.",
+    "title": "Comment ça marche",
+    "subheading": "Votre équipe de support en 3 étapes simples",
+    "intro": [
+      "L’externalisation n’a pas besoin d’être lente ou compliquée.",
+      "Avec notre méthode, vous disposez d’une équipe opérationnelle en moins d’une semaine."
+    ],
     "step1": {
-      "title": "Étape 1 : Soumettez votre formulaire",
-      "body": "Remplissez le formulaire et nous vous contacterons pour fixer un moment propice à un appel de découverte afin d'en savoir plus sur vos besoins."
+      "title": "Étape 1 : Envoyez votre demande",
+      "body": [
+        "Remplissez le formulaire.",
+        "Nous vous contactons rapidement pour fixer un appel découverte.",
+        "Cet échange nous permet de cerner vos besoins."
+      ]
     },
     "step2": {
-      "title": "Étape 2 : Votre Appel Stratégique Personnalisé",
-      "body": "Tout commence par un bref appel stratégique de 15 minutes, sans engagement.\nNous (vous et nous) plongeons au cœur de votre activité pour définir précisément vos besoins, le ton de votre marque et les indicateurs clés de succès.\nCe que vous obtenez : Vous repartirez de l'appel avec un plan personnalisé et limpide, accompagné d'un devis tout compris vous montrant exactement combien vous économiserez. Jamais de surprises."
+      "title": "Étape 2 : L’appel stratégique",
+      "body": [
+        "Nous organisons un appel gratuit de 15 minutes.",
+        "Ensemble, nous passons en revue vos besoins, votre ton de marque et vos objectifs clés.",
+        "À la fin, vous repartez avec un plan clair et personnalisé.",
+        "Nous vous remettons aussi un devis précis montrant vos économies.",
+        "<strong>Pas de frais cachés. Pas de surprises.</strong>"
+      ]
     },
     "step3": {
-      "title": "Étape 3 : Formez Votre Équipe d'Élite (À Nos Frais)",
-      "body": "Alors que d'autres facturent la formation, nous la payons intégralement. Nous sélectionnons des professionnels chevronnés, vous leur présentez vos produits et systèmes, et nous couvrons leur salaire pendant toute la phase de formation. Le résultat : des agents parfaitement préparés à une fraction du prix du marché, prêts à opérer comme une partie de votre équipe interne."
+      "title": "Étape 3 : Formation de votre équipe (offerte)",
+      "body": [
+        "<strong>Nous prenons en charge 100 % des coûts de formation.</strong>",
+        "Nous sélectionnons des agents qualifiés pour vous.",
+        "Vous leur présentez vos produits et vos outils.",
+        "Nous couvrons leur salaire durant toute la période d’apprentissage.",
+        "Résultat : une équipe prête à agir comme si elle faisait partie de votre entreprise."
+      ]
     },
     "step4": {
-      "title": "Étape 4 : Lancez-vous et Satisfaites Vos Clients",
-      "body": "Votre équipe formée est prête à offrir des réponses plus rapides, des résolutions plus fluides et un service constant sans les frais généraux. Vous gérez les agents ; nous nous occupons des RH, des contrats et de la paie. Le résultat : des clients plus heureux, des coûts réduits et la liberté de vous concentrer sur la croissance."
+      "title": "Étape 4 : Mise en service et clients satisfaits",
+      "body": [
+        "Votre équipe formée est prête à répondre à vos clients.",
+        "Elle assure des réponses rapides et des solutions fluides.",
+        "Vous gérez le quotidien, nous gérons RH, contrats et paie.",
+        "<strong>Résultat</strong> : des clients plus heureux, des coûts réduits et plus de temps pour développer votre activité."
+      ]
     },
-    "ready": "Prêt à Démarrer Votre Plan ?\nLa première étape est une simple conversation. Construisons votre plan sans engagement et montrons-vous à quel point un support de classe mondiale peut être simple et abordable.",
-    "cta": "Réserver Mon Appel Stratégique Gratuit",
-    "noCommitment": "Sans engagement. Sans pression. Juste un chemin clair vers les économies."
-  },
+    "ready": [
+      "Prêt à lancer votre plan sur mesure ?",
+      "La première étape est un simple échange.",
+      "Nous vous montrons à quel point un support de qualité peut être simple et abordable."
+    ],
+    "cta": "Réserver mon appel stratégique gratuit",
+    "noCommitment": "Sans engagement. Sans pression. Juste un plan clair pour économiser."
+  },  
   "contact": {
     "layout": {
       "title": "Contact",

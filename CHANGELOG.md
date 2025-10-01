@@ -1,5 +1,11 @@
 
-
+- plan
+- read changes done
+- MAKE CHANGES - DONE
+- about page - change 
+- privacy policy - postponed
+- ask for terms of service
+- how it works
 
 pages : 
 about us 

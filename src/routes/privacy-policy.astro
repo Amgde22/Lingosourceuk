@@ -1,0 +1,90 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { t } from "i18n:astro";
+import { getOptimizedImage } from "@utils/utils";
+
+import mobileLandingImage from "@assets/images/hero.png";
+
+const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
+
+const policy = t("legal:privacyPolicy" , {returnObjects:true}); // whole object
+---
+
+<BaseLayout
+  title={policy.title}
+  description={policy.introduction}
+  preloadedImage={optimizedMobileLandingImage}
+>
+<div class="place-taker" ></div>
+
+  <main class="privacy-container">
+    <h1>{policy.title}</h1>
+    <p><em>{policy.effectiveDate}</em></p>
+    <p><em>{policy.lastUpdated}</em></p>
+    <p>{policy.introduction}</p>
+    <p>{policy.agreementNotice}</p>
+    <p>{policy.compliance}</p>
+
+    {Object.entries(policy.sections).map(([key, section]) => (
+      <section>
+        <h2>{section.title}</h2>
+
+        {section.subsections ? (
+          section.subsections.map((sub) => (
+            <div>
+              <h3>{sub.title}</h3>
+              <ul>
+                {sub.content.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        ) : (
+          <ul>
+            {section.content.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        )}
+      </section>
+    ))}
+  </main>
+
+  <style>
+    .privacy-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</BaseLayout>

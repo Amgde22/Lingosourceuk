@@ -164,6 +164,8 @@
       }
     },
   "faq": {
+    "title":"frequently asked questions",
+    "body":"If you have any more questions , don't hesitate to email us at :",
     "questions": [
       {
         "question": "How much does this service cost?",
@@ -193,8 +195,14 @@
       "title":"About",
       "description":"more about Lingosource uk and the owner"
     },
+    "label":"about Lingosource",
     "missionTitle": "Our Mission: World-Class Support Shouldn't Cost a Fortune",
-    "backstory": "My name is Guendil Zine-Eddine, and I started this business in early 2025 out of pure frustration. While working for 3 years in the call center/customer service industry , I saw firsthand how all growing businesses are trapped in the same impossible choice : pay astronomical fees for a quality in-house support team, or settle for outsourcing where the once-affordable rates have disappeared, but the quality issues remain\nIt felt like a compromise either way. You either sacrificed your budget or you sacrificed your brand's reputation.\nI knew there had to be a third option. so I took it upon myself to build a business model on providing uncompromising quality and unbeatable economics, giving growing businesses the powerful support they deserve without the crippling cost…\nThat is why this company was founded : to offer the genuine quality and fair pricing I saw was missing from the inside",
+    "backstory": [
+      "My name is Guendil Zine-Eddine, and I started this business in early 2025 out of pure frustration. While working for 3 years in the call center/customer service industry , I saw firsthand how all growing businesses are trapped in the same impossible choice : pay astronomical fees for a quality in-house support team, or settle for outsourcing where the once-affordable rates have disappeared, but the quality issues remain",
+      "It felt like a compromise either way. You either sacrificed your budget or you sacrificed your brand's reputation.",
+      "I knew there had to be a third option. so I took it upon myself to build a business model on providing uncompromising quality and unbeatable economics, giving growing businesses the powerful support they deserve without the crippling cost…",
+      "<strong>That is why this company was founded :</strong> to offer the genuine quality and fair pricing I saw was missing from the inside"
+    ],
     "difference": {
     "title": "Our Difference is Our Approach",
     "intro": "We're not a massive, disconnected corporation; we are a curated team of professionals obsessed with quality and results. While traditional outsourcers focus on volume, we focus on value. Our entire model is built on a philosophy of partnership, not just service provision.",
@@ -220,54 +228,84 @@
     "cta": "Get My Free Quote"
     },
 
-    "howItWorks": {
-      "title": "How It Works",
+  "howItWorks": {
+    "title": "How It Works",
 
-      "steps": {
-        "step1": {
-          "title": "Submit your form",
-          "description": "Fill out our simple form with your requirements"
-        },
-        "step2": {
-          "title": "We assign suitable agents",
-          "description": "Our team matches you with the perfect agents"
-        },
-        "step3": {
-          "title": "Launch your customer support",
-          "description": "Start providing excellent customer service"
-        }
+    "steps": {
+      "step1": {
+        "title": "Submit your form",
+        "description": "Fill out our simple form with your requirements"
       },
-      "primaryCta":"Go to form",
-      "secondaryCta":"See how we do it"
+      "step2": {
+        "title": "We assign suitable agents",
+        "description": "Our team matches you with the perfect agents"
+      },
+      "step3": {
+        "title": "Launch your customer support",
+        "description": "Start providing excellent customer service"
+      }
     },
+    "primaryCta":"Go to form",
+    "secondaryCta":"See how we do it"
+  },
   "howItWorksPage": {
-    "layout":{
-      "title":"How It Works",
-      "description":"Discover more about our process , advantages and more"
+    "layout": {
+      "title": "How It Works",
+      "description": "See how our process works, what you get, and why it helps."
     },
-    "title": "How It works",
-    "subheading":"Your Elite Support Team, Live in 3 Simple Steps",
-    "intro": "Outsourcing doesn’t have to be slow, complex, or costly. Our streamlined process gets you a world-class support team in under a week.",
+    "title": "How It Works",
+    "subheading": "Your Support Team, Ready in 3 Simple Steps",
+    "intro": [
+      "Outsourcing does not have to be slow or complex.",
+      "Our process gives you a skilled support team in less than a week."
+    ],
     "step1": {
-      "title": "Step 1 : submit your form",
-      "body": "fill out the form and we’ll reach out and set up a suitable time for a discovery call so we can learn more about your needs"
+      "title": "Step 1: Submit Your Form",
+      "body": [
+        "Fill out the form.",
+        "We will reach out and book a time for a short call.",
+        "This call helps us understand your needs."
+      ]
     },
     "step2": {
       "title": "Step 2: Your Custom Blueprint Call",
-      "body": "It all starts with a brief, no-obligation 15-minute strategy call\nWe (you and us) deep dive into your business where we map out your business’s exact needs. , brand tone, and the key metrics for making this a success.\nWhat you get: You'll leave the call with a crystal-clear, customized plan with an all-inclusive quote showing you exactly how much you'll save. No surprises, ever."
+      "body": [
+        "We start with a short, free 15-minute strategy call.",
+        "Together, we look into your business needs, brand style, and success metrics.",
+        "After the call, you get a clear, custom plan.",
+        "You also get an all-in-one quote that shows exactly how much you save.",
+        "<strong>No hidden costs. No surprises.</strong>"
+      ]
     },
     "step3": {
-      "title": "Step 3: Train Your Elite Team (On Us)",
-      "body": "While others charge for training, we pay it in full. We hand-pick vetted pros, you walk them through your products and systems, and we cover their salary during the entire training phase. The result: fully prepared agents at a fraction of the market rate, ready to operate like part of your in-house team."
+      "title": "Step 3: Train Your Team (On Us)",
+      "body": [
+        "<strong>We cover the full cost of training. No extra fees.</strong>",
+        "We hand-pick skilled agents for you.",
+        "You show them your products and systems.",
+        "We pay their salary during training.",
+        "<strong>The result</strong> : a trained team that feels like part of your own company."
+      ]
     },
     "step4": {
-      "title": "Step 4: Go Live & Make Your Customers Satisfied",
-      "body": "Your trained team is ready to deliver faster responses, smoother resolutions, and consistent service without the overhead. You manage the agents; we handle HR, contracts, and payroll. The result: happier customers, lower costs, and freedom to focus on growth."
+      "title": "Step 4: Go Live and Delight Customers",
+      "body": [
+        "Your trained team is ready to serve your customers.",
+        "They deliver faster replies and smoother solutions.",
+        "You manage the agents day to day.",
+        "We take care of HR, contracts, and payroll.",
+        "<strong>The result</strong> : happy customers, lower costs, and more time to grow."
+      ]
     },
-    "ready": "Ready to Start Your Blueprint?\nThe first step is a simple conversation. Let's build your no-obligation plan and show you exactly how easy and affordable world-class support can be.",
+    "ready": [
+      "Ready to start your custom plan?",
+      "The first step is a simple call.",
+      "We will show you how easy and affordable top-quality support can be."
+    ],
     "cta": "Book My Free Strategy Call",
-    "noCommitment": "No commitment. No pressure. Just a clear path to savings."
+    "noCommitment": "No pressure. No risk. Just a clear path to savings."
   },
+  
   "contact":{
     "layout":{
       "title":"Contact",

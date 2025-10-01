@@ -10,7 +10,7 @@ const navData = [
     children: []
   },
   {
-    key: "How it works",
+    key: "how it works",
     url: "/how-it-works",
     children: []
   },
@@ -27,9 +27,8 @@ const navData = [
       }
     ]
   },
-
   {
-    key: "Pricing",
+    key: "pricing",
     url: "/pricing",
     children: []
   },
