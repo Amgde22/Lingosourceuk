@@ -1,0 +1,335 @@
+---
+import {t, getLocalePath} from "i18n:astro"
+import { Icon } from "astro-icon/components"
+
+// Fetch the pricing plan data
+const plans = t("CAS:pricing", { returnObjects: true });
+---
+
+<section id="cas-pricing">
+  <!-- Floating Background Circles -->
+  <div class="background-elements">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">{t("CAS:pricing.title")}</h2>
+    <div class="pricing-grid">
+
+      <!-- Card 1: Flexible Answering -->
+      <div class="price-card primary-card">
+        <header class="card-header">
+          <h3>{plans.flexible_answering.title}</h3>
+        </header>
+        <div class="price-display">
+          <span class="price-value">
+            ${plans.flexible_answering.price_per_minute.toFixed(2)}
+          </span>
+          <span class="price-unit">/ {plans.flexible_answering.unit}</span>
+        </div>
+        <ul class="features-list">
+          {plans.flexible_answering.features.map(feature => (
+            <li>
+              <Icon name="check-circle" class="icon check" />
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="cta-container">
+          <button onclick="openCalendlyDialog()" class="cta">
+            {plans.flexible_answering.ctaPrimary}
+          </button>
+          <button onclick="openDemoBookingDialog()" class="cta-secondary">
+            {plans.flexible_answering.ctaSecondary}
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2: Dedicated Agent -->
+      <div class="price-card secondary-card">
+        <header class="card-header">
+          <h3>{plans.dedicated_agent.title}</h3>
+        </header>
+        <div class="price-display">
+          <span class="price-value">
+            ${plans.dedicated_agent.price_per_hour.toFixed(2)}
+          </span>
+          <span class="price-unit">/ {plans.dedicated_agent.unit}</span>
+        </div>
+        <ul class="features-list">
+          {plans.dedicated_agent.features.map(feature => (
+            <li>
+              <Icon name="check-circle" class="icon check" />
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="cta-container">
+           <a href={getLocalePath("/dedicated-agent-pricing")} class="cta">
+            {plans.dedicated_agent.ctaPrimary}
+          </a>
+          <a href={getLocalePath("/")} class="cta-secondary">
+            {plans.dedicated_agent.ctaSecondary}
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const container = document.getElementById('cas-pricing');
+
+  // Intersection Observer for Animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        container.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(container);
+</script>
+
+<style lang="less" scoped>
+// --- Custom Color Variable ---
+@primary-light: color-mix(in srgb, var(--primary), rgba(255, 255, 255, 0.357) 15%);
+
+// --- Animation Definitions ---
+@keyframes slideDownFadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUpFadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#cas-pricing {
+  position: relative;
+  overflow: hidden; // Keep circles contained
+  padding: var(--sectionPadding);
+  background: linear-gradient(
+    to bottom,
+    var(--gray-200),
+    color-mix(in srgb, var(--gray-200), black 5%)
+  );
+  color: var(--gray-700);
+
+  // --- Animation Setup ---
+  .section-title, .price-card {
+    opacity: 0;
+  }
+  &.is-visible {
+    .section-title {
+      animation: slideDownFadeIn 0.7s ease-out forwards;
+    }
+    .price-card {
+      animation: slideUpFadeIn 0.7s ease-out forwards;
+    }
+    .section-title { animation-delay: 0.1s; }
+    .primary-card { animation-delay: 0.3s; }
+    .secondary-card { animation-delay: 0.4s; }
+  }
+}
+
+// --- Background Elements ---
+.background-elements {
+  .circle {
+    position: absolute;
+    background: var(--gray-300);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.5;
+  }
+  .c1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: -100px;
+  }
+  .c2 {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: -75px;
+  }
+  .c3 {
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    left: 20%;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1; // Content above background elements
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--headerFontSize);
+  color: var(--gray-800);
+  font-weight: 700;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: var(--spacing-xl);
+}
+
+.price-card {
+  flex: 1 1 320px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  border-radius: 1rem;
+  background: var(--gray-50);
+  // Unified shadow for both cards
+  box-shadow: 
+    inset 0 2px 4px rgba(255, 255, 255, 0.7),
+    0 15px 35px rgba(0, 0, 0, 0.2);
+
+  .card-header {
+    margin: calc(var(--spacing-lg) * -1);
+    padding:var(--spacing-md);
+    margin-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow:
+        inset 0 4px 8px #ffffff30,
+        0 10px 10px #00000030;
+    height:75px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+    h3 {
+      color: var(--bodyTextColorWhite);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin:0;
+    }
+  }
+
+  .price-display {
+    .price-value {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.1;
+      text-shadow: 0 8px 5px rgba(0, 0, 0, 0.15);
+    }
+    .price-unit {
+        font-size: 1rem;
+        color: var(--gray-500);
+        font-weight: 500;
+    }
+  }
+
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: left;
+    opacity:0.8;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      color: var(--gray-600);
+      font-size: 0.9rem; // Smaller font size
+    }
+    .icon {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+  }
+  .cta-container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
+
+// --- Card 1 Style ---
+.primary-card {
+  .card-header {
+    background: var(--primary);
+  }
+  .price-display .price-value {
+    color: var(--primary-700);
+  }
+  .icon.check {
+    color: var(--primary);
+  }
+}
+
+// --- Card 2 Style ---
+.secondary-card {
+  .card-header {
+    background: @primary-light;
+  }
+  .price-display .price-value {
+    color: var(--primary-700);
+
+  }
+  .icon.check {
+    color: @primary-light;
+  }
+  .cta{
+    background: var(--secondary-400);
+
+  }
+
+}
+
+// --- CTA Styles ---
+.cta, .cta-secondary {
+    display: block;
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    font-size: .85rem; // Smaller font size
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.cta {
+    border: none;
+    background: var(--secondary);
+    color: var(--bodyTextColorWhite);
+    &:hover {
+        background: var(--secondary-600);
+        transform: translateY(-3px);
+    }
+}
+
+.cta-secondary {
+    background: transparent;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    &:hover {
+        background: var(--secondary);
+        color: var(--bodyTextColorWhite);
+    }
+}
+</style>

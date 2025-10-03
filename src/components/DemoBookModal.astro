@@ -1,0 +1,110 @@
+---
+import "@styles/modal-style.less"
+import {t} from "i18n:astro"
+
+---
+
+<div id="calendlyDemoDialog" class="calendly-dialog" style="display: none;">
+  <div class="calendly-backdrop"></div>
+  
+  <div class="calendly-modal">
+    <div class="calendly-header">
+      <h2>{t("CAS:hero.modalSecondary.title")}</h2>
+      <button class="calendly-close" aria-label="Close dialog">×</button>
+    </div>
+    
+    <div class="calendly-body">
+      <div id="calendlyDemoEmbed" style="min-width:320px;height:640px;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  import { lock, unlock } from 'tua-body-scroll-lock'
+
+  const calendlyEventUrl = "https://calendly.com/magidembarek/zoom-demo"
+  let calendlyLoaded = false;
+
+  function loadCalendlyScript() {
+    return new Promise((resolve) => {
+      if (calendlyLoaded && typeof window.Calendly !== 'undefined') {
+        resolve();
+        return;
+    }
+      
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.type = 'text/javascript';
+      script.onload = () => {
+        calendlyLoaded = true;
+        resolve();
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  async function openDemoBookingDialog(options = {}) {
+    const dialog = document.getElementById('calendlyDemoDialog');
+    const embed = document.getElementById('calendlyDemoEmbed');
+    
+    if (!dialog || !embed) return;
+
+    // Load Calendly script if not already loaded
+    await loadCalendlyScript();
+
+    // lock body
+    lock(dialog)
+
+    // Clear previous instance
+    embed.innerHTML = '';
+
+    // Initialize widget
+    window.Calendly.initInlineWidget({
+      url: calendlyEventUrl,
+      parentElement: embed,
+
+    });
+
+    // Show dialog
+    dialog.style.display = 'block';
+    document.body.classList.add('calendly-open');
+  }
+
+  function closeDemoBookingDialog() {
+    const dialog = document.getElementById('calendlyDemoDialog');
+    if (!dialog) return;
+    unlock(dialog)
+
+    dialog.style.display = 'none';
+    document.body.classList.remove('calendly-open');
+  }
+
+  // Expose functions globally
+  window.openDemoBookingDialog = openDemoBookingDialog;
+  window.closeDemoBookingDialog = closeDemoBookingDialog;
+
+  // Setup event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.getElementById('calendlyDemoDialog');
+    const backdrop = dialog?.querySelector('.calendly-backdrop');
+    const closeBtn = dialog?.querySelector('.calendly-close');
+
+    // Close on backdrop click
+    backdrop?.addEventListener('click', closeDemoBookingDialog);
+
+    // Close on button click
+    closeBtn?.addEventListener('click', closeDemoBookingDialog);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dialog?.style.display !== 'none') {
+        closeDemoBookingDialog();
+      }
+    });
+  });
+
+
+</script>
+

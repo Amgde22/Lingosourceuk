@@ -1,0 +1,282 @@
+---
+import { t } from "i18n:astro"
+import { Icon } from "astro-icon/components"
+
+// Fetch the title and the array of features from your i18n source
+const whyUsData = t("CAS:whyUs", { returnObjects: true });
+const features = whyUsData.features;
+---
+
+<section id="why-us">
+  <!-- Flowing SVG Background Line -->
+  <div class="background-line">
+    <svg width="100%" height="100%" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      {/* 
+        This SVG creates a thick, wavy line effect using three separate paths.
+        Each path follows the same curve but is slightly offset vertically.
+        - The 'Q' command creates the first curve.
+        - The 'T' command creates a smooth continuation of that curve.
+        - The stroke-linecap="round" makes the line ends appear soft.
+      */}
+      <path d="M-50 310 Q 360 100, 720 400 T 1490 700" stroke="var(--gray-400)" fill="none" stroke-width="15" stroke-linecap="round"/>
+      <path d="M-50 325 Q 360 115, 720 415 T 1490 715" stroke="var(--gray-500)" fill="none" stroke-width="15" stroke-linecap="round"/>
+      <path d="M-50 340 Q 360 130, 720 430 T 1490 730" stroke="var(--gray-600)" fill="none" stroke-width="15" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title" set:html={whyUsData.title}></h2>
+    <div class="features-grid">
+      {features.map((feature, index) => (
+        <div class="feature-card" style={`--card-index: ${index};`}>
+          <div class="icon-wrapper">
+            <Icon name="blob-1" class="blob-bg" />
+            <Icon name={feature.icon} class="icon" />
+          </div>
+          <h3 class="feature-title">{feature.title}</h3>
+          <div class="divider"></div>
+          <p class="feature-body" set:html={feature.body}></p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const section = document.querySelector("#why-us");
+
+  if (section) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        // When the element is visible in the viewport, add the 'is-visible' class
+        if (entry.isIntersecting) {
+          section.classList.add("is-visible");
+          // Stop observing once the animation is triggered
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2 // Trigger when 20% of the section is visible
+    });
+
+    observer.observe(section);
+  }
+</script>
+
+
+<style lang="less" scoped>
+// --- Animation Delays ---
+@delay-title: 200ms;
+@delay-line: 400ms;
+@delay-cards-start: 500ms;
+@delay-card-increment: 150ms;
+
+// --- Animation Keyframes ---
+@keyframes slideDownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes animateWidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+
+#why-us {
+  position: relative;
+  padding: var(--sectionPadding);
+  background: linear-gradient(
+    to bottom, 
+    color-mix(in srgb, var(--gray-300), black 20%),
+    var(--gray-300) 40%, 
+    color-mix(in srgb, var(--gray-300), white 30%)
+  );
+  overflow: hidden;
+
+  // --- Initial Animation States ---
+  .section-title, .feature-card {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  .section-title::before {
+    width: 0;
+  }
+
+  // --- Triggered Animation States ---
+  &.is-visible {
+    .section-title {
+      animation: slideDownFadeIn 0.6s ease-out forwards;
+      animation-delay: @delay-title;
+    }
+    .section-title::before {
+      animation: animateWidth 0.7s ease-out forwards;
+      animation-delay: @delay-line;
+    }
+    .feature-card {
+      animation: slideDownFadeIn 0.6s ease-out forwards;
+      // Calculate delay for each card sequentially
+      animation-delay: calc(@delay-cards-start + var(--card-index) * @delay-card-increment);
+    }
+  }
+}
+
+.background-line {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--headerFontSize);
+  color: var(--primary-700);
+  font-weight: 700;
+  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+  width:fit-content;
+  margin:auto;
+  margin-bottom: var(--spacing-2xl);
+  position:relative;
+
+  &::before{
+    content:"";
+    position:absolute;
+    top: calc(100% + var(--spacing-sm));
+    left: 0;right: 0;
+    display: block;
+    height: 3px;
+    margin:auto;
+    background-color: var(--primary-400);
+  }
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-xl);
+}
+
+.feature-card {
+  flex: 1 1 300px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:.5em;
+  padding: var(--spacing-lg);
+  background: rgba(249, 250, 251, 0.7); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  box-shadow: 
+    inset 0 2px 4px 0 rgba(255, 255, 255, 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.4),
+      0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  
+  .blob-bg {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    color: var(--gray-200);
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .icon {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    color: var(--primary);
+  }
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: var(--spacing-sm);
+  text-align:start;
+
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background: var(--secondary);
+  border-radius: 1px;
+  margin-bottom: var(--spacing-sm);
+  translate:0 -8px;
+}
+
+.feature-body {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+  
+  :global(strong) {
+    color: var(--primary-700);
+    font-weight: 600;
+  }
+}
+
+// --- Responsive Adjustments ---
+@media (max-width: 768px) {
+  .features-grid {
+    gap: var(--spacing-xl);
+  }
+  
+  .feature-card {
+    flex-basis: 320px; 
+  }
+}
+
+@media (max-width: 480px) {
+  #why-us {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+  .feature-card {
+    padding: var(--spacing-md);
+  }
+  .section-title {
+    margin-bottom: var(--spacing-xl);
+  }
+}
+</style>

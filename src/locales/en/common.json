@@ -3,8 +3,11 @@
     "about": "About",
     "how it works": "How It Works",
     "privacy policy":"privacy policy",
-    "pricing": "Pricing",
-    "projects": "Projects",
+    "pricing": "Prices",
+    "hire an agent pricing":"Dedicated Agent Plans",
+    "phone answering service pricing":"Call Answering Plans",
+    "Call Answering Service":"Call Answering Service",
+    "more": "More",
     "project-1": "Project 1",
     "project-2": "Project 2",
     "blog": "Blog",
@@ -23,29 +26,12 @@
     },
     "quote": "Get Free Quote",
     "estimate": "Get an estimate now",
-    "ctaComponent": {
-        "title": "Get it done",
-        "subtitle": "With us today",
-        "message": "Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.",
-        "cta": "Get an estimate now",
-        "alt": ""
-    },
-    "about-page": {
-        "landing": "About",
-        "topper": "About",
-        "title": "About Company Title",
-        "p-1": "Our company was created In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-        "p-2": "We believe that In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.",
-        "p-3": "It's important In consequat tincidunt turpis sit amet imperdiet.",
-        "rank": "CEO-Founder",
-        "cta": "Our projects"
-    },
+
     "footer": {
         "information": "Information",
         "services": "Services",
         "contact": "Contact",
         "click": "Click to email",
-        "p": "Extra content if you need it, if not you can delete this whole p tag. I usually do.",
         "credit": "Designed and Hand Coded by "
     },
     "notFound": {

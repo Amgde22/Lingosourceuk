@@ -1,0 +1,146 @@
+{
+    "hero":{
+        "title" :"Turn Missed Calls into Sales For Just <span class=\"underline\">$1/Min</span> ",
+        "subtitle" : "Every missed call is money left on the table,  We answer live,For just $1/min, you get a full-time reception team services that captures leads and drives sales nonstop.",
+        "primaryCta" : "Request a Callback",
+        "secondaryCta" : "book a demo",
+        "modalPrimary":{
+            "title":"Schedule Your Call With Us",
+            "cancel":"cancel"
+        },
+        "modalSecondary":{
+            "title":"Schedule Your Demo Call",
+            "cancel":"cancel"
+        }
+    },
+    "howItWorks": {
+        "title": "How our answering service works",
+        "steps": [
+          {
+            "title": "Get Started in Minutes",
+            "description": "Book a call , and tell us how you want calls handled , it’s fast, simple, and tailored to your business."
+          },
+          {
+            "title": "We Answer Every Call",
+            "description": "Our live receptionists pick up your calls instantly, using your company name and instructions, so you never lose a lead."
+          },
+          {
+            "title": "You Get the Details",
+            "description": "We send you the caller’s info by email or SMS in real-time , so you can follow up and close deals without stress."
+          }
+        ]
+      },
+      "whyUs": {
+        "title": "Why Choose Us",
+        "features": [
+          {
+            "title": "Constant Availability",
+            "body": "Reliable live agents that are always available, answering calls for you <strong>FULL TIME</strong> (24/7), to make sure your business always has a live voice.",
+            "icon": "clock"
+          },
+          {
+            "title": "Affordable Pricing",
+            "body": "Affordable, flexible plans with rates like <strong>$1/minute</strong> designed for small businesses, so you only pay for what you need.",
+            "icon": "dollar-sign"
+          },
+          {
+            "title": "Multilingual Support",
+            "body": "Support in multiple languages (English, French, Spanish and more) to help you connect with customers wherever they are.",
+            "icon": "globe"
+          },
+          {
+            "title": "Professional Quality",
+            "body": "Experienced, professional receptionists trained to represent your brand with care and expertise.",
+            "icon": "star"
+          },
+          {
+            "title": "Warm & Friendly Service",
+            "body": "Every caller is greeted with warmth and professionalism, creating positive first impressions that build long-lasting trust.",
+            "icon": "heart"
+          }
+        ]
+      },
+      "whyThis":{
+        "title":"How Our Services Drive Real World Results",
+        "sourcesTitle":"sources : ",
+        "stats":[
+            {
+                "value":"85%",
+                "body":"of consumers abandon the call after reaching an auto attendant",
+                "source":"Vonage, 2019"
+            },
+            {
+                "value":"78%",
+                "body":"of customers forgive a mistake after receiving excellent customer service.",
+                "source":"salesforce"
+            },
+            {
+                "value":"60%",
+                "body":"of consumers choose to call local businesses after finding them on Google",
+                "source":"BrightLocal, 2019"
+            }
+        ]
+      },
+      "pricingCalc":{
+        "title":"Let's Compare Prices",
+        "prompt":"handle my calls for :",
+        "timeUnit":"minutes",
+        "you_save_x":"you save",
+        "you_lose_x":"you lose",
+        
+        "us":{
+            "title":"Lingosource",
+            "price":"1.00$ /min",
+            "features":[
+                "tailored price for small businesses",
+                "full time availability",
+                "High quality answering"
+            ],
+            "secondaryCta":"See full pricing"
+        },
+        "competitor":{
+            "title":"Cheapest Alternative",
+            "price":"1.80$ /min",
+            "unfeatures":[
+                "Higher Prices",
+                "inconsistent response availability",
+                "no hand-picked talents to answer for you "
+            ]
+        }
+      },
+
+        "pricing": {
+          "title":"Our Phone Answering Service Prices",
+          "flexible_answering": {
+            "title": "Flexible Answering",
+            "price_per_minute": 1.00,
+            "unit":"minute",
+            "features": [
+              "Flat Rate 24/7/365 (No holiday or after-hours fees)",
+              "Pay-As-You-Go (No contract required)",
+              "5-Minute Setup (No setup fee)",
+              "Full 24/7 Service (Coming Soon)"
+            ],
+            "ctaPrimary":"schedule a call",
+            "ctaSecondary":"Book a demo"
+          },
+          "dedicated_agent": {
+            "title": "Dedicated Agent",
+            "price_per_hour": 7.00,
+            "unit":"hour",
+            "features": [
+              "Up to 70% Cost Savings on call center operations",
+              "Ideal for Very High Call Volume",
+              "Agents Trained on Your SOP",
+              "Agent Answers Directly to You"
+            ],
+            "ctaPrimary":"See Full Plan",
+            "ctaSecondary":"Learn more"
+          }
+        },
+
+      
+      
+    "cta":"schedule a call",
+    "ctaSecondary":"Book a demo"
+}

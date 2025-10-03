@@ -10,31 +10,40 @@ const navData = [
     children: []
   },
   {
-    key: "how it works",
-    url: "/how-it-works",
+    key: "contact",
+    url: "/contact",
     children: []
   },
   {
-    key: "projects",
+    key: "pricing",
     children: [
       {
-        key: "project-1",
-        url: "/projects/project-1/"
+        key: "hire an agent pricing",
+        url: "/dedicated-agent-pricing"
       },
       {
-        key: "project-2",
-        url: "/projects/project-2/"
+        key: "phone answering service pricing",
+        url: "/phone-answering-serive-pricing"
       }
     ]
   },
   {
-    key: "pricing",
-    url: "/pricing",
-    children: []
+    key: "more",
+    children: [
+      {
+        key: "how it works",
+        url: "/how-it-works"
+      },
+      {
+        key: "blog",
+        url: "/blog"
+      }
+    ]
   },
   {
-    key: "contact",
-    url: "/contact",
+    key: "call answering service",
+    url: "/call-answering-service",
+    special:true,
     children: []
   },
 ]

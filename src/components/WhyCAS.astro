@@ -1,0 +1,177 @@
+---
+import mobileImage from "@assets/images/whythis-25.webp"
+import tabletImage from "@assets/images/whythis-50.webp"
+import desktopImage from "@assets/images/whythis-100.webp"
+import {t} from "i18n:astro"
+---
+
+<div id="why-cas">
+  <div class="image-bg">
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset={desktopImage.src}
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset={tabletImage.src}
+      />
+      <img
+        src={mobileImage.src}
+        alt="Smiling agent"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+  </div>
+  <div class="bg-gradient"></div>
+
+  <div class="info-box">
+    <h3 class="title" set:html={t("CAS:whyThis.title")}></h3>
+
+    {t("CAS:whyThis.stats", {returnObjects:true}).map((stat, index) => (
+      <div class="stat-container">
+        <p class="stat-value">{stat.value}</p>
+        <p class="stat-body">{stat.body} ({index + 1})</p>
+      </div>
+    ))}
+
+    <div class="sources">
+      <span class="sources-title">{t("CAS:whyThis.sourcesTitle")}</span>
+      {t("CAS:whyThis.stats", {returnObjects:true}).map((stat, index) => (
+        <span class="source">
+          <span class="source-number">({index + 1})</span>
+          <span class="source-title" set:html={stat.source}></span>
+        </span>
+      ))}
+    </div>
+  </div>
+</div>
+
+<style lang="less" scoped>
+  @image-height-mobile:300px;
+#why-cas {
+  padding:var(--spacing-lg);
+  padding-bottom: 0;
+  position: relative;
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+
+  font-size :16px;
+  .image-bg {
+    position: absolute;
+    inset: 0;
+
+    // This selector targets the <img> inside the <picture> tag,
+    // so no changes are needed here.
+    img {
+      width: 100%;
+      height: 100%; // Ensure height is also 100% for object-fit to work correctly
+      object-fit: cover;
+    }
+  }
+
+  .bg-gradient {
+    position: absolute;
+    inset: 0;
+    background: 
+      linear-gradient(to left, var(--primary-700) 350px , transparent 50%),
+      linear-gradient(to left, var(--primary-700) 350px , transparent calc(50% + 50px));
+    pointer-events: none;
+  }
+
+  .info-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    padding: 2em;
+    color: var(--gray-200);
+    z-index: 1;
+
+    // text shadows
+    .title ,.stat-value,.stat-body,.source{
+      text-shadow:0 (2/16em) 5px rgba(0, 0, 0, 0.2)
+    }
+
+    .title {
+      font-size: 1.5em;
+      color: var(--gray-200);
+      font-weight: bold;
+
+      &::after {
+        content: "•";
+        color: var(--secondary);
+        margin-left: .3em;
+      }
+    }
+
+    .stat-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1em 0;
+
+      .stat-value {
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--gray-200);
+      }
+
+      .stat-body {
+        font-size: 0.875em;
+        color: var(--gray-300);
+      }
+    }
+
+    .sources {
+      margin-top: 2em;
+      font-size: 0.65em;
+      justify-self: end;
+      color: var(--gray-100);
+
+      .sources-title{
+        color: var(--gray-100);
+      }
+      .source {
+        margin: 0.25em 0;
+        color: var(--gray-100);
+      }
+      .source-number {
+        font-weight: bold;
+        margin-right: 0.25em;
+      }
+    }
+  }
+
+  // mobile styles
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    padding:0 ;
+    padding-top:var(--spacing-lg);
+
+    .image-bg {
+      position: relative; /* Take image out of the background */
+      inset: auto;
+      order: 2; 
+      height: @image-height-mobile; 
+    }
+
+    .bg-gradient {
+      background: linear-gradient(to bottom, var(--primary-700)65% , transparent 75%);
+    }
+
+    .info-box {
+      width: 100%;
+      padding: 1.5em;
+      order: 1; 
+    }
+  }
+}
+</style>

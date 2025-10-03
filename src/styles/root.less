@@ -59,7 +59,7 @@
     --primaryDark: var(--primary-600);
     --secondaryDark: var(--secondary-600);
 
-    --dark: #1d1715;
+    --dark: var(--gray-900);
     --medium: #1d1715;
     --accent: #460b05;
     --grey: hsl(224, 14%, 16%);
@@ -352,4 +352,10 @@
 }
 .capitalize{
   text-transform: capitalize;
+}
+
+.cta,.cta-primary, .cta-secondary{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
 }

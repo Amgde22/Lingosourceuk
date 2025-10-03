@@ -1,0 +1,110 @@
+---
+import "@styles/modal-style.less"
+import {t} from "i18n:astro"
+
+---
+
+<div id="calendlyDialog" class="calendly-dialog" style="display: none;">
+  <div class="calendly-backdrop"></div>
+  
+  <div class="calendly-modal">
+    <div class="calendly-header">
+      <h2>{t("CAS:hero.modalPrimary.title")}</h2>
+      <button class="calendly-close" aria-label="Close dialog">×</button>
+    </div>
+    
+    <div class="calendly-body">
+      <div id="calendlyEmbed" style="min-width:320px;height:640px;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  import { lock, unlock } from 'tua-body-scroll-lock'
+
+  const calendlyLink = ""
+  let calendlyLoaded = false;
+
+  function loadCalendlyScript() {
+    return new Promise((resolve) => {
+      if (calendlyLoaded && typeof window.Calendly !== 'undefined') {
+        resolve();
+        return;
+    }
+      
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.type = 'text/javascript';
+      script.onload = () => {
+        calendlyLoaded = true;
+        resolve();
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  async function openCalendlyDialog(options = {}) {
+    const dialog = document.getElementById('calendlyDialog');
+    const embed = document.getElementById('calendlyEmbed');
+    
+    if (!dialog || !embed) return;
+
+    // Load Calendly script if not already loaded
+    await loadCalendlyScript();
+
+    // lock body
+    lock(dialog)
+
+    // Clear previous instance
+    embed.innerHTML = '';
+
+    // Initialize widget
+    window.Calendly.initInlineWidget({
+      url: options.url || 'https://calendly.com/magidembarek/request-a-call-back',
+      parentElement: embed,
+      prefill: options.prefill || {}
+    });
+
+    // Show dialog
+    dialog.style.display = 'block';
+    document.body.classList.add('calendly-open');
+  }
+
+  function closeCalendlyDialog() {
+    const dialog = document.getElementById('calendlyDialog');
+    if (!dialog) return;
+    unlock(dialog)
+
+    dialog.style.display = 'none';
+    document.body.classList.remove('calendly-open');
+  }
+
+  // Expose functions globally
+  window.openCalendlyDialog = openCalendlyDialog;
+  window.closeCalendlyDialog = closeCalendlyDialog;
+
+  // Setup event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    const dialog = document.getElementById('calendlyDialog');
+    const backdrop = dialog?.querySelector('.calendly-backdrop');
+    const closeBtn = dialog?.querySelector('.calendly-close');
+
+    // Close on backdrop click
+    backdrop?.addEventListener('click', closeCalendlyDialog);
+
+    // Close on button click
+    closeBtn?.addEventListener('click', closeCalendlyDialog);
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dialog?.style.display !== 'none') {
+        closeCalendlyDialog();
+      }
+    });
+  });
+
+
+</script>
+

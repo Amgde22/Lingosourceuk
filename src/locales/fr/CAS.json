@@ -1,0 +1,20 @@
+{
+    "hero":{
+        "title" :"Turn Missed Calls into (arrow under this word) Sales For Just $1/Min (highlighted with animation)",
+        "subtitle" : "Every missed call is money left on the table,  We answer live,For just $1/min, you get a full-time reception team services that captures leads and drives sales nonstop.",
+        "primaryCta" : "Request a Callback",
+        "secondaryCra" : "book a demo",
+        "modalPrimary":{
+            "title":"Schedule Your Call With Us",
+            "cancel":"cancel"
+        },
+        "secondaryModal":{
+            "title":"Schedule Your Demo Call",
+            "cancel":"cancel"
+        }
+    },
+    "HowItWorks":{
+        "title"
+    }
+
+}

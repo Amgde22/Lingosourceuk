@@ -1,0 +1,41 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+
+
+
+import Hero from "@components/Hero-call-asnwering.astro"
+import CASHowItWorks from "@components/CASHowItWorks.astro"
+import WhyCAS from "@components/WhyCAS.astro"
+import CASWhyUs from "@components/CASWhyUs.astro"
+import CASPriceCalculator from "@components/CASPriceCalculator.astro"
+import Blog from "@components/Blog.astro"
+import Contact from "@components/Contact.astro"
+
+import {  t } from "i18n:astro";
+import {getOptimizedImage} from "@utils/utils"
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Hero (for rendering)
+import mobileLandingImage from "@assets/images/hero.png" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+
+const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage)
+---
+
+<BaseLayout
+  title={t("home:pricing.layout.title")}
+  description={t("home:pricing.layout.description")}
+  preloadedImage = {optimizedMobileLandingImage}
+
+>
+
+<div class="place-taker" ></div>
+<Hero />
+<!-- if you are looking for madals , they are in base layout -->
+<CASHowItWorks />
+<WhyCAS />
+<CASWhyUs />
+<CASPriceCalculator />
+<Contact />
+<Blog />
+</BaseLayout>
+

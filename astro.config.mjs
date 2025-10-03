@@ -19,14 +19,17 @@ export default defineConfig({
       },
       // used to localize the routes
       pages: {
-				"/about": {
-					"fr": "/a-propos"
-				},
+        "/about": {
+          "fr": "/a-propos"
+        },
         "/contact":{
           "fr":"/contact"
         },
-        "/pricing":{
-          "fr":"/tarifs"
+        "/dedicated-agent-plans":{
+          "fr":"/forfaits-agent-dedie"
+        },
+        "/call-answering-plans":{  
+          "fr":"/forfaits-reception-d-appels"  
         },
         "/how-it-works":{
           "fr":"/comment-ca-marche"
@@ -35,10 +38,12 @@ export default defineConfig({
           "fr":"/blog"
         },
         "/privacy-policy":{
-          fr:"/politique-de-confidentialite"
+          "fr":"/politique-de-confidentialite"
+        },
+        "/call-answering-service":{
+          "fr":"/service-reception-d-appels"
         }
-
-			},
+      }
     }),
     sitemap({
       i18n: {

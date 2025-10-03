@@ -20,10 +20,13 @@ import Settings from "./TemplateComponents/Settings.astro";
         decoding="async"
       />
     </a>
+
     <a href={"tel:"+phoneForTel} class="call-btn" >
       <svg class="call-btn-icon"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M16.552 22.133c-1.44-.053-5.521-.617-9.795-4.89c-4.273-4.274-4.836-8.354-4.89-9.795c-.08-2.196 1.602-4.329 3.545-5.162a1.47 1.47 0 0 1 1.445.159c1.6 1.166 2.704 2.93 3.652 4.317a1.504 1.504 0 0 1-.256 1.986l-1.951 1.449a.48.48 0 0 0-.142.616c.442.803 1.228 1.999 2.128 2.899s2.153 1.738 3.012 2.23a.483.483 0 0 0 .644-.162l1.27-1.933a1.503 1.503 0 0 1 2.056-.332c1.407.974 3.049 2.059 4.251 3.598a1.47 1.47 0 0 1 .189 1.485c-.837 1.953-2.955 3.616-5.158 3.535"/></g></svg>
       {t("home:header.callBtn")}
     </a>
+
+
     <!--Navigation List-->
     <nav class="cs-nav" role="navigation">
       <!--Mobile Nav Toggle-->
@@ -67,7 +70,12 @@ import Settings from "./TemplateComponents/Settings.astro";
                     <Icon name="mdi--caret" class="cs-drop-icon" />
                   </button>
                 ) : (
-                  // If entry does not have children in navData.json, create an anchor
+                    (entry.special?
+                    <a href={getLocalePath(entry.url)} class="special-link">
+                      {t(entry.key)}
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m13-2a1 1 0 0 0-1-1h-4a1 1 0 1 0 0 2h3v3a1 1 0 1 0 2 0z" clip-rule="evenodd"/></svg>
+                    </a>
+                    :
                   <a
                     href={getLocalePath(entry.url)}
                     class:list={[
@@ -85,6 +93,7 @@ import Settings from "./TemplateComponents/Settings.astro";
                   >
                     {t(entry.key)}
                   </a>
+                  )
                 )}
 
                 {entry.children?.length > 0 && (
@@ -132,12 +141,13 @@ import Settings from "./TemplateComponents/Settings.astro";
   /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
-  .call-btn{
+  .call-btn,.special-link{
+    width:fit-content;
     color:white;
     background-color: var(--primary-500);
     display:flex;
     align-items:center;
-    font-size:12px;
+    font-size:0.7rem;
     padding:.5rem .8rem;
     gap:.5em;
     font-weight: 800;
@@ -145,6 +155,9 @@ import Settings from "./TemplateComponents/Settings.astro";
     border:none;
     height:min-content;
 
+    @media(max-width:720px){
+      margin-left:auto;
+    }
     &:hover{
       background-color: var(--primary-600);
     }
@@ -155,6 +168,9 @@ import Settings from "./TemplateComponents/Settings.astro";
       height:1.4em;
     }
   }
+    .call-btn{
+      display:none;
+    }
   /* Mobile - 1023px */
   @media only screen and (max-width: 63.9375rem) {
     body {
@@ -781,7 +797,7 @@ import Settings from "./TemplateComponents/Settings.astro";
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: (24/16rem);
+        gap: (8/16rem);
       }
 
       .cs-toggle {
@@ -816,7 +832,7 @@ import Settings from "./TemplateComponents/Settings.astro";
         justify-content: flex-start;
         align-items: center;
         /* 20px - 36px */
-        gap: clamp(1.25rem, 2.6vw, 2.25rem);
+        gap: clamp(1rem, 2.6vw, 1.5rem);
         /* separator between cs-ul and darkmode toggle */
         &::after {
           content: "";
