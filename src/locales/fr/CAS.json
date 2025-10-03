@@ -1,7 +1,7 @@
 {
     "hero": {
-        "title": "Transformez les appels manqués en ventes pour seulement <span class=\"underline\">1€/min</span>",
-        "subtitle": "Chaque appel manqué est une opportunité de vente perdue. Nous répondons en direct. Pour seulement 1€/min, bénéficiez des services d'une équipe de réception à temps plein qui capture des prospects et stimule vos ventes sans interruption.",
+        "title": "Transformez les appels manqués en ventes pour seulement <span class=\"underline\">1$/min</span>",
+        "subtitle": "Chaque appel manqué est une opportunité de vente perdue. Nous répondons en direct. Pour seulement 1$/min, bénéficiez des services d'une équipe de réception à temps plein qui capture des prospects et stimule vos ventes sans interruption.",
         "primaryCta": "Demander à être rappelé",
         "secondaryCta": "Réserver une démo",
         "modalPrimary": {
@@ -40,7 +40,7 @@
             },
             {
                 "title": "Tarifs abordables",
-                "body": "Des forfaits flexibles et abordables avec des tarifs à partir de <strong>1€/minute</strong>, conçus pour les petites entreprises, afin que vous ne payiez que ce dont vous avez besoin.",
+                "body": "Des forfaits flexibles et abordables avec des tarifs à partir de <strong>1$/minute</strong>, conçus pour les petites entreprises, afin que vous ne payiez que ce dont vous avez besoin.",
                 "icon": "dollar-sign"
             },
             {
@@ -89,7 +89,7 @@
         "you_lose_x": "vous perdez",
         "us": {
             "title": "Lingosource",
-            "price": "1,00€ /min",
+            "price": "1,00$ /min",
             "features": [
                 "Tarif adapté aux PME",
                 "Disponibilité à temps plein",
@@ -98,12 +98,12 @@
             "secondaryCta": "Voir tous les tarifs"
         },
         "competitor": {
-            "title": "L'alternative la moins chère",
-            "price": "1,80€ /min",
+            "title": "Autres alternatives",
+            "price": "1,80$ /min",
             "unfeatures": [
-                "Prix plus élevés",
-                "Disponibilité des réponses irrégulière",
-                "Pas de talents triés sur le volet pour vous répondre"
+                "Tarifs plus élevés",
+                "Disponibilité inégale",
+                "Agents non sélectionnés"
             ]
         }
     },

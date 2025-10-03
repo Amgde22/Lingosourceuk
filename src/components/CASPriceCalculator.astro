@@ -51,7 +51,8 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
           <span class="price-value" id="our-price">$100.00</span>
           
         </div>
-        <p class="money-saved" id="money-saved">{t("CAS:pricingCalc.you_save_x")} $80.00</p>
+        <!-- MODIFIED LINE: Text is now separate from the value span -->
+        <p class="money-saved">{t("CAS:pricingCalc.you_save_x")} <span id="saved-amount">$80.00</span></p>
         <ul class="features-list">
           {data.us.features.map(feature => (
             <li>
@@ -79,7 +80,8 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
             </div>
           <span class="price-value" id="competitor-price">$180.00</span>
         </div>
-        <p class="money-lost" id="money-lost">{t("CAS:pricingCalc.you_lose_x")} $80.00</p>
+        <!-- MODIFIED LINE: Text is now separate from the value span -->
+        <p class="money-lost">{t("CAS:pricingCalc.you_lose_x")} <span id="lost-amount">$80.00</span></p>
         <ul class="features-list">
           {data.competitor.unfeatures.map(unfeature => (
             <li class="unfeature">
@@ -106,8 +108,9 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
   const minutesSlider = document.getElementById('minutes-slider');
   const ourPriceEl = document.getElementById('our-price');
   const competitorPriceEl = document.getElementById('competitor-price');
-  const moneySavedEl = document.getElementById('money-saved');
-  const moneyLostEl = document.getElementById('money-lost');
+  // MODIFIED SCRIPT: Selecting the new spans for the amounts
+  const savedAmountEl = document.getElementById('saved-amount');
+  const lostAmountEl = document.getElementById('lost-amount');
   const ourTimeBreakdownEl = document.getElementById('our-time-breakdown');
   const competitorTimeBreakdownEl = document.getElementById('competitor-time-breakdown');
 
@@ -138,8 +141,11 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
 
     ourPriceEl.textContent = `$${ourTotal.toFixed(2)}`;
     competitorPriceEl.textContent = `$${competitorTotal.toFixed(2)}`;
-    moneySavedEl.textContent = `You save $${difference.toFixed(2)}`;
-    moneyLostEl.textContent = `You lose $${difference.toFixed(2)}`;
+    
+    // MODIFIED SCRIPT: Only update the text content of the amount spans
+    savedAmountEl.textContent = `$${difference.toFixed(2)}`;
+    lostAmountEl.textContent = `$${difference.toFixed(2)}`;
+
     ourTimeBreakdownEl.textContent = timeString;
     competitorTimeBreakdownEl.textContent = timeString;
     updateSliderStyle();
