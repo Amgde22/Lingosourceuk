@@ -1,20 +1,141 @@
 {
-    "hero":{
-        "title" :"Turn Missed Calls into (arrow under this word) Sales For Just $1/Min (highlighted with animation)",
-        "subtitle" : "Every missed call is money left on the table,  We answer live,For just $1/min, you get a full-time reception team services that captures leads and drives sales nonstop.",
-        "primaryCta" : "Request a Callback",
-        "secondaryCra" : "book a demo",
-        "modalPrimary":{
-            "title":"Schedule Your Call With Us",
-            "cancel":"cancel"
+    "hero": {
+        "title": "Transformez les appels manqués en ventes pour seulement <span class=\"underline\">1€/min</span>",
+        "subtitle": "Chaque appel manqué est une opportunité de vente perdue. Nous répondons en direct. Pour seulement 1€/min, bénéficiez des services d'une équipe de réception à temps plein qui capture des prospects et stimule vos ventes sans interruption.",
+        "primaryCta": "Demander à être rappelé",
+        "secondaryCta": "Réserver une démo",
+        "modalPrimary": {
+            "title": "Planifiez votre appel avec nous",
+            "cancel": "Annuler"
         },
-        "secondaryModal":{
-            "title":"Schedule Your Demo Call",
-            "cancel":"cancel"
+        "modalSecondary": {
+            "title": "Planifiez votre appel de démo",
+            "cancel": "Annuler"
         }
     },
-    "HowItWorks":{
-        "title"
-    }
-
+    "howItWorks": {
+        "title": "Comment fonctionne notre service de permanence téléphonique",
+        "steps": [
+            {
+                "title": "Démarrez en quelques minutes",
+                "description": "Réservez un appel et indiquez-nous comment vous souhaitez que vos appels soient gérés. C'est rapide, simple et adapté à votre entreprise."
+            },
+            {
+                "title": "Nous répondons à chaque appel",
+                "description": "Nos réceptionnistes répondent instantanément à vos appels, en utilisant le nom de votre entreprise et vos instructions, pour que vous ne perdiez jamais un prospect."
+            },
+            {
+                "title": "Vous recevez les détails",
+                "description": "Nous vous envoyons les informations de l'appelant par e-mail ou SMS en temps réel, afin que vous puissiez faire le suivi et conclure des ventes sans stress."
+            }
+        ]
+    },
+    "whyUs": {
+        "title": "Pourquoi nous choisir",
+        "features": [
+            {
+                "title": "Disponibilité constante",
+                "body": "Des agents fiables et toujours disponibles, répondant à vos appels <strong>À TEMPS PLEIN</strong> (24/7), pour garantir que votre entreprise ait toujours une voix humaine pour accueillir vos clients.",
+                "icon": "clock"
+            },
+            {
+                "title": "Tarifs abordables",
+                "body": "Des forfaits flexibles et abordables avec des tarifs à partir de <strong>1€/minute</strong>, conçus pour les petites entreprises, afin que vous ne payiez que ce dont vous avez besoin.",
+                "icon": "dollar-sign"
+            },
+            {
+                "title": "Support multilingue",
+                "body": "Un support en plusieurs langues (anglais, français, espagnol et plus) pour vous aider à communiquer avec vos clients, où qu'ils soient.",
+                "icon": "globe"
+            },
+            {
+                "title": "Qualité professionnelle",
+                "body": "Des réceptionnistes expérimentés et professionnels, formés pour représenter votre marque avec soin et expertise.",
+                "icon": "star"
+            },
+            {
+                "title": "Service chaleureux et convivial",
+                "body": "Chaque appelant est accueilli avec chaleur et professionnalisme, créant une première impression positive qui bâtit une confiance durable.",
+                "icon": "heart"
+            }
+        ]
+    },
+    "whyThis": {
+        "title": "Comment nos services génèrent des résultats concrets",
+        "sourcesTitle": "sources : ",
+        "stats": [
+            {
+                "value": "85%",
+                "body": "des consommateurs abandonnent l'appel après être tombés sur un serveur vocal automatique",
+                "source": "Vonage, 2019"
+            },
+            {
+                "value": "78%",
+                "body": "des clients pardonnent une erreur après avoir reçu un excellent service client.",
+                "source": "Salesforce"
+            },
+            {
+                "value": "60%",
+                "body": "des consommateurs choisissent d'appeler une entreprise locale après l'avoir trouvée sur Google",
+                "source": "BrightLocal, 2019"
+            }
+        ]
+    },
+    "pricingCalc": {
+        "title": "Comparons les prix",
+        "prompt": "gérer mes appels pendant :",
+        "timeUnit": "minutes",
+        "you_save_x": "vous économisez",
+        "you_lose_x": "vous perdez",
+        "us": {
+            "title": "Lingosource",
+            "price": "1,00€ /min",
+            "features": [
+                "Tarif adapté aux PME",
+                "Disponibilité à temps plein",
+                "Réponse de haute qualité"
+            ],
+            "secondaryCta": "Voir tous les tarifs"
+        },
+        "competitor": {
+            "title": "L'alternative la moins chère",
+            "price": "1,80€ /min",
+            "unfeatures": [
+                "Prix plus élevés",
+                "Disponibilité des réponses irrégulière",
+                "Pas de talents triés sur le volet pour vous répondre"
+            ]
+        }
+    },
+    "pricing": {
+        "title": "Nos tarifs de permanence téléphonique",
+        "flexible_answering": {
+            "title": "Réponse Flexible",
+            "price_per_minute": 1.00,
+            "unit": "minute",
+            "features": [
+                "Tarif forfaitaire 24/7/365 (Sans frais de jours fériés ou d'heures creuses)",
+                "Paiement à l'utilisation (Sans contrat requis)",
+                "Configuration en 5 minutes (Sans frais d'installation)",
+                "Service complet 24/7 (Bientôt disponible)"
+            ],
+            "ctaPrimary": "Planifier un appel",
+            "ctaSecondary": "Réserver une démo"
+        },
+        "dedicated_agent": {
+            "title": "Agent Dédié",
+            "price_per_hour": 7.00,
+            "unit": "heure",
+            "features": [
+                "Jusqu'à 70% d'économies sur les opérations de centre d'appels",
+                "Idéal pour un très grand volume d'appels",
+                "Agents formés selon vos procédures opérationnelles",
+                "L'agent vous est directement rattaché"
+            ],
+            "ctaPrimary": "Voir le forfait complet",
+            "ctaSecondary": "En savoir plus"
+        }
+    },
+    "cta": "Planifier un appel",
+    "ctaSecondary": "Réserver une démo"
 }

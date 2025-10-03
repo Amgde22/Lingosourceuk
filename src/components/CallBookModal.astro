@@ -1,30 +1,121 @@
 ---
 import "@styles/modal-style.less"
 import {t} from "i18n:astro"
-
 ---
+
+<style>
+  /* --- Make body a positioning context for the skeleton --- */
+  .calendly-body {
+    position: relative;
+  }
+
+  /* --- Skeleton Loader Styles --- */
+  .calendly-skeleton {
+    /* Position absolutely within the .calendly-body */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+  }
+
+  /* When hidden, fade it out */
+  .calendly-skeleton.hidden {
+    opacity: 0;
+    pointer-events: none; /* Make it unclickable when hidden */
+  }
+
+  /* Animation for the pulsing effect */
+  @keyframes pulse {
+    0% { background-color: #f0f0f0; }
+    50% { background-color: #e0e0e0; }
+    100% { background-color: #f0f0f0; }
+  }
+
+  /* Base styles for all skeleton elements */
+  .calendly-skeleton [class^="sk-"] {
+    animation: pulse 1.5s infinite ease-in-out;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+
+  .sk-header {
+    height: 30px;
+    width: 50%;
+    margin-bottom: 24px;
+  }
+  .sk-line {
+    height: 16px;
+    width: 80%;
+    margin-bottom: 12px;
+  }
+  .sk-line.short {
+    width: 60%;
+    margin-bottom: 24px;
+  }
+  .sk-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .sk-box {
+    height: 90px;
+  }
+
+  /* --- Calendly Embed Styling --- */
+  /* Keep the iframe transparent until it's fully loaded to prevent flickering */
+  #calendlyEmbed iframe {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+  }
+
+  /* When the 'loaded' class is added, fade the iframe in */
+  #calendlyEmbed.loaded iframe {
+    opacity: 1;
+  }
+</style>
 
 <div id="calendlyDialog" class="calendly-dialog" style="display: none;">
   <div class="calendly-backdrop"></div>
   
   <div class="calendly-modal">
+    <!-- Header stays visible at all times -->
     <div class="calendly-header">
       <h2>{t("CAS:hero.modalPrimary.title")}</h2>
       <button class="calendly-close" aria-label="Close dialog">×</button>
     </div>
     
+    <!-- Body contains both the skeleton and the Calendly embed -->
     <div class="calendly-body">
+      <!-- Skeleton Loader: This will be shown while Calendly is loading -->
+      <div class="calendly-skeleton">
+        <div class="sk-header"></div>
+        <div class="sk-line"></div>
+        <div class="sk-line short"></div>
+        <div class="sk-grid">
+          <div class="sk-box"></div>
+          <div class="sk-box"></div>
+          <div class="sk-box"></div>
+          <div class="sk-box"></div>
+        </div>
+      </div>
+      
+      <!-- Calendly Embed Target -->
       <div id="calendlyEmbed" style="min-width:320px;height:640px;"></div>
     </div>
   </div>
 </div>
 
-
-
 <script>
   import { lock, unlock } from 'tua-body-scroll-lock'
 
-  const calendlyLink = ""
   let calendlyLoaded = false;
 
   function loadCalendlyScript() {
@@ -32,11 +123,12 @@ import {t} from "i18n:astro"
       if (calendlyLoaded && typeof window.Calendly !== 'undefined') {
         resolve();
         return;
-    }
+      }
       
       const script = document.createElement('script');
       script.src = 'https://assets.calendly.com/assets/external/widget.js';
       script.type = 'text/javascript';
+      script.async = true;
       script.onload = () => {
         calendlyLoaded = true;
         resolve();
@@ -48,35 +140,46 @@ import {t} from "i18n:astro"
   async function openCalendlyDialog(options = {}) {
     const dialog = document.getElementById('calendlyDialog');
     const embed = document.getElementById('calendlyEmbed');
+    const skeleton = dialog?.querySelector('.calendly-skeleton');
     
-    if (!dialog || !embed) return;
+    if (!dialog || !embed || !skeleton) return;
+    
+    // Show skeleton and reset state
+    skeleton.classList.remove('hidden');
+    embed.classList.remove('loaded'); 
+    dialog.style.display = 'block';
+    document.body.classList.add('calendly-open');
+    lock(dialog);
 
-    // Load Calendly script if not already loaded
+    // Load Calendly script
     await loadCalendlyScript();
 
-    // lock body
-    lock(dialog)
-
-    // Clear previous instance
+    // Clear previous widget instance
     embed.innerHTML = '';
 
-    // Initialize widget
+    // Listen for Calendly event to know when to hide skeleton
+    function handleCalendlyEvent(e) {
+      if (e.data.event && e.data.event === 'calendly.event_type_viewed') {
+        skeleton.classList.add('hidden'); // Fade out skeleton
+        embed.classList.add('loaded');   // Fade in Calendly iframe
+        window.removeEventListener('message', handleCalendlyEvent); // Clean up listener
+      }
+    }
+    window.addEventListener('message', handleCalendlyEvent);
+
+    // Initialize the widget
     window.Calendly.initInlineWidget({
       url: options.url || 'https://calendly.com/magidembarek/request-a-call-back',
       parentElement: embed,
       prefill: options.prefill || {}
     });
-
-    // Show dialog
-    dialog.style.display = 'block';
-    document.body.classList.add('calendly-open');
   }
 
   function closeCalendlyDialog() {
     const dialog = document.getElementById('calendlyDialog');
     if (!dialog) return;
-    unlock(dialog)
 
+    unlock(dialog);
     dialog.style.display = 'none';
     document.body.classList.remove('calendly-open');
   }
@@ -85,26 +188,21 @@ import {t} from "i18n:astro"
   window.openCalendlyDialog = openCalendlyDialog;
   window.closeCalendlyDialog = closeCalendlyDialog;
 
-  // Setup event listeners
+  // Setup general event listeners
   document.addEventListener('DOMContentLoaded', () => {
     const dialog = document.getElementById('calendlyDialog');
-    const backdrop = dialog?.querySelector('.calendly-backdrop');
-    const closeBtn = dialog?.querySelector('.calendly-close');
+    if (!dialog) return;
 
-    // Close on backdrop click
+    const backdrop = dialog.querySelector('.calendly-backdrop');
+    const closeBtn = dialog.querySelector('.calendly-close');
+
     backdrop?.addEventListener('click', closeCalendlyDialog);
-
-    // Close on button click
     closeBtn?.addEventListener('click', closeCalendlyDialog);
 
-    // Close on Escape key
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && dialog?.style.display !== 'none') {
+      if (e.key === 'Escape' && dialog.style.display !== 'none') {
         closeCalendlyDialog();
       }
     });
   });
-
-
 </script>
-
