@@ -460,8 +460,13 @@ import Settings from "./TemplateComponents/Settings.astro";
           align-items: center;
           margin-left: auto;
           gap: 0.5em;
+
+           
         }
       }
+      .cs-drop-link{
+            text-decoration:underline;
+           }
 
       .cs-button-solid {
         display: none;
@@ -577,7 +582,8 @@ import Settings from "./TemplateComponents/Settings.astro";
         &.cs-drop-link {
           /* 14px - 16px */
           font-size: clamp(0.875rem, 2vw, 1.25rem);
-          color: inherit;
+          /* UPDATED: Changed from 'inherit' to 'white' */
+          color: white;
         }
       }
 

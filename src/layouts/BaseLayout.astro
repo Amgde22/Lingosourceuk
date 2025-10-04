@@ -7,7 +7,7 @@ import I18nHead from "@astrolicious/i18n/components/I18nHead.astro";
 import { getHtmlAttrs, getLocales, t } from "i18n:astro";
 import client from "@data/client.json";
 import { trimArrSlashes, trimStringSlashes } from "@utils/utils";
-import ThemeProvider from "@components/TemplateComponents/ThemeProvider.astro";
+// import ThemeProvider from "@components/TemplateComponents/ThemeProvider.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import CallBookModal from "@components/CallBookModal.astro"
@@ -60,8 +60,8 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={`https://${client.domain}${Astro.url.pathname}`} />
-		<meta property="og:image" content="/assets/images/logo-small.png" />
-		<meta property="og:image:secure_url" content="/assets/images/logo-small.png" />
+		<meta property="og:image" content="https://i.postimg.cc/jjdNKzJ9/logo.png" />
+		<meta property="og:image:secure_url" content="https://i.postimg.cc/jjdNKzJ9/logo.png" />
 
 		<!--Favicons-->
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
@@ -94,7 +94,7 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 		</title>
 
 		<!-- Dark / Light mode component -->
-		<ThemeProvider />
+		<!-- <ThemeProvider /> -->
 
 		<!-- Navigation script -->
 		<script src="@assets/js/nav.js"></script>
@@ -114,9 +114,9 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 </html>
 
 {/* Inlined to avoid FOUC. Uses global scope from `ThemeProvider.astro` */}
-<script is:inline>
+<!-- <script is:inline>
 	StarlightThemeProvider.getPreferredColorScheme();
 	StarlightThemeProvider.updatePickers();
 
 
-</script>
+</script> -->

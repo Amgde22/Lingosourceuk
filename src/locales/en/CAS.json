@@ -1,5 +1,9 @@
 {
     "hero":{
+      "layout":{
+        "title":"Phone answering service",
+        "description":"Lingosource , The best quality customer support agents at the best price"
+      },
         "title" :"Turn Missed Calls into Sales For Just <span class=\"underline\">$1/Min</span> ",
         "subtitle" : "Every missed call is money left on the table,  We answer live,For just $1/min, you get a full-time reception team services that captures leads and drives sales nonstop.",
         "primaryCta" : "Request a Callback",
@@ -110,6 +114,10 @@
       },
 
         "pricing": {
+          "layout":{
+            "title":"Phone Answering Service Prices",
+            "description":"Discover the plans for our phone answering service"
+          },
           "title":"Our Phone Answering Service Prices",
           "flexible_answering": {
             "title": "Flexible Answering",

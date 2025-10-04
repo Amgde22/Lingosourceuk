@@ -90,7 +90,14 @@ const currentYear = getCurrentYear();
           height: (32/16em);
           margin: auto;
           margin-bottom: (30/16em);
-          display: inline-block;
+          display: flex;
+          justify-content:center;
+
+          min-height :50px ;
+          @media(min-width:1000px){
+          min-height :70px ;
+          }
+
 
           img {
             width: auto;

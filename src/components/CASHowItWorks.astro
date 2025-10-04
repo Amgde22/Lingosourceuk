@@ -12,8 +12,8 @@ const steps = t("CAS:howItWorks.steps", { returnObjects: true });
   <div class="steps-nav-container">
     {steps.map((step, index) => (
       <>
-        <div class={`step-nav-item step-nav-item-${index}`}>
-          <button class="step-nav-btn" data-step={index}>
+        <div class={`step-nav-item step-nav-item-${index}`} data-step={index}>
+          <button class="step-nav-btn" aria-hidden="true" tabindex="-1">
             {index + 1}
           </button>
           <p class="step-title">{step.title}</p>
@@ -66,7 +66,9 @@ const steps = t("CAS:howItWorks.steps", { returnObjects: true });
 <script>
   const container = document.querySelector("#Call-answering-how-it-works");
   const steps = container.querySelectorAll(".step-showcase-item");
-  const navBtns = container.querySelectorAll(".step-nav-btn");
+  // UPDATED: Select the entire nav item, not just the button
+  const navItems = container.querySelectorAll(".step-nav-item");
+  const navBtns = container.querySelectorAll(".step-nav-btn"); // Still needed for styling
   const prevBtn = container.querySelector(".prev-step-btn");
   const nextBtn = container.querySelector(".next-step-btn");
   let current = 0;
@@ -93,8 +95,13 @@ const steps = t("CAS:howItWorks.steps", { returnObjects: true });
     current = index;
   }
 
-  navBtns.forEach((btn, i) => {
-    btn.addEventListener("click", () => showStep(i));
+  // UPDATED: Add click listener to the entire item
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Read the step index from the data attribute
+      const stepIndex = parseInt(item.dataset.step, 10);
+      showStep(stepIndex);
+    });
   });
 
   nextBtn.addEventListener("click", () => {
@@ -205,11 +212,20 @@ const steps = t("CAS:howItWorks.steps", { returnObjects: true });
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-2xl);
     position: relative;
+    
+    // ADDED: Max-width for large monitors
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--spacing-md); // Add some padding for when it hits max-width
+
 
     .step-nav-item {
       text-align: center;
       position: relative;
       z-index: 2;
+      // ADDED: Indicate the whole area is clickable
+      cursor: pointer;
 
       .step-nav-btn {
         width: 60px;
@@ -222,6 +238,8 @@ const steps = t("CAS:howItWorks.steps", { returnObjects: true });
         font-size: 1.1rem;
         transition: all 0.3s;
         flex-shrink: 0; // Prevent button from shrinking in flexbox
+        // Make button non-interactive to ensure parent click event fires cleanly
+        pointer-events: none; 
 
         &.active {
           background: var(--primary);

@@ -1,5 +1,9 @@
 {
     "hero": {
+        "layout": {
+            "title": "Service de permanence téléphonique",
+            "description": "Lingosource : des agents de support client de qualité au meilleur prix"
+          },          
         "title": "Transformez les appels manqués en ventes pour seulement <span class=\"underline\">1$/min</span>",
         "subtitle": "Chaque appel manqué est une opportunité de vente perdue. Nous répondons en direct. Pour seulement 1$/min, bénéficiez des services d'une équipe de réception à temps plein qui capture des prospects et stimule vos ventes sans interruption.",
         "primaryCta": "Demander à être rappelé",
@@ -108,6 +112,10 @@
         }
     },
     "pricing": {
+        "layout": {
+            "title": "Tarifs de notre service de permanence téléphonique",
+            "description": "Découvrez nos formules pour un accueil téléphonique professionnel"
+          },
         "title": "Nos tarifs de permanence téléphonique",
         "flexible_answering": {
             "title": "Réponse Flexible",

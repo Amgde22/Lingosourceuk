@@ -270,7 +270,8 @@ import { getLocalePath,t } from "i18n:astro";
     min-height: 100vh;
     overflow: hidden;
     background-color: @primary-900;
-    padding: 3rem 0;
+    padding: calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
+
   }
 
   .container {
@@ -307,7 +308,6 @@ import { getLocalePath,t } from "i18n:astro";
 
   /* Intro */
   .intro-text {
-    padding: calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
     margin-bottom: 3.25rem;
   }
 
@@ -332,23 +332,31 @@ import { getLocalePath,t } from "i18n:astro";
 
   .intro-paragraphs {
     max-width: 56rem;
+    margin-top: var(--spacing-lg);
 
     p {
       font-size: 1rem;
       line-height: 1.6;
       color: @gray-400;
+      margin-bottom: var(--spacing-md);
+      @media (min-width: 768px) {
+        font-size: 1.0625rem;
+      }
+    }
 
+    p.list-item{
+      display:grid;
+      grid-template-columns:auto 1fr;
+      // align-items:center;
+      
       .list-item-icon {
         display: inline-block;
         margin-inline: 8px;
+        transform:translateY(6px);
       }
 
       &:not(:has(.list-item-icon)) {
         margin-top: var(--spacing-lg);
-      }
-
-      @media (min-width: 768px) {
-        font-size: 1.0625rem;
       }
     }
   }
