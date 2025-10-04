@@ -115,8 +115,11 @@ import {t} from "i18n:astro"
 
 <script>
   import { lock, unlock } from 'tua-body-scroll-lock'
+  import data from "@data/client.json"
 
-  const calendlyEventUrl = "https://calendly.com/magidembarek/zoom-demo"
+
+
+  const calendlyEventUrl = data.callBackCalendlyUrl
   let calendlyLoaded = false;
 
   function loadCalendlyScript() {

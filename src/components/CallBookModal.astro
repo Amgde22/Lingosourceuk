@@ -1,6 +1,7 @@
 ---
 import "@styles/modal-style.less"
 import {t} from "i18n:astro"
+
 ---
 
 <style>
@@ -115,7 +116,9 @@ import {t} from "i18n:astro"
 
 <script>
   import { lock, unlock } from 'tua-body-scroll-lock'
+  import data from "@data/client.json"
 
+  const url = data.callBackCalendlyUrl
   let calendlyLoaded = false;
 
   function loadCalendlyScript() {
@@ -169,7 +172,7 @@ import {t} from "i18n:astro"
 
     // Initialize the widget
     window.Calendly.initInlineWidget({
-      url: options.url || 'https://calendly.com/magidembarek/request-a-call-back',
+      url: url ,
       parentElement: embed,
       prefill: options.prefill || {}
     });

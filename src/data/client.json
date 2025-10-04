@@ -1,6 +1,8 @@
 {
 	"name": "LingoSource Uk",
 	"email": "contact@lingosource.uk",
+	"callBackCalendlyUrl":"https://calendly.com/zino-lingosource/request-a-callback",
+	"demoCalendlyUrl":"https://calendly.com/zino-lingosource/30min",
 	"phoneForTel": "+44777942185",
 	"phoneFormatted": "+44 777942185",
 	"address": {
