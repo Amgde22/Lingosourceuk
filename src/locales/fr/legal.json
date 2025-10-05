@@ -164,467 +164,585 @@
         }
       }
     },
+
       "termsOfService": {
-        "title": "CONDITIONS D'UTILISATION LINGOSOURCE",
-        "effectiveDate": "Date d'entrée en vigueur : 5 octobre 2025",
-        "lastUpdated": "Dernière mise à jour : 5 octobre 2025",
+        "title": "CONDITIONS D'UTILISATION - HORIZON ANSWERING",
+        "effectiveDate": "Date d'entrée en vigueur :",
+        "lastUpdated": "Dernière mise à jour :",
         "introduction": {
-          "p1": "Les présentes Conditions d'utilisation (« Conditions ») régissent votre utilisation des services de centre d'appels externalisé et de support client fournis par Lingosource Ltd, une société constituée en vertu du Companies Act 2006 du Royaume-Uni, portant le numéro d'entreprise 16688081 et ayant son siège social au 71–75 Shelton Street, Covent Garden, Londres, Angleterre (« Société », « nous », « notre » ou « nos »), opérant sous le nom commercial « Lingosource ».",
-          "p2": "En vous inscrivant, en accédant ou en utilisant l'un de nos Services (« Services »), vous (« Client », « vous » ou « votre ») acceptez d'être lié par les présentes Conditions. Si vous n'acceptez pas ces Conditions, vous не devez pas accéder ni utiliser nos Services.",
-          "p3": "Ces Conditions incorporent par référence la Politique de confidentialité de la Société, qui régit la collecte, l'utilisation et la protection des données personnelles. En cas d'incohérence entre ces Conditions et la Politique de confidentialité, la Politique de confidentialité prévaudra."
+          "title": "Introduction",
+          "content": [
+            "Ces Conditions d'Utilisation (\"Conditions\") régissent votre utilisation des services de réponse téléphonique fournis par Lingosource Ltd, une société constituée en vertu du Companies Act 2006 du Royaume-Uni, portant le numéro d'entreprise 16688081 et ayant son siège social au 71-75 Shelton Street, Covent Garden, Londres, Angleterre (\"Société\", \"nous\", \"notre\" ou \"nos\"), opérant sous le nom commercial \"Lingosource\" (\"Service\").",
+            "Lingosource fournit des services professionnels de réponse téléphonique et de redirection d'appels où des agents formés répondent aux appels entrants au nom des entreprises lorsqu'elles ne sont pas disponibles ou trop occupées. Nos agents prennent des messages, fournissent des informations de base et gèrent les communications avec les clients de manière professionnelle.",
+            "En vous inscrivant, en accédant ou en utilisant notre Service, vous (\"Client\", \"vous\" ou \"votre\") acceptez d'être lié par ces Conditions. Si vous n'acceptez pas ces Conditions, il vous est conseillé de ne pas utiliser notre Service."
+          ]
         },
-        "companyIdentity": {
-          "title": "1. Identité et champ d'application de la société",
-          "tradingNames": {
-            "title": "1.1. Noms commerciaux :",
-            "p1": "La Société opère sous le nom commercial suivant :",
-            "p2": "Lingosource propose des solutions de centre d'appels externalisées, notamment la gestion des appels entrants/sortants, le support client, l'assistance commerciale, la gestion des tâches administratives et le service de réponse téléphonique."
-          },
-          "scopeOfServices": {
-            "title": "2. Étendue des services :",
-            "p1": "Les Services sont conçus pour aider les entreprises à gérer les communications avec les clients et les opérations administratives. Les services peuvent inclure, sans s'y limiter :",
-            "list": [
-              "Gestion des appels entrants, prise de messages et transferts d'appels ;",
-              "Campagnes d'appels sortants, y compris les suivis clients et le télémarketing (sous réserve d'un accord écrit préalable) ;",
-              "Support administratif et assistance aux tâches de back-office ;",
-              "Support commercial, génération de leads et traitement des commandes ;",
-              "Rapports et analyses liés aux volumes d'appels, aux performances des agents et aux interactions avec les clients."
+        "sections": [
+          {
+            "id": "1",
+            "title": "Description du Service",
+            "subsections": [
+              {
+                "id": "1.1",
+                "title": "Services de réponse téléphonique",
+                "description": "Lingosource est un service professionnel de réponse téléphonique qui facture les entreprises à la minute pour gérer leurs appels entrants lorsqu'elles ne sont pas disponibles ou trop occupées. Notre service complet inclut :",
+                "list": [
+                  { "title": "Réponse téléphonique professionnelle :", "text": "Des agents formés répondent aux appels de votre entreprise en utilisant le nom de votre société et un message d'accueil personnalisé" },
+                  { "title": "Redirection et routage d'appels :", "text": "Transfert d'appel intelligent basé sur vos instructions spécifiques et les besoins de votre entreprise" },
+                  { "title": "Services de prise de messages :", "text": "Capture détaillée des messages avec des informations précises sur l'appelant, les détails de la demande et les niveaux d'urgence" },
+                  { "title": "Filtrage et sélection d'appels :", "text": "Filtrage professionnel pour identifier les appels importants, filtrer le spam et traiter les demandes de routine" },
+                  { "title": "Prise de rendez-vous :", "text": "Prise de rendez-vous de base et gestion de calendrier sur instruction" },
+                  { "title": "Prise de commandes :", "text": "Traitement simple des commandes et collecte d'informations pour votre entreprise" },
+                  { "title": "Représentation du service client :", "text": "Support client de première ligne représentant votre entreprise de manière professionnelle" },
+                  { "title": "Gestion des appels d'urgence :", "text": "Routage prioritaire pour les appels urgents selon vos procédures d'escalade" },
+                  { "title": "Support multilingue :", "text": "Si disponible, support en plusieurs langues pour des bases de clients diverses" },
+                  { "title": "Couverture en dehors des heures de bureau :", "text": "Représentation professionnelle en dehors de vos heures normales de bureau" }
+                ]
+              },
+              {
+                "id": "1.2",
+                "title": "Fonctionnalités et capacités du service",
+                "categories": [
+                  {
+                    "title": "Gestion professionnelle des appels",
+                    "list": [
+                      { "title": "Scripts personnalisés :", "text": "Scripts de gestion d'appels sur mesure développés spécifiquement pour votre entreprise" },
+                      { "title": "Représentation de la marque :", "text": "Agents formés pour représenter les valeurs, le ton et les normes de service de votre entreprise" },
+                      { "title": "Qualification des appels :", "text": "Catégorisation et traitement appropriés des différents types d'appels (ventes, support, réclamations, etc.)" },
+                      { "title": "Capacités de transfert assisté :", "text": "Transfert en direct des appels importants aux membres désignés de l'équipe" },
+                      { "title": "Gestion de la mise en attente et des rappels :", "text": "Gestion professionnelle des périodes de pointe avec planification des rappels" }
+                    ]
+                  },
+                  {
+                    "title": "Gestion des messages et des informations",
+                    "list": [
+                      { "title": "Prise de message détaillée :", "text": "Capture complète des informations de l'appelant, y compris le nom, les coordonnées, le but de l'appel et toute exigence spécifique" },
+                      { "title": "Livraison des messages en temps réel :", "text": "Notification immédiate des messages urgents via votre canal de communication préféré" },
+                      { "title": "Priorisation des messages :", "text": "Classification des messages par niveau d'urgence et importance commerciale" },
+                      { "title": "Suivi :", "text": "Suivi de base de la livraison des messages et des exigences de réponse du client" },
+                      { "title": "Traitement sécurisé des informations :", "text": "Traitement confidentiel de toutes les informations commerciales et client" }
+                    ]
+                  },
+                  {
+                    "title": "Communication et rapports",
+                    "list": [
+                      { "title": "Livraison de messages multicanal :", "text": "Messages envoyés par e-mail, SMS, portail client sécurisé ou téléphone selon vos préférences" },
+                      { "title": "Rapports de synthèse d'appels :", "text": "Rapports réguliers sur les volumes d'appels, les types et les statistiques de traitement" },
+                      { "title": "Analyses de performance :", "text": "Analyses de base sur les modèles d'appels, les heures de pointe et l'efficacité du service" },
+                      { "title": "Rapports personnalisés :", "text": "Rapports sur mesure basés sur vos besoins commerciaux spécifiques et vos indicateurs de performance clés (KPI)" }
+                    ]
+                  },
+                  {
+                    "title": "Intégration technologique",
+                    "list": [
+                      { "title": "Intégration CRM :", "text": "Si possible, intégration avec vos systèmes de gestion de la relation client (CRM) existants" },
+                      { "title": "Enregistrement des appels :", "text": "Enregistrement d'appels de qualité professionnelle à des fins d'assurance qualité et de formation" },
+                      { "title": "Plateforme basée sur le cloud :", "text": "Infrastructure cloud sécurisée et fiable assurant la continuité du service" },
+                      { "title": "Compatibilité mobile :", "text": "Gestion du service accessible via les appareils mobiles et les tablettes" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1.3",
+                "title": "Modèle de prestation de services",
+                "description": "Notre service fonctionne sur une base de facturation à la minute, ce qui signifie que vous ne payez que pour le temps de conversation réel que nos agents passent à traiter vos appels. Ce modèle offre :",
+                "list": [
+                  { "title": "Efficacité des coûts :", "text": "Pas de frais mensuels fixes, ne payez que pour les services utilisés" },
+                  { "title": "Évolutivité :", "text": "Le service s'adapte automatiquement à la croissance de votre entreprise ou aux fluctuations saisonnières" },
+                  { "title": "Flexibilité :", "text": "Aucun engagement à long terme, ajustez l'utilisation en fonction de vos besoins" },
+                  { "title": "Transparence :", "text": "Facturation claire et détaillée montrant exactement les services fournis" }
+                ]
+              },
+              {
+                "id": "1.4",
+                "title": "Disponibilité et couverture du service",
+                "list": [
+                  { "title": "Heures d'ouverture :", "text": "Service disponible 24/7/365 ou personnalisé selon vos heures d'ouverture spécifiques" },
+                  { "title": "Couverture géographique :", "text": "Service à l'échelle du Royaume-Uni avec des capacités de traitement des appels internationaux" },
+                  { "title": "Systèmes de secours :", "text": "Systèmes redondants assurant des interruptions de service minimales" },
+                  { "title": "Reprise après sinistre :", "text": "Planification complète de la continuité des activités pour un service ininterrompu" }
+                ]
+              },
+              {
+                "id": "1.5",
+                "title": "Limitations et exclusions du service",
+                "description": "Bien que nous nous efforcions de fournir des services complets de gestion des appels, certaines limitations s'appliquent :",
+                "categories": [
+                  {
+                    "title": "Limitations concernant les conseils professionnels",
+                    "list": [
+                      "Nous fournissons uniquement des services de réponse téléphonique et de prise de messages",
+                      "Les agents ne peuvent pas fournir de conseils juridiques, médicaux, financiers ou professionnels spécialisés",
+                      "Un support technique complexe nécessitant des connaissances spécialisées peut nécessiter des arrangements supplémentaires",
+                      "Les agents ne peuvent pas prendre de décisions commerciales contraignantes ni d'engagements en votre nom"
+                    ]
+                  },
+                  {
+                    "title": "Limitations du champ d'application du service",
+                    "list": [
+                      "Services limités aux communications téléphoniques (sauf arrangement spécifique)",
+                      "Ne peut pas fournir de services sur site ou de présence physique",
+                      "Limité aux informations fournies dans vos instructions de service et vos supports de formation",
+                      "Ne peut pas accéder à vos systèmes internes sans accords d'intégration spécifiques"
+                    ]
+                  },
+                  {
+                    "title": "Limitations réglementaires et de conformité",
+                    "list": [
+                      "Ne peut pas traiter les appels nécessitant une licence professionnelle spécifique (conseils médicaux, juridiques, financiers)",
+                      "La conformité avec les réglementations spécifiques à l'industrie est de votre responsabilité",
+                      "Ne peut garantir la conformité avec les normes industrielles spécialisées sans arrangements spécifiques"
+                    ]
+                  }
+                ]
+              }
             ]
           },
-          "serviceLimitations": {
-            "title": "2.1. Limitations de service :",
-            "p1": "La Société se réserve le droit de limiter ou de refuser les Services dans les circonstances suivantes :",
-            "list": [
-              "Clients opérant dans des secteurs réglementés, y compris, mais sans s'y limiter, le divertissement pour adultes, les jeux de hasard, le tabac, l'alcool, le cannabis, les armes à feu ou les services financiers non réglementés ;",
-              "Activités susceptibles d'enfreindre les lois, réglementations ou exigences en matière de protection des données applicables ;",
-              "Demandes qui dépassent les capacités ou le champ d'application raisonnables des Services de la Société."
+          {
+            "id": "2",
+            "title": "Inscription et configuration du compte",
+            "subsections": [
+              {
+                "id": "2.1",
+                "title": "Inscription du compte",
+                "description": "Pour utiliser notre Service, vous devez :",
+                "list": [
+                  "Remplir notre formulaire d'inscription en ligne",
+                  "Fournir des informations commerciales et de contact exactes",
+                  "Participer à une démonstration du service ou à un appel de configuration comme convenu",
+                  "Avoir au moins 18 ans ou avoir le consentement d'un parent/tuteur",
+                  "Représenter une activité commerciale légitime"
+                ]
+              },
+              {
+                "id": "2.2",
+                "title": "Informations du compte",
+                "description": "Vous acceptez de :",
+                "list": [
+                  "Fournir des informations d'inscription complètes et exactes",
+                  "Maintenir l'exactitude des informations de votre compte",
+                  "Nous informer rapidement de tout changement dans les détails de votre entreprise ou vos coordonnées",
+                  "Garder vos identifiants de compte sécurisés et confidentiels"
+                ]
+              },
+              {
+                "id": "2.3",
+                "title": "Vérification du compte",
+                "description": "Nous nous réservons le droit de :",
+                "list": [
+                  "Vérifier les informations de votre entreprise et votre identité",
+                  "Demander des documents supplémentaires pour confirmer la légitimité de votre entreprise",
+                  "Refuser le service aux entreprises qui ne répondent pas à nos exigences"
+                ]
+              }
             ]
           },
-          "jurisdictionalApplication": {
-            "title": "2.2. Application juridictionnelle :",
-            "p1": "Ces Conditions s'appliquent à tous les Clients du monde entier, sous réserve du respect des lois et réglementations locales. La Société se réserve le droit de refuser le service lorsque des risques juridiques, réglementaires ou de réputation sont identifiés."
+          {
+            "id": "3",
+            "title": "Tarification et modalités de paiement",
+            "subsections": [
+              {
+                "id": "3.1",
+                "title": "Tarification du service",
+                "list": [
+                  { "title": "Tarif de gestion d'appel :", "text": "1 $ USD par minute" },
+                  { "title": "Modèle de facturation :", "text": "Facturation mensuelle post-payée basée sur l'utilisation réelle" },
+                  { "title": "Devise :", "text": "Factures émises en USD et en GBP" }
+                ]
+              },
+              {
+                "id": "3.2",
+                "title": "Méthodes de paiement",
+                "description": "Nous acceptons les paiements via :",
+                "list": [
+                  "Cartes de crédit/débit via Stripe (méthode principale)",
+                  "PayPal",
+                  "Virements bancaires (sur arrangement)"
+                ]
+              },
+              {
+                "id": "3.3",
+                "title": "Cycle de facturation",
+                "list": [
+                  { "title": "Facturation post-payée :", "text": "Vous êtes facturé mensuellement pour les services utilisés le mois précédent" },
+                  { "title": "Prélèvement automatique :", "text": "Votre méthode de paiement enregistrée est automatiquement débitée à la date de facturation mensuelle" },
+                  { "title": "Envoi des factures :", "text": "Factures mensuelles envoyées par e-mail à votre adresse e-mail enregistrée" }
+                ]
+              },
+              {
+                "id": "3.4",
+                "title": "Traitement des paiements",
+                "list": [
+                  "Le traitement des paiements est géré de manière sécurisée par des processeurs tiers certifiés",
+                  "Nous ne stockons pas les numéros complets de carte de crédit sur nos serveurs",
+                  "Toutes les transactions sont cryptées et conformes à la norme PCI-DSS"
+                ]
+              },
+              {
+                "id": "3.5",
+                "title": "Paiement en retard et suspension du service",
+                "list": [
+                  { "title": "Défaut de paiement :", "text": "Un non-paiement pendant 10 jours après la date d'échéance peut entraîner la suspension du service" },
+                  { "title": "Pas d'intérêts/pénalités :", "text": "Nous ne facturons pas d'intérêts ou de pénalités de retard" },
+                  { "title": "Tentatives de résolution :", "text": "Nous tenterons de vous contacter pour résoudre les problèmes de paiement avant la suspension" },
+                  { "title": "Rétablissement du service :", "text": "Le service est repris immédiatement après un paiement réussi" }
+                ]
+              },
+              {
+                "id": "3.6",
+                "title": "Politique de non-remboursement",
+                "list": [
+                  { "title": "Nature post-payée :", "text": "Comme les services sont facturés après utilisation, aucun remboursement ou crédit n'est fourni" },
+                  { "title": "Interruptions de service :", "text": "Aucun remboursement pour les interruptions de service hors de notre contrôle" },
+                  { "title": "Résolution des litiges :", "text": "Les litiges de paiement sont traités par un processus formel de résolution des litiges" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "4",
+            "title": "Utilisation du service et restrictions",
+            "subsections": [
+              {
+                "id": "4.1",
+                "title": "Utilisation acceptable",
+                "description": "Notre Service peut être utilisé pour :",
+                "list": [
+                  "Communications commerciales légitimes et service client",
+                  "Gestion professionnelle des appels et prise de messages",
+                  "Gestion et routage des appels entrants",
+                  "Traitement des demandes des clients et prise de rendez-vous"
+                ]
+              },
+              {
+                "id": "4.2",
+                "title": "Industries et activités interdites",
+                "description": "Nous ne fournissons pas de services aux entreprises principalement engagées dans :",
+                "list": [
+                  "Divertissement pour adultes ou services de contenu pour adultes",
+                  "Opérations de jeu ou de paris",
+                  "Services d'escorte",
+                  "Produits du tabac ou services connexes",
+                  "Vente ou distribution d'alcool",
+                  "Entreprises liées au cannabis ou à la marijuana",
+                  "Vente d'armes, d'armes à feu ou de munitions",
+                  "Services financiers non réglementés ou plateformes de trading de cryptomonnaies"
+                ]
+              },
+              {
+                "id": "4.3",
+                "title": "Utilisations interdites",
+                "description": "Vous ne pouvez pas utiliser notre Service pour :",
+                "list": [
+                  "Activités frauduleuses, abusives ou illégales",
+                  "Harcèlement, spam ou appels marketing non sollicités",
+                  "Toute activité qui viole les réglementations britanniques sur les télécommunications",
+                  "Usurpation d'identité ou fausse déclaration d'identité ou d'objectif commercial",
+                  "Activités qui pourraient nuire à notre réputation ou violer nos politiques"
+                ]
+              },
+              {
+                "id": "4.4",
+                "title": "Appels sortants",
+                "list": [
+                  { "title": "Arrangement requis :", "text": "Les services d'appels sortants ne sont disponibles que sur arrangement spécial" },
+                  { "title": "Conformité :", "text": "Toutes les activités sortantes doivent être conformes aux réglementations britanniques sur les télécommunications" },
+                  { "title": "Conditions supplémentaires :", "text": "Des conditions et une tarification distinctes peuvent s'appliquer aux services sortants" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5",
+            "title": "Protection des données et confidentialité",
+            "subsections": [
+              {
+                "id": "5.1",
+                "title": "Politique de confidentialité",
+                "content": "Votre vie privée est importante pour nous. Notre collecte, utilisation et protection de vos informations personnelles sont régies par notre Politique de confidentialité, qui est incorporée à ces Conditions par référence."
+              },
+              {
+                "id": "5.2",
+                "title": "Enregistrements d'appels",
+                "list": [
+                  { "title": "Assurance qualité :", "text": "Les appels peuvent être enregistrés à des fins d'assurance qualité et de formation" },
+                  { "title": "Période de conservation :", "text": "Les enregistrements d'appels sont conservés pendant un (1) an à compter de la date de l'appel" },
+                  { "title": "Sécurité des données :", "text": "Tous les enregistrements sont stockés de manière sécurisée et traités conformément aux lois britanniques sur la protection des données" }
+                ]
+              },
+              {
+                "id": "5.3",
+                "title": "Informations sur l'appelant",
+                "list": [
+                  "Nous pouvons collecter des informations sur l'appelant (nom, numéro de téléphone, contenu du message) en votre nom",
+                  "Ces informations sont traitées en tant que votre Sous-traitant de données en vertu du RGPD britannique",
+                  "Vous restez responsable en tant que Responsable du traitement de garantir la base légale de la collecte de données"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6",
+            "title": "Propriété intellectuelle",
+            "subsections": [
+              {
+                "id": "6.1",
+                "title": "Propriété des documents",
+                "list": [
+                  { "title": "Nos documents :", "text": "Nous possédons tous les scripts d'appel, les supports de formation et les procédures opérationnelles" },
+                  { "title": "Enregistrements d'appels :", "text": "Nous possédons les enregistrements d'appels et pouvons les utiliser pour l'assurance qualité et la formation" },
+                  { "title": "Documents du client :", "text": "Vous conservez la propriété de vos informations commerciales et de votre image de marque que vous nous fournissez" }
+                ]
+              },
+              {
+                "id": "6.2",
+                "title": "Licence d'utilisation",
+                "list": [
+                  { "title": "Octroi du client :", "text": "Vous nous accordez une licence limitée pour utiliser le nom de votre entreprise, vos informations de base et vos instructions pour fournir nos services" },
+                  { "title": "Données anonymisées :", "text": "Nous pouvons utiliser des données d'appel anonymisées à des fins de formation et d'amélioration du service" }
+                ]
+              },
+              {
+                "id": "6.3",
+                "title": "Aucune restriction de copie",
+                "content": "Nous ne restreignons pas les clients de copier le contenu du site Web ou notre image de marque à des fins commerciales légitimes."
+              }
+            ]
+          },
+          {
+            "id": "7",
+            "title": "Niveau de service et support",
+            "subsections": [
+              {
+                "id": "7.1",
+                "title": "Disponibilité du service",
+                "list": [
+                  "Nous nous efforçons de fournir un service fiable mais ne pouvons garantir une disponibilité de 100%",
+                  "La disponibilité du service est soumise à la maintenance, aux problèmes techniques et aux dépendances de tiers",
+                  "La maintenance planifiée sera communiquée à l'avance lorsque cela est possible"
+                ]
+              },
+              {
+                "id": "7.2",
+                "title": "Support client",
+                "list": [
+                  { "title": "Méthodes de contact :", "text": "E-mail (contact@lingosource.uk), téléphone et formulaire de contact en ligne" },
+                  { "title": "Heures de support :", "text": "Du lundi au vendredi, de 9h00 à 17h00 GMT" },
+                  { "title": "Temps de réponse :", "text": "Nous visons à répondre aux demandes de support dans les 24 heures pendant les jours ouvrables" }
+                ]
+              },
+              {
+                "id": "7.3",
+                "title": "Modifications du service",
+                "list": [
+                  "Nous nous réservons le droit de modifier, mettre à jour ou interrompre des fonctionnalités de notre Service",
+                  "Les changements importants seront communiqués avec un préavis raisonnable",
+                  "L'utilisation continue après les changements constitue une acceptation des modifications"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "8",
+            "title": "Limitation de responsabilité",
+            "subsections": [
+              {
+                "id": "8.1",
+                "title": "Montant de la limitation",
+                "content": "Notre responsabilité totale pour toute réclamation découlant de ou liée à notre Service est limitée au montant que vous nous avez payé au cours des six (6) mois précédant immédiatement la réclamation."
+              },
+              {
+                "id": "8.2",
+                "title": "Dommages exclus",
+                "description": "Nous ne sommes pas responsables pour :",
+                "list": [
+                  "Dommages consécutifs, indirects, accessoires ou punitifs",
+                  "Pertes de profits, d'opportunités commerciales ou de revenus",
+                  "Perte ou corruption de données non directement causée par notre négligence",
+                  "Actions ou défaillances de tiers hors de notre contrôle raisonnable"
+                ]
+              },
+              {
+                "id": "8.3",
+                "title": "Force majeure",
+                "description": "Nous ne sommes pas responsables des interruptions de service causées par :",
+                "list": [
+                  "Catastrophes naturelles, guerre ou actions gouvernementales",
+                  "Pannes d'infrastructure Internet ou de télécommunications",
+                  "Défaillances de fournisseurs de services tiers",
+                  "Autres circonstances hors de notre contrôle raisonnable"
+                ]
+              },
+              {
+                "id": "8.4",
+                "title": "Avis de non-responsabilité concernant les conseils professionnels",
+                "list": [
+                  "Nos agents fournissent uniquement des services de réponse téléphonique, pas de conseils professionnels",
+                  "Nous ne sommes pas responsables des décisions commerciales prises sur la base de nos services de prise de messages",
+                  "Les clients doivent rechercher des conseils professionnels appropriés pour les questions commerciales, juridiques ou techniques"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9",
+            "title": "Indemnisation",
+            "description": "Vous acceptez d'indemniser, de défendre et de dégager de toute responsabilité Lingosource Ltd, ses dirigeants, administrateurs, employés et agents contre toute réclamation, dommage, perte, coût ou dépense (y compris les honoraires d'avocat raisonnables) découlant de :",
+            "list": [
+              "Votre utilisation de notre Service en violation de ces Conditions",
+              "Votre violation de toute loi ou réglementation applicable",
+              "Les informations ou le contenu que vous nous fournissez ou à nos agents",
+              "Réclamations de tiers liées à vos opérations commerciales"
+            ]
+          },
+          {
+            "id": "10",
+            "title": "Durée et résiliation",
+            "subsections": [
+              {
+                "id": "10.1",
+                "title": "Durée",
+                "content": "Ces Conditions restent en vigueur tant que vous utilisez notre Service ou maintenez un compte chez nous."
+              },
+              {
+                "id": "10.2",
+                "title": "Résiliation par vous",
+                "description": "Vous pouvez résilier votre compte à tout moment en :",
+                "list": [
+                  "Fournissant un préavis écrit à contact@lingosource.uk",
+                  "Suivant les procédures de clôture de compte dans votre tableau de bord client",
+                  "Appelant notre support client pendant les heures de bureau"
+                ]
+              },
+              {
+                "id": "10.3",
+                "title": "Résiliation par nous",
+                "description": "Nous pouvons résilier ou suspendre votre compte immédiatement si :",
+                "list": [
+                  "Vous violez ces Conditions ou notre Politique d'utilisation acceptable",
+                  "Le paiement est en retard de plus de 10 jours malgré nos tentatives de vous contacter",
+                  "Nous croyons raisonnablement que la poursuite du service serait illégale ou préjudiciable",
+                  "Votre entreprise opère dans une industrie interdite"
+                ]
+              },
+              {
+                "id": "10.4",
+                "title": "Effet de la résiliation",
+                "description": "À la résiliation :",
+                "list": [
+                  "Votre droit d'utiliser le Service cesse immédiatement",
+                  "Les frais impayés deviennent immédiatement dus et payables",
+                  "Nous conserverons les dossiers comme l'exige la loi ou à des fins commerciales légitimes",
+                  "La suppression des données suivra les calendriers de conservation de notre Politique de confidentialité"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "11",
+            "title": "Marketing et références",
+            "subsections": [
+              {
+                "id": "11.1",
+                "title": "Références clients",
+                "description": "Avec votre consentement, nous pouvons :",
+                "list": [
+                  "Utiliser le nom et le logo de votre entreprise comme référence sur notre site Web et nos supports marketing",
+                  "Inclure votre entreprise dans des études de cas ou des témoignages",
+                  "Faire référence à notre relation commerciale dans des propositions à des clients potentiels"
+                ]
+              },
+              {
+                "id": "11.2",
+                "title": "Consentement à l'utilisation de la marque",
+                "content": "Si vous souhaitez utiliser notre marque ou notre logo publiquement, vous devez obtenir notre consentement écrit préalable."
+              },
+              {
+                "id": "11.3",
+                "title": "Communications marketing",
+                "content": "Nous pouvons vous envoyer des communications promotionnelles sur nos services. Vous pouvez vous désinscrire à tout moment en suivant les instructions de désabonnement dans nos e-mails ou en nous contactant directement."
+              }
+            ]
+          },
+          {
+            "id": "12",
+            "title": "Résolution des litiges et droit applicable",
+            "subsections": [
+              {
+                "id": "12.1",
+                "title": "Droit applicable",
+                "content": "Ces Conditions sont régies et interprétées conformément aux lois de l'Angleterre et du Pays de Galles."
+              },
+              {
+                "id": "12.2",
+                "title": "Processus de résolution des litiges",
+                "description": "Pour les litiges découlant de ces Conditions :",
+                "list": [
+                  { "title": "Résolution directe :", "text": "Contactez-nous d'abord à contact@lingosource.uk pour tenter une résolution informelle" },
+                  { "title": "Médiation :", "text": "Les parties peuvent d'abord tenter une médiation par l'intermédiaire d'un service de médiation reconnu au Royaume-Uni avant d'engager une procédure judiciaire, si les deux parties en conviennent par écrit." },
+                  { "title": "Juridiction des tribunaux :", "text": "Toute procédure judiciaire sera soumise à la compétence exclusive des tribunaux d'Angleterre et du Pays de Galles" }
+                ]
+              },
+              {
+                "id": "12.3",
+                "title": "Délai de prescription",
+                "content": "Toute réclamation doit être introduite dans les six (6) ans à compter de la date à laquelle la cause d'action est née, ou dans le délai de prescription légal applicable, le plus court des deux étant retenu."
+              }
+            ]
+          },
+          {
+            "id": "13",
+            "title": "Dispositions générales",
+            "subsections": [
+              {
+                "id": "13.1",
+                "title": "Intégralité de l'accord",
+                "content": "Ces Conditions, ainsi que notre Politique de confidentialité, constituent l'intégralité de l'accord entre vous et Lingosource Ltd concernant le Service."
+              },
+              {
+                "id": "13.2",
+                "title": "Modifications",
+                "content": "Nous pouvons modifier ces Conditions de temps à autre. Les changements importants seront communiqués par e-mail ou par un avis bien visible sur notre site Web. L'utilisation continue après les changements constitue une acceptation des Conditions révisées."
+              },
+              {
+                "id": "13.3",
+                "title": "Divisibilité",
+                "content": "Si une disposition de ces Conditions est jugée inapplicable, les autres dispositions resteront en vigueur et de plein effet."
+              },
+              {
+                "id": "13.4",
+                "title": "Cession",
+                "content": "Vous ne pouvez pas céder ou transférer vos droits en vertu de ces Conditions sans notre consentement écrit. Nous pouvons céder nos droits et obligations en vertu de ces Conditions dans le cadre d'une fusion, d'une acquisition ou d'une vente d'actifs."
+              },
+              {
+                "id": "13.5",
+                "title": "Renonciation",
+                "content": "Notre manquement à faire appliquer une disposition de ces Conditions ne constitue pas une renonciation à cette disposition ou à toute autre disposition."
+              },
+              {
+                "id": "13.6",
+                "title": "Survie",
+                "content": "Les dispositions qui, de par leur nature, doivent survivre à la résiliation (y compris les obligations de paiement, la propriété intellectuelle, la limitation de responsabilité et la résolution des litiges) survivront à la résiliation de ces Conditions."
+              }
+            ]
+          },
+          {
+            "id": "14",
+            "title": "Coordonnées",
+            "list": [
+              { "title": "Société :", "text": "Lingosource Ltd" },
+              { "title": "Nom commercial :", "text": "Lingosource (Le service de réponse téléphonique aura un site Web désigné à l'avenir qui sera Horizonanswering.com)" },
+              { "title": "Numéro d'entreprise :", "text": "16688081" },
+              { "title": "Adresse enregistrée :", "text": "71-75 Shelton Street, Covent Garden, London, England" },
+              { "title": "E-mail :", "text": "contact@lingosource.uk" },
+              { "title": "Heures de bureau :", "text": "Du lundi au vendredi, de 9h00 à 17h00 GMT" }
+            ],
+            "closing": "Pour toute question concernant ces Conditions d'Utilisation, veuillez nous contacter en utilisant les informations ci-dessus."
           }
-        },
-        "servicesProvided": {
-          "title": "3. Services fournis",
-          "outsourcedServices": {
-            "title": "3.1. Services de centre d'appels externalisés",
-            "p1": "Les clients peuvent engager Lingosource pour fournir des solutions de centre d'appels professionnelles, notamment :",
-            "list": {
-              "inbound": "Gestion des appels entrants : répondre aux appels des clients à l'aide des scripts fournis par le client, prendre des messages et transférer des appels conformément aux instructions du client.",
-              "outbound": "Appels sortants : mener des campagnes sortantes, des suivis clients, des appels de vente ou des sondages, strictement comme convenu par écrit.",
-              "adminSupport": "Support administratif : effectuer des tâches de back-office, de la saisie de données, de la planification de rendez-vous ou du traitement des commandes selon les instructions du client.",
-              "reporting": "Rapports et analyses : fournir des résumés d'appels, des rapports sur les performances des agents et d'autres mesures convenues avec le client."
-            }
-          },
-          "customization": {
-            "title": "3.2. Personnalisation et instructions du client",
-            "list": [
-              "Tous les services sont fournis sur la base des instructions, des scripts et des directives fournis par le client.",
-              "Les clients sont responsables de fournir des informations exactes et complètes nécessaires pour fournir les services efficacement.",
-              "Lingosource peut refuser ou suspendre des tâches lorsque les instructions sont peu claires, incomplètes ou dépassent le cadre opérationnel de la Société."
-            ]
-          },
-          "restrictions": {
-            "title": "3.3. Restrictions de service",
-            "p1": "La Société ne fournit pas de Services à :",
-            "list": [
-              "Services de divertissement pour adultes ou d'escorte",
-              "Opérateurs de jeux de hasard, de paris ou de loterie",
-              "Tabac, alcool, cannabis ou produits connexes",
-              "Vendeurs d'armes à feu, d'armes ou de munitions",
-              "Services financiers non réglementés, plateformes de trading de crypto-monnaies ou d'investissement"
-            ]
-          },
-          "rightToRefuse": {
-            "title": "3.4. Droit de refuser ou de limiter les services",
-            "p1": "La Société peut, à sa seule discrétion, refuser, suspendre ou résilier les Services si :",
-            "list": [
-              "L'activité du Client relève de secteurs réglementés ;",
-              "La fourniture de Services enfreindrait les lois ou exigences réglementaires applicables ;",
-              "Les instructions du Client sont incompatibles avec les présentes Conditions ou présentent des risques pour la réputation, juridiques ou opérationnels."
-            ]
-          }
-        },
-        "clientRegistration": {
-          "title": "4. Inscription du client et configuration du compte",
-          "accountCreation": {
-            "title": "4.1. Création de compte",
-            "p1": "Pour accéder aux Services, les Clients doivent :",
-            "list": [
-              "Remplir le formulaire d'inscription en ligne (ou signer un contrat écrit pour des services personnalisés) ;",
-              "Fournir des informations professionnelles ou personnelles exactes, notamment le nom, l'adresse, les coordonnées et les informations de facturation ;",
-              "Avoir au moins 18 ans ou avoir le consentement parental/d'un tuteur valide si moins de 18 ans ;",
-              "Représenter une entreprise légitime ou un but licite."
-            ]
-          },
-          "accountSecurity": {
-            "title": "4.2. Identifiants de compte et sécurité",
-            "list": [
-              "Les clients sont responsables du maintien de la confidentialité de leurs identifiants de connexion.",
-              "Toute activité utilisant le compte du Client est réputée autorisée par le Client.",
-              "Le Client doit informer immédiatement la Société de toute utilisation non autorisée de son compte."
-            ]
-          },
-          "verification": {
-            "title": "4.3. Vérification",
-            "p1": "La Société se réserve le droit de :",
-            "list": [
-              "Vérifier l'identité et la légitimité de l'entreprise du Client ;",
-              "Demander des pièces justificatives ;",
-              "Suspendre ou refuser les Services si les exigences de vérification не sont pas remplies."
-            ]
-          },
-          "refuseRegistration": {
-            "title": "4.4. Droit de refuser l'inscription",
-            "p1": "La Société peut refuser l'inscription ou restreindre les Services à sa discrétion lorsque la fourniture de Services :",
-            "list": [
-              "Exposerait la Société à un risque juridique, réglementaire ou de réputation ;",
-              "Entrerait en conflit avec les présentes Conditions ou les informations fournies par le Client ;",
-              "Impliquerait des industries ou des activités interdites."
-            ]
-          }
-        },
-        "pricing": {
-          "title": "5. Tarification, facturation et paiements",
-          "serviceFees": {
-            "title": "5.1. Frais de service",
-            "list": [
-              "Services de centre d'appels externalisés Lingosource : les frais pour les services personnalisés, y compris la gestion des appels entrants/sortants, le support commercial ou les tâches administratives, sont déterminés par un devis mutuellement convenu par écrit entre la Société et le Client.",
-              "Tous les frais sont hors taxes, droits, prélèvements ou charges applicables, que le Client sera responsable de payer en plus."
-            ]
-          },
-          "invoices": {
-            "title": "5.2. Factures et facturation",
-            "list": [
-              "Les factures sont émises mensuellement, à l'avance ou post-payées selon le modèle de service convenu.",
-              "Les clients peuvent choisir de payer en USD ou en GBP, sauf accord contraire.",
-              "Les factures détaillées préciseront les services fournis, les mesures d'utilisation et les taxes applicables."
-            ]
-          },
-          "paymentMethods": {
-            "title": "5.3. Méthodes de paiement",
-            "p1": "La Société accepte les paiements via :",
-            "list": [
-              "Cartes de crédit/débit via Stripe ;",
-              "PayPal ;",
-              "Virements bancaires (le cas échéant, le Client prenant en charge les frais de virement)."
-            ]
-          },
-          "billingCycle": {
-            "title": "5.4. Cycle de facturation",
-            "list": [
-              "Les services sont facturés sur un cycle mensuel.",
-              "Lorsque la facturation automatique est configurée, le mode de paiement enregistré sera débité à la date de la facture sans préavis supplémentaire."
-            ]
-          },
-          "latePayments": {
-            "title": "5.5. Paiements en retard et suspension de service",
-            "list": [
-              "Les paiements non reçus dans les 10 jours suivant la date d'échéance de la facture peuvent entraîner la suspension immédiate de tous les Services.",
-              "Aucun intérêt ni pénalité de retard de paiement n'est appliqué ; les Services resteront suspendus jusqu'au règlement complet.",
-              "La Société se réserve le droit de résilier les Services en cas de non-paiement continu."
-            ]
-          },
-          "refundPolicy": {
-            "title": "5.6. Politique de remboursement",
-            "list": [
-              "En raison de la nature post-payée des Services, la Société ne fournit aucun remboursement ni crédit pour les minutes non utilisées, les interruptions de service indépendantes de sa volonté ou l'utilisation partielle.",
-              "Les litiges de paiement peuvent être soulevés et résolus conformément aux procédures de résolution des litiges de la Société."
-            ]
-          }
-        },
-        "acceptableUse": {
-          "title": "6. Utilisation acceptable des services",
-          "lawfulUse": {
-            "title": "6.1 Utilisation légale",
-            "p1": "Le Client utilisera les Services uniquement à des fins commerciales licites et en pleine conformité avec les lois et réglementations applicables, y compris la protection des données, la protection des consommateurs et les réglementations sur les télécommunications."
-          },
-          "prohibitedActivities": {
-            "title": "6.2 Activités interdites",
-            "p1": "Les clients ne doivent pas utiliser les services pour :",
-            "list": [
-              "S'engager dans des activités frauduleuses, trompeuses, abusives ou illégales ;",
-              "Mener des opérations dans des industries restreintes en vertu de la clause 2.3 (par exemple, contenu pour adultes, jeux de hasard, services financiers non réglementés) ;",
-              "Harceler, menacer ou abuser des appelants ou des tiers ;",
-              "Collecter ou traiter des données personnelles en violation des lois applicables sur la protection des données ;",
-              "Donner une fausse représentation de l'identité, du but ou des opérations commerciales du client ou de la société."
-            ]
-          },
-          "outboundServices": {
-            "title": "6.3 Services sortants",
-            "p1": "Toutes les activités d'appels sortants, de marketing, de télémarketing ou d'appels à froid nécessitent un accord écrit préalable explicite avec la Société."
-          },
-          "monitoring": {
-            "title": "6.4 Surveillance et application",
-            "list": [
-              "La Société se réserve le droit de surveiller l'utilisation des Services pour garantir la conformité avec cette Clause.",
-              "La violation de cette Clause peut entraîner la suspension ou la résiliation immédiate des Services sans responsabilité."
-            ]
-          },
-          "clientResponsibility": {
-            "title": "6.5 Responsabilité du client",
-            "list": [
-              "Le Client doit s'assurer que toutes les instructions, les scripts d'appel et les communications via les Services sont conformes à toutes les lois applicables.",
-              "Le Client reste responsable de toute utilisation abusive des Services, y compris les violations des réglementations applicables."
-            ]
-          }
-        },
-        "intellectualProperty": {
-          "title": "7. Propriété intellectuelle et protection des données",
-          "ownership": {
-            "title": "7.1 Propriété des matériaux",
-            "list": [
-              "Tous les droits de propriété intellectuelle sur et pour les Services, y compris les scripts d'appel, les supports de formation, les logiciels, les méthodologies et les procédures opérationnelles créés ou fournis par la Société, restent la propriété exclusive de la Société.",
-              "Tous les matériaux, instructions ou marques fournis par le Client restent la propriété du Client. En fournissant ces matériaux, le Client accorde à la Société une licence limitée, non exclusive et libre de droits pour les utiliser uniquement pour la fourniture des Services."
-            ]
-          },
-          "restrictionsOnUse": {
-            "title": "7.2 Restrictions d'utilisation",
-            "list": [
-              "Les Clients ne doivent pas copier, reproduire, distribuer ou exploiter de quelque autre manière que ce soit la propriété intellectuelle de la Société, sauf autorisation expresse et écrite.",
-              "La Société peut utiliser des données anonymisées et agrégées, y compris des enregistrements d'appels, à des fins de formation interne, d'assurance qualité et d'amélioration des services."
-            ]
-          },
-          "dataProtection": {
-            "title": "7.3 Conformité à la protection des données",
-            "list": [
-              "La Société traitera toutes les données personnelles conformément aux lois applicables sur la protection des données, y compris le RGPD britannique et la loi sur la protection des données de 2018.",
-              "Les données collectées peuvent inclure les noms, numéros de téléphone, e-mails, enregistrements d'appels et informations de facturation nécessaires pour fournir les Services.",
-              "La Société agit en tant que sous-traitant des données, et le Client reste le responsable du traitement des données responsable de garantir la collecte et le traitement licites des données des clients finaux."
-            ]
-          },
-          "dataRetention": {
-            "title": "7.4 Conservation et transferts de données",
-            "list": [
-              "Les enregistrements d'appels et les données associées seront conservés pendant une période maximale d'un (1) an, sauf disposition contraire de la loi ou accord écrit.",
-              "Les données personnelles ne seront pas transférées en dehors du Royaume-Uni ou de l'EEE sans garanties appropriées, y compris les clauses contractuelles types ou d'autres mécanismes approuvés."
-            ]
-          },
-          "confidentiality": {
-            "title": "7.5 Confidentialité",
-            "list": [
-              "Les deux parties maintiendront une stricte confidentialité des informations commerciales, des données clients et du contenu des appels.",
-              "La divulgation n'est autorisée que lorsque la loi l'exige ou avec un consentement écrit préalable."
-            ]
-          },
-          "dataSubjectRights": {
-            "title": "7.6 Assistance aux droits des personnes concernées",
-            "p1": "La Société assistera le Client dans l'exécution des demandes de droits des personnes concernées, y compris les demandes d'accès, de rectification et d'effacement."
-          }
-        },
-        "liabilityLimitation": {
-          "title": "8. Limitation de responsabilité",
-          "capOnLiability": {
-            "title": "8.1 Plafond de responsabilité",
-            "p1": "Dans la mesure maximale autorisée par la loi, la responsabilité totale de la Société découlant de ou en relation avec les Services, que ce soit en matière de contrat, de délit, de négligence ou autre, sera limitée au total des frais payés par le Client à la Société au cours des six (6) mois précédant immédiatement la réclamation."
-          },
-          "exclusionOfDamages": {
-            "title": "8.2 Exclusion des dommages consécutifs",
-            "p1": "La Société ne sera pas responsable des dommages indirects, accessoires, spéciaux, punitifs ou consécutifs, y compris, mais sans s'y limiter :",
-            "list": [
-              "Perte de profits ou de revenus ;",
-              "Perte d'opportunités commerciales ou de clientèle ;",
-              "Atteinte à la réputation ;",
-              "Perte ou corruption de données non causée directement par la négligence grave de la Société."
-            ]
-          },
-          "thirdPartyActs": {
-            "title": "8.3 Actes de tiers",
-            "p1": "La Société ne sera pas responsable des actes ou omissions de prestataires de services tiers engagés par le Client, y compris les processeurs de paiement ou les fournisseurs de télécommunications."
-          },
-          "forceMajeure": {
-            "title": "8.4 Force majeure",
-            "p1": "La Société ne sera pas responsable de tout retard ou manquement à l'exécution de ses obligations en vertu du présent Contrat causé par des circonstances indépendantes de sa volonté raisonnable, y compris, mais sans s'y limiter :",
-            "list": [
-              "Catastrophes naturelles, grèves ou conflits du travail ;",
-              "Pannes de courant ou pannes de réseau ;",
-              "Actions ou réglementations gouvernementales ;",
-              "Interruptions des services Internet, de télécommunications ou de tiers."
-            ]
-          }
-        },
-        "governingLaw": {
-          "title": "9. Droit applicable et résolution des litiges",
-          "law": {
-            "title": "9.1 Droit applicable",
-            "p1": "Le présent Contrat sera régi et interprété conformément aux lois d'Angleterre et du Pays de Galles."
-          },
-          "mediation": {
-            "title": "9.2 Médiation :",
-            "p1": "Les parties peuvent d'abord tenter une médiation par le biais d'un service de médiation britannique reconnu avant d'engager une procédure judiciaire, si les deux parties en conviennent par écrit."
-          },
-          "jurisdiction": {
-            "title": "9.3 Juridiction",
-            "p1": "Les parties conviennent que les tribunaux d'Angleterre et du Pays de Galles auront compétence exclusive pour régler tout litige ou réclamation découlant de ou en relation avec le présent Contrat."
-          }
-        },
-        "marketing": {
-          "title": "10. Marketing et références",
-          "useOfClientNames": {
-            "title": "10.1 Utilisation des noms des clients",
-            "p1": "La Société peut utiliser le nom, le logo et les témoignages du Client dans ses supports marketing, sur son site Web et dans ses communications promotionnelles."
-          },
-          "clientConsent": {
-            "title": "10.2 Consentement du client pour l'image de marque",
-            "p1": "Les clients doivent obtenir le consentement écrit préalable de la Société avant d'utiliser le nom, le logo ou toute image de marque de la Société dans leurs propres supports marketing, promotionnels ou publics."
-          },
-          "accuracy": {
-            "title": "10.3 Exactitude des témoignages",
-            "p1": "Lorsque les Clients fournissent des témoignages, des études de cas ou des avis, le Client déclare et garantit que ces déclarations sont véridiques, exactes et non trompeuses."
-          }
-        },
-        "feesAndInvoicing": {
-          "title": "11. Frais, facturation et conditions de paiement",
-          "fees": {
-            "title": "11.1 Frais",
-            "list": [
-              "Le Client s'engage à payer les frais pour les Services tels qu'indiqués dans le Bon de commande, la Proposition ou le devis applicable accepté par le Client.",
-              "Tous les frais sont hors TVA et autres taxes applicables, qui seront payables en plus."
-            ]
-          },
-          "invoicing": {
-            "title": "11.2 Facturation",
-            "list": [
-              "Sauf accord écrit contraire, les factures seront émises mensuellement à l'avance et sont payables dans les sept (7) jours suivant la date de la facture.",
-              "Le paiement doit être effectué via le processeur de paiement désigné par la Société (actuellement Stripe) ou toute autre méthode notifiée par écrit par la Société."
-            ]
-          },
-          "latePayment": {
-            "title": "11.3 Paiement en retard",
-            "list": [
-              "Tout montant non payé à la date d'échéance portera intérêt à un taux de 5 % par mois, calculé quotidiennement jusqu'à réception du paiement intégral.",
-              "Si le paiement reste impayé pendant plus de quatorze (14) jours, la Société se réserve le droit de suspendre ou de restreindre les Services sans préavis."
-            ]
-          },
-          "currency": {
-            "title": "11.4 Devise",
-            "p1": "Tous les paiements doivent être effectués en GBP (£), sauf accord écrit contraire."
-          }
-        },
-        "refundsCancellations": {
-          "title": "12. Remboursements et annulations",
-          "nonRefundable": {
-            "title": "12.1 Frais non remboursables",
-            "p1": "Tous les frais d'installation, les frais d'intégration et les frais administratifs sont strictement non remboursables."
-          },
-          "serviceFees": {
-            "title": "12.2 Frais de service",
-            "p1": "Les frais de service continus ne sont pas remboursables, sauf en cas de manquement démontrable de la Société à fournir les Services conformément aux présentes Conditions, et toujours sous réserve de la Clause 8 (Limitation de responsabilité)."
-          },
-          "coolingOff": {
-            "title": "12.3 Droit de rétractation du consommateur",
-            "list": [
-              "Si le Client est un consommateur (et non une entreprise), le Client peut avoir le droit d'annuler dans les quatorze (14) jours suivant la conclusion du contrat en vertu des réglementations britanniques sur les contrats de consommation de 2013.",
-              "Si le Client a demandé que les Services commencent pendant cette période, le droit d'annulation est annulé une fois que les Services commencent."
-            ]
-          },
-          "cancellationByClient": {
-            "title": "12.4 Annulation par le client",
-            "list": [
-              "Les clients peuvent annuler leur abonnement ou leur contrat en fournissant un préavis écrit de trente (30) jours à la Société.",
-              "L'annulation n'affectera pas les frais accumulés avant la date de résiliation effective."
-            ]
-          }
-        },
-        "suspensionTermination": {
-          "title": "13. Suspension et résiliation du service",
-          "suspensionForBreach": {
-            "title": "13.1 Suspension pour violation",
-            "p1": "La Société peut suspendre les Services immédiatement et sans responsabilité si le Client :",
-            "list": [
-              "Ne paie pas à l'échéance ;",
-              "Enfreint les restrictions d'utilisation acceptable en vertu de la clause 5 ; ou",
-              "S'engage dans une conduite qui, de l'avis raisonnable de la Société, pourrait nuire à sa réputation ou à ses opérations."
-            ]
-          },
-          "terminationByCompany": {
-            "title": "13.2 Résiliation par la Société",
-            "p1": "La Société peut résilier le présent Contrat avec effet immédiat sur notification écrite si :",
-            "list": [
-              "Le Client commet une violation substantielle qui est incapable d'être corrigée, ou ne parvient pas à y remédier dans les quatorze (14) jours suivant la notification ;",
-              "Le Client devient insolvable, en faillite ou incapable de payer ses dettes à leur échéance ; ou",
-              "Le Client ne se conforme pas de manière répétée aux présentes Conditions."
-            ]
-          },
-          "terminationByClient": {
-            "title": "13.3 Résiliation par le Client",
-            "p1": "Le Client peut résilier le présent Contrat moyennant un préavis écrit de trente (30) jours à la Société."
-          },
-          "effectOfTermination": {
-            "title": "13.4 Effet de la résiliation",
-            "p1": "En cas de résiliation pour quelque raison que ce soit :",
-            "list": [
-              "Tous les frais impayés deviendront immédiatement exigibles et payables ;",
-              "La Société cessera de fournir les Services ;",
-              "Le Client devra rapidement retourner ou détruire tout matériel appartenant à la Société ; et",
-              "Les clauses qui, de par leur nature, devraient survivre (y compris la confidentialité, la propriété intellectuelle, la limitation de responsabilité et le droit applicable) resteront en vigueur."
-            ]
-          }
-        },
-        "warranties": {
-          "title": "14. Garanties et clauses de non-responsabilité",
-          "companyWarranties": {
-            "title": "14.1 Garanties de la société",
-            "p1": "La Société garantit qu'elle fournira les Services avec une compétence, un soin et une diligence raisonnables, et en conformité avec toutes les lois et réglementations applicables."
-          },
-          "noGuarantee": {
-            "title": "14.2 Aucune garantie de résultats",
-            "p1": "Le Client reconnaît que bien que la Société s'efforcera de fournir une gestion professionnelle des appels et des services connexes :",
-            "list": [
-              "La Société ne garantit aucun résultat commercial spécifique, aucun résultat de vente ou aucune conversion de client ; et",
-              "Les Services peuvent ne pas être ininterrompus, sans erreur ou entièrement exempts de retards ou de problèmes techniques."
-            ]
-          },
-          "exclusion": {
-            "title": "14.3 Exclusion d'autres garanties",
-            "p1": "Sauf disposition expresse dans les présentes Conditions, toutes les autres garanties, conditions ou représentations, qu'elles soient expresses ou implicites par la loi, la common law ou autrement (y compris l'adéquation à un usage particulier, la qualité marchande ou la qualité satisfaisante), sont par la présente exclues dans toute la mesure permise par la loi."
-          }
-        },
-        "generalProvisions": {
-          "title": "15. Dispositions générales",
-          "entireAgreement": {
-            "title": "15.1 Intégralité de l'accord",
-            "p1": "Les présentes Conditions, ainsi que tout Bon de commande, Proposition ou document associé, constituent l'intégralité de l'accord entre les parties et remplacent tous les accords, discussions ou ententes antérieurs."
-          },
-          "forceMajeure": {
-            "title": "15.2 Force majeure",
-            "p1": "La Société ne sera pas responsable de tout retard ou manquement dans l'exécution causé par des circonstances indépendantes de sa volonté raisonnable, y compris, mais sans s'y limiter, les catastrophes naturelles, les grèves, les pannes de courant ou les interruptions d'Internet/réseau."
-          },
-          "severability": {
-            "title": "15.3 Divisibilité",
-            "p1": "Si une disposition des présentes Conditions est jugée invalide, illégale ou inapplicable, le reste restera en vigueur et de plein effet."
-          },
-          "assignment": {
-            "title": "15.4 Cession",
-            "p1": "Le Client ne peut céder ou transférer aucun droit ou obligation en vertu des présentes Conditions sans le consentement écrit préalable de la Société. La Société peut céder ses droits ou obligations à toute société du groupe ou dans le cadre d'un transfert d'entreprise, d'une fusion ou d'une vente."
-          },
-          "waiver": {
-            "title": "15.5 Renonciation",
-            "p1": "Aucun manquement ou retard de l'une ou l'autre des parties dans l'exercice d'un droit ou d'un recours ne constituera une renonciation à ce droit ou à tout autre droit ou recours."
-          },
-          "notices": {
-            "title": "15.6 Notifications",
-            "p1": "Toutes les notifications doivent être faites par écrit et remises par e-mail aux adresses e-mail enregistrées des parties, sauf accord écrit contraire."
-          },
-          "amendments": {
-            "title": "15.7 Modifications",
-            "p1": "La Société peut modifier les présentes Conditions de temps à autre en publiant une version mise à jour sur son site Web. L'utilisation continue des Services après la publication constitue l'acceptation des Conditions modifiées."
-          }
-        },
-        "contactInfo": {
-          "title": "16. Coordonnées",
-          "list": [
-            "Société : Lingosource Ltd",
-            "Nom commercial : Lingosource",
-            "Numéro d'entreprise : 16688081",
-            "Adresse enregistrée : 71-75 Shelton Street, Covent Garden, Londres, Angleterre",
-            "E-mail : contact@lingosource.uk",
-            "Heures d'ouverture : du lundi au vendredi, de 9h00 à 17h00 GMT"
-          ],
-          "p1": "Pour toute question concernant ces Conditions d'utilisation, veuillez nous contacter en utilisant les informations ci-dessus."
-        }
+        ]
       }
+
 
   }
   

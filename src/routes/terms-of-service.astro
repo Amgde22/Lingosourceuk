@@ -7,128 +7,197 @@ import mobileLandingImage from "@assets/images/hero.png";
 
 const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
 
-const policy = t("legal:termsOfService" , {returnObjects:true});
+// Fetch the entire termsOfService object from your i18n JSON file
+const terms = t("legal:termsOfService" , {returnObjects:true});
+
 ---
 
 <BaseLayout
-  title={policy.title}
-  description={policy.introduction.p1}
+  title={terms.title}
+  description={terms.introduction.content[0]}
   preloadedImage={optimizedMobileLandingImage}
 >
-<!-- keep this -->
-<div class="place-taker" ></div>
+  <!-- This div is a placeholder for a fixed header, keeping it as requested -->
+  <div class="place-taker"></div>
 
-  <main class="terms-container">
-    <h1>{policy.title}</h1>
-    <p><em>{policy.effectiveDate}</em></p>
-    <p><em>{policy.lastUpdated}</em></p>
+ 
+<style lang="less">
+  .terms-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
 
-    {/* Introduction is handled separately due to its unique structure */}
-    <section>
-      <p>{policy.introduction.p1}</p>
-      <p>{policy.introduction.p2}</p>
-      <p>{policy.introduction.p3}</p>
-    </section>
+  h1, h2, h3, h4 {
+    color: #1a202c;
+    line-height: 1.3;
+    font-weight: 600;
+  }
 
-    {/* Loop through all main sections of the policy */}
-    {Object.entries(policy).map(([key, section]) => {
-      // Skip non-section root properties and special sections handled elsewhere
-      if (typeof section !== 'object' || !section.title || ['title', 'effectiveDate', 'lastUpdated', 'introduction', 'contactInfo'].includes(key)) {
-        return null;
-      }
+  h1 {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1rem;
+  }
 
-      return (
-        <section>
-          <h2>{section.title}</h2>
-          {/* Loop through subsections within a section */}
-          {Object.entries(section).map(([subKey, subSection]) => {
-            if (typeof subSection !== 'object' || !subSection.title) {
-              return null;
-            }
-            return (
-              <div>
-                <h3>{subSection.title}</h3>
-                
-                {/* Dynamically render all paragraph elements (p1, p2, etc.) */}
-                {Object.keys(subSection).filter(k => k.startsWith('p')).map(pKey => (
-                  <p>{subSection[pKey]}</p>
-                ))}
+  .meta-info {
+    text-align: center;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
 
-                {/* Render lists if they are arrays */}
-                {subSection.list && Array.isArray(subSection.list) && (
-                  <ul>
-                    {subSection.list.map((item) => (
-                      <li>{item}</li>
-                    ))}
-                  </ul>
-                )}
+  h2 {
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
 
-                {/* Render lists if they are objects */}
-                {subSection.list && typeof subSection.list === 'object' && !Array.isArray(subSection.list) && (
-                  <ul>
-                    {Object.values(subSection.list).map((item) => (
-                      <li>{item}</li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            );
-          })}
-        </section>
-      );
-    })}
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #2d3748;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+  }
 
-    {/* Contact Info is handled separately for consistent layout */}
-    <section>
-        <h2>{policy.contactInfo.title}</h2>
-        <ul>
-            {policy.contactInfo.list.map((item) => (
-                <li>{item}</li>
-            ))}
-        </ul>
-        <p>{policy.contactInfo.p1}</p>
-    </section>
+  p {
+    margin-bottom: 1rem;
+  }
 
-  </main>
-
-  <style>
-    .terms-container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-      margin-top: 1.5rem;
-      margin-bottom: 0.25rem;
-    }
-    
-    p {
-        margin-bottom: 1rem;
-    }
-
-    ul {
-      padding-left: 1.25rem;
-      list-style: disc;
-      margin-bottom: 1rem;
-    }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 1rem;
 
     li {
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
     }
-  </style>
+  }
+
+  strong {
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  .contact-info {
+      background-color: #f7fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin-top: 2rem;
+  }
+
+</style>
+
+<div class="terms-container">
+  <!-- Main Title and Meta Info -->
+  <h1>{terms.title}</h1>
+  <div class="meta-info">
+    <p>{terms.effectiveDate}</p>
+    <p>{terms.lastUpdated}</p>
+  </div>
+
+  <!-- Introduction Section -->
+  <section class="introduction">
+    <h2>{terms.introduction.title}</h2>
+    {terms.introduction.content.map((paragraph) => <p>{paragraph}</p>)}
+  </section>
+
+  <!-- Main Content Sections -->
+  {terms.sections.map((section) => (
+    <section id={`section-${section.id}`}>
+      <h2>{section.id}. {section.title}</h2>
+      
+      {/* Render section-level description if it exists */}
+      {section.description && <p>{section.description}</p>}
+      
+      {/* Render section-level list if it exists */}
+      {section.list && (
+        <ul>
+          {section.list.map((item) => (
+             <li>
+                {typeof item === 'string' ? (
+                  item
+                ) : (
+                  <>
+                    <strong>{item.title}</strong> {item.text}
+                  </>
+                )}
+              </li>
+          ))}
+        </ul>
+      )}
+
+      {/* Render Subsections */}
+      {section.subsections && section.subsections.map((subsection) => (
+        <div class="subsection" id={`subsection-${subsection.id}`}>
+          <h3>{subsection.id} {subsection.title}</h3>
+          
+          {/* Render simple content if it exists */}
+          {subsection.content && <p>{subsection.content}</p>}
+          
+          {/* Render description if it exists */}
+          {subsection.description && <p>{subsection.description}</p>}
+          
+          {/* Render list if it exists */}
+          {subsection.list && (
+            <ul>
+              {subsection.list.map((item) => (
+                <li>
+                  {typeof item === 'string' ? (
+                    item
+                  ) : (
+                    <>
+                      <strong>{item.title}</strong> {item.text}
+                    </>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+          
+          {/* Render categories if they exist */}
+          {subsection.categories && subsection.categories.map((category) => (
+            <div class="category">
+              <h4>{category.title}</h4>
+              <ul>
+                {category.list.map((item) => (
+                   <li>
+                    {typeof item === 'string' ? (
+                      item
+                    ) : (
+                      <>
+                        <strong>{item.title}</strong> {item.text}
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ))}
+      
+      {/* Render closing text if it exists (for Contact section) */}
+      {section.closing && <p class="contact-info">{section.closing}</p>}
+    </section>
+  ))}
+</div>
 </BaseLayout>
