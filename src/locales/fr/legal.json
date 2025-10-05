@@ -206,11 +206,11 @@
                   {
                     "title": "Gestion professionnelle des appels",
                     "list": [
-                      { "title": "Scripts personnalisés :", "text": "Scripts de gestion d'appels sur mesure développés spécifiquement pour votre entreprise" },
-                      { "title": "Représentation de la marque :", "text": "Agents formés pour représenter les valeurs, le ton et les normes de service de votre entreprise" },
-                      { "title": "Qualification des appels :", "text": "Catégorisation et traitement appropriés des différents types d'appels (ventes, support, réclamations, etc.)" },
-                      { "title": "Capacités de transfert assisté :", "text": "Transfert en direct des appels importants aux membres désignés de l'équipe" },
-                      { "title": "Gestion de la mise en attente et des rappels :", "text": "Gestion professionnelle des périodes de pointe avec planification des rappels" }
+                      { "title": "a) Scripts personnalisés :", "text": "Scripts de gestion d'appels sur mesure développés spécifiquement pour votre entreprise" },
+                      { "title": "b) Représentation de la marque :", "text": "Agents formés pour représenter les valeurs, le ton et les normes de service de votre entreprise" },
+                      { "title": "c) Qualification des appels :", "text": "Catégorisation et traitement appropriés des différents types d'appels (ventes, support, réclamations, etc.)" },
+                      { "title": "d) Capacités de transfert assisté :", "text": "Transfert en direct des appels importants aux membres désignés de l'équipe" },
+                      { "title": "e) Gestion de la mise en attente et des rappels :", "text": "Gestion professionnelle des périodes de pointe avec planification des rappels" }
                     ]
                   },
                   {

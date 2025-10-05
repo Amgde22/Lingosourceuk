@@ -205,11 +205,11 @@
                 {
                   "title": "Professional Call Management",
                   "list": [
-                    { "title": "Customized Scripts:", "text": "Tailored call handling scripts developed specifically for your business" },
-                    { "title": "Brand Representation:", "text": "Agents trained to represent your company's values, tone, and service standards" },
-                    { "title": "Call Disposition:", "text": "Proper categorization and handling of different call types (sales, support, complaints, etc.)" },
-                    { "title": "Warm Transfer Capabilities:", "text": "Live transfer of important calls to designated team members" },
-                    { "title": "Hold and Callback Management:", "text": "Professional handling of busy periods with callback scheduling" }
+                    { "title": "a) Customized Scripts:", "text": "Tailored call handling scripts developed specifically for your business" },
+                    { "title": "b) Brand Representation:", "text": "Agents trained to represent your company's values, tone, and service standards" },
+                    { "title": "c) Call Disposition:", "text": "Proper categorization and handling of different call types (sales, support, complaints, etc.)" },
+                    { "title": "d) Warm Transfer Capabilities:", "text": "Live transfer of important calls to designated team members" },
+                    { "title": "e) Hold and Callback Management:", "text": "Professional handling of busy periods with callback scheduling" }
                   ]
                 },
                 {
