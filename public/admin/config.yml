@@ -5,7 +5,6 @@ backend:
   branch: main
   identity_url: https://auth.decapbridge.com/sites/3e374e48-d413-43da-b681-27e5e26507f7
   gateway_url: https://gateway.decapbridge.com
-  local_backend: true
 
   # Quickly see who did what (optional)
   commit_messages:
