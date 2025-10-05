@@ -1,0 +1,172 @@
+/* This style sheet is used to style the blog preview in the Decap CMS admin panel. */
+/* THe classses should match the elements created in the Decap CMS preview pane script in admin.astro */
+
+:root {
+    --primary-50: oklch(0.95 0.02 256.35);
+    --primary-100: oklch(0.90 0.05 256.35);
+    --primary-200: oklch(0.75 0.08 256.35);
+    --primary-300: oklch(0.62 0.095 256.35);
+    --primary-400: oklch(0.50 0.10 256.35);
+    --primary-500: oklch(0.438 0.1058 256.35); /*base*/
+    --primary-600: oklch(0.38 0.11 256.35);
+    --primary-700: #1A304A;
+    --primary-900: #011837;
+    --primary-rgb: 59, 130, 246; /* Tailwind blue-500 */
+
+
+    --secondary-50:  #F46969;
+    --secondary-100: oklch(0.90 0.05 27.52);
+    --secondary-200: #D83C3C;
+    --secondary-300: oklch(0.68 0.15 27.52);
+    --secondary-400: oklch(0.58 0.18 27.52);
+    --secondary-500: oklch(0.5054 0.1905 27.52); /* base */
+    --secondary-600: oklch(0.44 0.19 27.52);
+    --secondary-700: #980707;
+    --secondary-800: oklch(0.28 0.15 27.52);
+    --secondary-900: #6E0000;
+
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+
+    --primary: var(--primary-500);
+    --primaryLight: var(--primary-400);
+    --secondary: var(--secondary-500);
+    --secondaryLight: var(--secondary-400);
+    --secondaryLighter: var(--secondary-300);
+    
+    --headerColor: var(--primary-900);
+    --bodyTextColor: #171717;
+    --bodyTextColorWhite: #fafafa;
+    --danger:#dc2626;
+
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.4375rem, 3.9vw, 2.0625rem);
+
+      --spacing-xxs: 2px;
+      --spacing-xs: 4px;
+      --spacing-sm: 8px;
+      --spacing-md: 16px;
+      --spacing-lg: 32px;
+      --spacing-xl: 48px;
+      --spacing-2xl: 64px;
+
+    /* 60px - 100px top and bottom */
+
+    --sectionPadding: clamp(4.75rem, 6.82vw, 7.25rem) var(--spacing-md);
+  }
+
+.frame-content {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.6em;
+}
+
+.frame-content h1,
+.frame-content h2,
+.frame-content h3,
+.frame-content h4,
+.frame-content h5,
+.frame-content h6 {
+	font-family: "Roboto", sans-serif;
+	color: var(--headerColor);
+}
+
+.frame-content img {
+	max-width: 100%;
+}
+
+.frame-content .blog {
+	padding: 2rem;
+	max-width: 48rem;
+	margin-inline: auto;
+}
+
+.frame-content .blog .title {
+	margin-top: 40px;
+}
+
+.frame-content .blog .cover {
+	border-radius: 0.5em;
+	min-width: 100%;
+	height: clamp(200px, 30vw, 400px);
+	margin-bottom: 50px;
+	object-fit: cover;
+}
+
+.frame-content .blog .metadata {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 50px;
+	color: var(--bodyTextColor);
+}
+
+.frame-content .blog .metadata .author {
+	margin: 0;
+	font-size: 0.875rem;
+}
+
+.frame-content .blog .metadata .dot {
+	display: block;
+	width: 3px;
+	height: 3px;
+	background-color: var(--primary);
+	border-radius: 50%;
+	margin-bottom: 1px;
+}
+
+.frame-content .blog .metadata .date {
+	font-size: 0.875rem;
+}
+
+.frame-content .blog .divider {
+	margin-top: 0;
+	margin-bottom: 1.5625em;
+	background-color: #a2a0a0;
+}
+
+.frame-content .blog .markdown {
+	margin-top: 3rem;
+	max-width: 80ch;
+}
+
+.frame-content .blog .markdown h1,
+.frame-content .blog .markdown h2,
+.frame-content .blog .markdown h3,
+.frame-content .blog .markdown h4,
+.frame-content .blog .markdown h5,
+.frame-content .blog .markdown h6 {
+	color: var(--headerColor);
+}
+
+.frame-content .blog .markdown a {
+	color: var(--bodyTextColor);
+}
+
+.frame-content .blog .markdown a:hover {
+	color: var(--primary);
+	text-decoration-color: var(--primary);
+}
+
+.frame-content .blog .markdown *:not(pre *, .admonition *, details *, blockquote *, span, a, h1, h2, h3, h4, h5, h6) {
+	color: var(--bodyTextColor);
+}
+
+.frame-content .blog .markdown pre {
+	padding: 1rem;
+	margin: 1rem 0;
+	background-color: #24292e;
+	color: #e1e4e8 !important;
+	overflow-x: auto;
+	border-radius: 0.5em;
+}

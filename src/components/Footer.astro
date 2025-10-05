@@ -33,10 +33,12 @@ const currentYear = getCurrentYear();
           {
             navData.map((entry: any) => (
               <li>
-                {entry.url && (<a href={getLocalePath(entry.url)}>{t(entry.key)}</a>)}
+                {entry.url && (<a class="capitalize" href={getLocalePath(entry.url)}>{t(entry.key)}</a>)}
               </li>
             ))
           }
+            
+        <li><a class="capitalize" href={getLocalePath("/privacy-policy")}>{t("privacy policy")}</a></li>
         </ul>
         <ul>
           <li>
@@ -173,6 +175,7 @@ const currentYear = getCurrentYear();
               margin-bottom: (37/16rem);
               color: #fff;
               position: relative;
+              margin-top:2em;
 
               &:before {
                 content: "";
