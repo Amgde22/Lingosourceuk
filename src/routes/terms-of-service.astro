@@ -1,0 +1,134 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { t } from "i18n:astro";
+import { getOptimizedImage } from "@utils/utils";
+
+import mobileLandingImage from "@assets/images/hero.png";
+
+const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
+
+const policy = t("legal:termsOfService" , {returnObjects:true});
+---
+
+<BaseLayout
+  title={policy.title}
+  description={policy.introduction.p1}
+  preloadedImage={optimizedMobileLandingImage}
+>
+<!-- keep this -->
+<div class="place-taker" ></div>
+
+  <main class="terms-container">
+    <h1>{policy.title}</h1>
+    <p><em>{policy.effectiveDate}</em></p>
+    <p><em>{policy.lastUpdated}</em></p>
+
+    {/* Introduction is handled separately due to its unique structure */}
+    <section>
+      <p>{policy.introduction.p1}</p>
+      <p>{policy.introduction.p2}</p>
+      <p>{policy.introduction.p3}</p>
+    </section>
+
+    {/* Loop through all main sections of the policy */}
+    {Object.entries(policy).map(([key, section]) => {
+      // Skip non-section root properties and special sections handled elsewhere
+      if (typeof section !== 'object' || !section.title || ['title', 'effectiveDate', 'lastUpdated', 'introduction', 'contactInfo'].includes(key)) {
+        return null;
+      }
+
+      return (
+        <section>
+          <h2>{section.title}</h2>
+          {/* Loop through subsections within a section */}
+          {Object.entries(section).map(([subKey, subSection]) => {
+            if (typeof subSection !== 'object' || !subSection.title) {
+              return null;
+            }
+            return (
+              <div>
+                <h3>{subSection.title}</h3>
+                
+                {/* Dynamically render all paragraph elements (p1, p2, etc.) */}
+                {Object.keys(subSection).filter(k => k.startsWith('p')).map(pKey => (
+                  <p>{subSection[pKey]}</p>
+                ))}
+
+                {/* Render lists if they are arrays */}
+                {subSection.list && Array.isArray(subSection.list) && (
+                  <ul>
+                    {subSection.list.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                )}
+
+                {/* Render lists if they are objects */}
+                {subSection.list && typeof subSection.list === 'object' && !Array.isArray(subSection.list) && (
+                  <ul>
+                    {Object.values(subSection.list).map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </section>
+      );
+    })}
+
+    {/* Contact Info is handled separately for consistent layout */}
+    <section>
+        <h2>{policy.contactInfo.title}</h2>
+        <ul>
+            {policy.contactInfo.list.map((item) => (
+                <li>{item}</li>
+            ))}
+        </ul>
+        <p>{policy.contactInfo.p1}</p>
+    </section>
+
+  </main>
+
+  <style>
+    .terms-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      list-style: disc;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</BaseLayout>

@@ -163,6 +163,469 @@
           ]
         }
       }
+    },
+
+      "termsOfService": {
+        "title": "TERMS OF SERVICE LINGOSOURCE",
+        "effectiveDate": "Effective Date: october 5th 2025",
+        "lastUpdated": "Last Updated: october 5th 2025",
+        "introduction": {
+          "p1": "These Terms of Service (“Terms”) govern your use of the outsourced call centre and customer support services provided by Lingosource Ltd, a company incorporated under the Companies Act 2006 of the United Kingdom, bearing Company Number 16688081 and having its registered office at 71–75 Shelton Street, Covent Garden, London, England (“Company”, “we”, “us”, or “our”), operating under the trading name “Lingosource”.",
+          "p2": "By registering for, accessing, or using any of our Services (“Services”), you (“Client”, “you”, or “your”) agree to be bound by these Terms. If you do not agree with these Terms, you must not access or use our Services.",
+          "p3": "These Terms incorporate by reference the Company’s Privacy Policy, which governs the collection, use, and protection of personal data. In case of any inconsistency between these Terms and the Privacy Policy, the Privacy Policy shall prevail."
+        },
+        "companyIdentity": {
+          "title": "1. Company Identity and Scope",
+          "tradingNames": {
+            "title": "1.1. Trading Names:",
+            "p1": "The Company operates under the following trading name:",
+            "p2": "Lingosource offers outsourced call centre solutions, including inbound/outbound call handling, customer support, sales assistance, and administrative task management and phone answering service."
+          },
+          "scopeOfServices": {
+            "title": "2. Scope of Services:",
+            "p1": "The Services are designed to support businesses in managing customer communications and administrative operations. Services may include, but are not limited to:",
+            "list": [
+              "Inbound call handling, message taking, and call transfers;",
+              "Outbound call campaigns, including customer follow-ups and telemarketing (subject to prior written agreement);",
+              "Administrative support and back-office task assistance;",
+              "Sales support, lead generation, and order processing;",
+              "Reporting and analytics related to call volumes, agent performance, and customer interactions."
+            ]
+          },
+          "serviceLimitations": {
+            "title": "2.1. Service Limitations:",
+            "p1": "The Company reserves the right to limit or refuse Services in the following circumstances:",
+            "list": [
+              "Clients operating in restricted industries, including but not limited to adult entertainment, gambling, tobacco, alcohol, cannabis, firearms, or unregulated financial services;",
+              "Activities that may breach applicable laws, regulations, or data protection requirements;",
+              "Requests that are beyond the reasonable capabilities or scope of the Company’s Services."
+            ]
+          },
+          "jurisdictionalApplication": {
+            "title": "2.2. Jurisdictional Application:",
+            "p1": "These Terms apply to all Clients worldwide, subject to compliance with local laws and regulations. The Company retains discretion to refuse service where legal, regulatory, or reputational risks are identified."
+          }
+        },
+        "servicesProvided": {
+          "title": "3. Services Provided",
+          "outsourcedServices": {
+            "title": "3.1. Outsourced Call Centre Services",
+            "p1": "Clients may engage Lingosource to provide professional call centre solutions, including:",
+            "list": {
+              "inbound": "Inbound Call Handling: Answering client calls using Client provided scripts, taking messages, and transferring calls as per Client instructions.",
+              "outbound": "Outbound Calls: Conducting outbound campaigns, customer follow ups, sales calls, or surveys, strictly as agreed in writing.",
+              "adminSupport": "Administrative Support: Performing back office tasks, data entry, appointment scheduling, or order processing as instructed by the Client.",
+              "reporting": "Reporting and Analytics: Providing call summaries, agent performance reports, and other metrics agreed upon with the Client."
+            }
+          },
+          "customization": {
+            "title": "3.2. Customization and Client Instructions",
+            "list": [
+              "All Services are delivered based on Client-provided instructions, scripts, and guidelines.",
+              "Clients are responsible for providing accurate and complete information required to deliver the Services effectively.",
+              "Lingosource may refuse or suspend tasks where instructions are unclear, incomplete, or exceed the Company’s operational scope."
+            ]
+          },
+          "restrictions": {
+            "title": "3.3. Service Restrictions",
+            "p1": "The Company does not provide Services to:",
+            "list": [
+              "Adult entertainment or escort services",
+              "Gambling, betting, or lottery operators",
+              "Tobacco, alcohol, cannabis, or related products",
+              "Firearms, weapons, or ammunition sellers",
+              "Unregulated financial services, cryptocurrency trading, or investment platforms"
+            ]
+          },
+          "rightToRefuse": {
+            "title": "3.4. Right to Refuse or Limit Services",
+            "p1": "The Company may, at its sole discretion, decline, suspend, or terminate Services if:",
+            "list": [
+              "The Client’s business falls within restricted industries;",
+              "Providing Services would breach applicable laws or regulatory requirements;",
+              "The Client’s instructions are inconsistent with these Terms or pose reputational, legal, or operational risks."
+            ]
+          }
+        },
+        "clientRegistration": {
+          "title": "4. Client Registration & Account Setup",
+          "accountCreation": {
+            "title": "4.1. Account Creation",
+            "p1": "To access the Services, Clients must:",
+            "list": [
+              "Complete the online registration form (or execute a written contract for customized services);",
+              "Provide accurate business or personal information, including name, address, contact details, and billing information;",
+              "Be at least 18 years of age or have valid parental/guardian consent if under 18;",
+              "Represent a legitimate business or lawful purpose."
+            ]
+          },
+          "accountSecurity": {
+            "title": "4.2. Account Credentials and Security",
+            "list": [
+              "Clients are responsible for maintaining the confidentiality of login credentials.",
+              "Any activity using the Client’s account is deemed to be authorised by the Client.",
+              "The Client must notify the Company immediately of any unauthorised use of their account."
+            ]
+          },
+          "verification": {
+            "title": "4.3. Verification",
+            "p1": "The Company reserves the right to:",
+            "list": [
+              "Verify the Client’s identity and business legitimacy;",
+              "Request supporting documentation;",
+              "Suspend or refuse Services if verification requirements are not met."
+            ]
+          },
+          "refuseRegistration": {
+            "title": "4.4. Right to Refuse Registration",
+            "p1": "The Company may decline registration or restrict Services at its discretion where providing Services would:",
+            "list": [
+              "Expose the Company to legal, regulatory, or reputational risk;",
+              "Conflict with these Terms or the Client’s provided information;",
+              "Involve prohibited industries or activities."
+            ]
+          }
+        },
+        "pricing": {
+          "title": "5. Pricing, Billing, and Payments",
+          "serviceFees": {
+            "title": "5.1. Service Fees",
+            "list": [
+              "Lingosource Outsourced Call Centre Services: Fees for customised services, including inbound/outbound call handling, sales support, or administrative tasks, are determined through a quotation mutually agreed in writing between the Company and the Client.",
+              "All fees are exclusive of applicable taxes, duties, levies, or charges, which the Client shall be responsible for paying in addition."
+            ]
+          },
+          "invoices": {
+            "title": "5.2. Invoices and Billing",
+            "list": [
+              "Invoices are issued monthly, in advance or post-paid as per the agreed service model.",
+              "Clients may choose to pay in USD or GBP, unless otherwise agreed.",
+              "Detailed invoices will specify the services provided, usage metrics, and applicable taxes."
+            ]
+          },
+          "paymentMethods": {
+            "title": "5.3. Payment Methods",
+            "p1": "The Company accepts payments via:",
+            "list": [
+              "Credit/debit cards through Stripe;",
+              "PayPal;",
+              "Bank transfers (where applicable, with the Client bearing transfer charges)."
+            ]
+          },
+          "billingCycle": {
+            "title": "5.4. Billing Cycle",
+            "list": [
+              "Services are billed on a monthly cycle.",
+              "Where automated billing is set up, the registered payment method will be charged on the invoice date without additional notice."
+            ]
+          },
+          "latePayments": {
+            "title": "5.5. Late Payments and Service Suspension",
+            "list": [
+              "Payments not received within 10 days of the invoice due date may result in immediate suspension of all Services.",
+              "No interest or late payment penalties are applied; Services will remain suspended until full settlement.",
+              "The Company reserves the right to terminate Services for continued non-payment."
+            ]
+          },
+          "refundPolicy": {
+            "title": "5.6. Refund Policy",
+            "list": [
+              "Due to the post-paid nature of Services, the Company does not provide refunds or credits for unused minutes, service interruptions beyond its control, or partial usage.",
+              "Payment disputes may be raised and resolved in accordance with the Company’s dispute resolution procedures."
+            ]
+          }
+        },
+        "acceptableUse": {
+          "title": "6. Acceptable Use of Services",
+          "lawfulUse": {
+            "title": "6.1 Lawful Use",
+            "p1": "The Client shall use the Services solely for lawful business purposes and in full compliance with applicable laws and regulations, including data protection, consumer protection, and telecommunications regulations."
+          },
+          "prohibitedActivities": {
+            "title": "6.2 Prohibited Activities",
+            "p1": "Clients must not use the Services to:",
+            "list": [
+              "Engage in fraudulent, misleading, abusive, or unlawful activities;",
+              "Conduct operations in industries restricted under Clause 2.3 (e.g., adult content, gambling, unregulated financial services);",
+              "Harass, threaten, or abuse callers or third parties;",
+              "Collect or process personal data in violation of applicable data protection laws;",
+              "Misrepresent the Client’s or Company’s identity, purpose, or business operations."
+            ]
+          },
+          "outboundServices": {
+            "title": "6.3 Outbound Services",
+            "p1": "Any outbound calling, marketing, telemarketing, or cold calling activities require explicit prior written agreement with the Company."
+          },
+          "monitoring": {
+            "title": "6.4 Monitoring and Enforcement",
+            "list": [
+              "The Company reserves the right to monitor usage of the Services to ensure compliance with this Clause.",
+              "Violation of this Clause may result in immediate suspension or termination of Services without liability."
+            ]
+          },
+          "clientResponsibility": {
+            "title": "6.5 Client Responsibility",
+            "list": [
+              "The Client shall ensure that all instructions, call scripts, and communications via the Services comply with all applicable laws.",
+              "The Client remains liable for any misuse of Services, including breaches of applicable regulations."
+            ]
+          }
+        },
+        "intellectualProperty": {
+          "title": "7. Intellectual Property and Data Protection",
+          "ownership": {
+            "title": "7.1 Ownership of Materials",
+            "list": [
+              "All intellectual property rights in and to the Services, including call scripts, training materials, software, methodologies, and operational procedures created or provided by the Company, remain the sole property of the Company.",
+              "Any materials, instructions, or branding provided by the Client remain the property of the Client. By providing such materials, the Client grants the Company a limited, non-exclusive, royalty-free license to use them solely for delivering the Services."
+            ]
+          },
+          "restrictionsOnUse": {
+            "title": "7.2 Restrictions on Use",
+            "list": [
+              "Clients shall not copy, reproduce, distribute, or otherwise exploit any Company intellectual property except as expressly authorised in writing.",
+              "The Company may use anonymised and aggregated data, including call recordings, for internal training, quality assurance, and service improvement purposes."
+            ]
+          },
+          "dataProtection": {
+            "title": "7.3 Data Protection Compliance",
+            "list": [
+              "The Company shall process all personal data in accordance with applicable data protection laws, including UK GDPR and the Data Protection Act 2018.",
+              "Data collected may include names, telephone numbers, emails, call recordings, and billing information required to provide the Services.",
+              "The Company acts as a data processor, and the Client remains the data controller responsible for ensuring lawful collection and processing of end-customer data."
+            ]
+          },
+          "dataRetention": {
+            "title": "7.4 Data Retention and Transfers",
+            "list": [
+              "Call recordings and related data shall be retained for a maximum period of one (1) year, unless otherwise required by law or agreed in writing.",
+              "Personal data will not be transferred outside the UK or EEA without appropriate safeguards, including Standard Contractual Clauses or other approved mechanisms."
+            ]
+          },
+          "confidentiality": {
+            "title": "7.5 Confidentiality",
+            "list": [
+              "Both parties shall maintain strict confidentiality of business information, client data, and call content.",
+              "Disclosure is permitted only where required by law or with prior written consent."
+            ]
+          },
+          "dataSubjectRights": {
+            "title": "7.6 Assistance with Data Subject Rights",
+            "p1": "The Company shall assist the Client in fulfilling data subject rights requests, including access, rectification, and erasure requests."
+          }
+        },
+        "liabilityLimitation": {
+          "title": "8. Limitation of Liability",
+          "capOnLiability": {
+            "title": "8.1 Cap on Liability",
+            "p1": "To the maximum extent permitted by law, the Company’s total liability arising from or in connection with the Services, whether in contract, tort, negligence, or otherwise, shall be limited to the total fees paid by the Client to the Company in the six (6) months immediately preceding the claim."
+          },
+          "exclusionOfDamages": {
+            "title": "8.2 Exclusion of Consequential Damages",
+            "p1": "The Company shall not be liable for any indirect, incidental, special, punitive, or consequential damages, including but not limited to:",
+            "list": [
+              "Loss of profits or revenue;",
+              "Loss of business opportunities or goodwill;",
+              "Reputational harm;",
+              "Data loss or corruption not caused directly by the Company’s gross negligence."
+            ]
+          },
+          "thirdPartyActs": {
+            "title": "8.3 Third-Party Acts",
+            "p1": "The Company shall not be responsible for any acts or omissions of third-party service providers engaged by the Client, including payment processors or telecommunication providers."
+          },
+          "forceMajeure": {
+            "title": "8.4 Force Majeure",
+            "p1": "The Company shall not be liable for any delay or failure to perform its obligations under this Agreement caused by circumstances beyond its reasonable control, including but not limited to:",
+            "list": [
+              "Natural disasters, strikes, or industrial disputes;",
+              "Power outages or network failures;",
+              "Government actions or regulations;",
+              "Internet, telecommunications, or third-party service interruptions."
+            ]
+          }
+        },
+        "governingLaw": {
+          "title": "9. Governing Law and Dispute Resolution",
+          "law": {
+            "title": "9.1 Governing Law",
+            "p1": "This Agreement shall be governed by and construed in accordance with the laws of England and Wales."
+          },
+          "mediation": {
+            "title": "9.2 Mediation:",
+            "p1": "The parties may first attempt mediation through a recognised UK mediation service before commencing court proceedings, if both agree in writing."
+          },
+          "jurisdiction": {
+            "title": "9.3 Jurisdiction",
+            "p1": "The parties agree that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with this Agreement."
+          }
+        },
+        "marketing": {
+          "title": "10. Marketing and References",
+          "useOfClientNames": {
+            "title": "10.1 Use of Client Names",
+            "p1": "The Company may use the Client’s name, logo, and testimonials in its marketing materials, on its website, and in promotional communications."
+          },
+          "clientConsent": {
+            "title": "10.2 Client Consent for Branding",
+            "p1": "Clients must obtain prior written consent from the Company before using the Company’s name, logo, or any branding in their own marketing, promotional, or public materials."
+          },
+          "accuracy": {
+            "title": "10.3 Accuracy of Testimonials",
+            "p1": "Where Clients provide testimonials, case studies, or reviews, the Client represents and warrants that such statements are truthful, accurate, and not misleading."
+          }
+        },
+        "feesAndInvoicing": {
+          "title": "11. Fees, Invoicing and Payment Terms",
+          "fees": {
+            "title": "11.1 Fees",
+            "list": [
+              "The Client agrees to pay the fees for the Services as set out in the applicable Order Form, Proposal, or quotation accepted by the Client.",
+              "All fees are exclusive of VAT and other applicable taxes, which shall be payable in addition."
+            ]
+          },
+          "invoicing": {
+            "title": "11.2 Invoicing",
+            "list": [
+              "Unless otherwise agreed in writing, invoices shall be issued monthly in advance and are payable within seven (7) days from the invoice date.",
+              "Payment must be made through the Company’s designated payment processor (currently Stripe) or any other method notified in writing by the Company."
+            ]
+          },
+          "latePayment": {
+            "title": "11.3 Late Payment",
+            "list": [
+              "Any amounts not paid by the due date shall accrue interest at 5% per month, calculated daily until payment is received in full.",
+              "If payment remains outstanding for more than fourteen (14) days, the Company reserves the right to suspend or restrict Services without further notice."
+            ]
+          },
+          "currency": {
+            "title": "11.4 Currency",
+            "p1": "All payments shall be made in GBP (£) unless otherwise agreed in writing."
+          }
+        },
+        "refundsCancellations": {
+          "title": "12. Refunds and Cancellations",
+          "nonRefundable": {
+            "title": "12.1 Non-Refundable Fees",
+            "p1": "All setup fees, onboarding charges, and administrative fees are strictly non-refundable."
+          },
+          "serviceFees": {
+            "title": "12.2 Service Fees",
+            "p1": "Ongoing service fees are non-refundable except in the event of demonstrable failure by the Company to provide the Services in accordance with these Terms, and always subject to Clause 8 (Limitation of Liability)."
+          },
+          "coolingOff": {
+            "title": "12.3 Consumer Cooling-Off Rights",
+            "list": [
+              "If the Client is a consumer (not a business), the Client may have the right to cancel within fourteen (14) days of entering into the contract under the UK Consumer Contracts Regulations 2013.",
+              "If the Client has requested the Services to begin within this period, the right to cancel is waived once Services commence."
+            ]
+          },
+          "cancellationByClient": {
+            "title": "12.4 Cancellation by Client",
+            "list": [
+              "Clients may cancel their subscription or contract by providing thirty (30) days’ prior written notice to the Company.",
+              "Cancellation shall not affect any fees accrued prior to the effective termination date."
+            ]
+          }
+        },
+        "suspensionTermination": {
+          "title": "13. Service Suspension and Termination",
+          "suspensionForBreach": {
+            "title": "13.1 Suspension for Breach",
+            "p1": "The Company may suspend Services immediately and without liability if the Client:",
+            "list": [
+              "Fails to make payment when due;",
+              "Breaches the Acceptable Use restrictions under Clause 5; or",
+              "Engages in conduct that, in the Company’s reasonable opinion, may damage its reputation or operations."
+            ]
+          },
+          "terminationByCompany": {
+            "title": "13.2 Termination by Company",
+            "p1": "The Company may terminate this Agreement with immediate effect upon written notice if:",
+            "list": [
+              "The Client commits a material breach which is incapable of remedy, or fails to remedy within fourteen (14) days of notice;",
+              "The Client becomes insolvent, bankrupt, or unable to pay debts as they fall due; or",
+              "The Client repeatedly fails to comply with these Terms."
+            ]
+          },
+          "terminationByClient": {
+            "title": "13.3 Termination by Client",
+            "p1": "The Client may terminate this Agreement upon thirty (30) days’ written notice to the Company."
+          },
+          "effectOfTermination": {
+            "title": "13.4 Effect of Termination",
+            "p1": "Upon termination for any reason:",
+            "list": [
+              "All outstanding fees shall become immediately due and payable;",
+              "The Company shall cease providing the Services;",
+              "The Client shall promptly return or destroy any materials belonging to the Company; and",
+              "Clauses which by their nature should survive (including confidentiality, intellectual property, limitation of liability, and governing law) shall continue in full force."
+            ]
+          }
+        },
+        "warranties": {
+          "title": "14. Warranties and Disclaimers",
+          "companyWarranties": {
+            "title": "14.1 Company Warranties",
+            "p1": "The Company warrants that it shall provide the Services with reasonable skill, care, and diligence, and in compliance with all applicable laws and regulations."
+          },
+          "noGuarantee": {
+            "title": "14.2 No Guarantee of Results",
+            "p1": "The Client acknowledges that while the Company will use best efforts to provide professional call handling and related services:",
+            "list": [
+              "The Company does not warrant or guarantee any specific business outcomes, sales results, or customer conversions; and",
+              "The Services may not be uninterrupted, error-free, or entirely free of delays or technical issues."
+            ]
+          },
+          "exclusion": {
+            "title": "14.3 Exclusion of Other Warranties",
+            "p1": "Except as expressly provided in these Terms, all other warranties, conditions, or representations, whether express or implied by statute, common law, or otherwise (including fitness for purpose, merchantability, or satisfactory quality), are hereby excluded to the fullest extent permitted by law."
+          }
+        },
+        "generalProvisions": {
+          "title": "15. General Provisions",
+          "entireAgreement": {
+            "title": "15.1 Entire Agreement",
+            "p1": "These Terms, together with any Order Form, Proposal, or associated documents, constitute the entire agreement between the parties and supersede all prior agreements, discussions, or understandings."
+          },
+          "forceMajeure": {
+            "title": "15.2 Force Majeure",
+            "p1": "The Company shall not be liable for any delay or failure in performance caused by circumstances beyond its reasonable control, including but not limited to natural disasters, strikes, power outages, or internet/network disruptions."
+          },
+          "severability": {
+            "title": "15.3 Severability",
+            "p1": "If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remainder shall continue in full force and effect."
+          },
+          "assignment": {
+            "title": "15.4 Assignment",
+            "p1": "The Client may not assign or transfer any rights or obligations under these Terms without the prior written consent of the Company. The Company may assign its rights or obligations to any group company or in connection with a business transfer, merger, or sale."
+          },
+          "waiver": {
+            "title": "15.5 Waiver",
+            "p1": "No failure or delay by either party in exercising any right or remedy shall constitute a waiver of that or any other right or remedy."
+          },
+          "notices": {
+            "title": "15.6 Notices",
+            "p1": "All notices shall be in writing and delivered by email to the registered email addresses of the parties, unless otherwise agreed in writing."
+          },
+          "amendments": {
+            "title": "15.7 Amendments",
+            "p1": "The Company may amend these Terms from time to time by publishing an updated version on its website. Continued use of the Services after publication constitutes acceptance of the amended Terms."
+          }
+        },
+        "contactInfo": {
+          "title": "16. Contact Information",
+          "list": [
+            "Company: Lingosource Ltd",
+            "Trading Name: Lingosource",
+            "Company Number: 16688081",
+            "Registered Address: 71-75 Shelton Street, Covent Garden, London, England",
+            "Email: contact@lingosource.uk",
+            "Business Hours: Monday to Friday, 9:00 AM - 5:00 PM GMT"
+          ],
+          "p1": "For questions about these Terms of Service, please contact us using the information above."
+        }
+      }
     }
-  }
+
   

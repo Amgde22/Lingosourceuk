@@ -40,6 +40,9 @@ export default defineConfig({
         "/privacy-policy":{
           "fr":"/politique-de-confidentialite"
         },
+        "/terms-of-service":{
+          "fr":"/conditions-d-utilisatio"
+        },
         "/call-answering-service":{
           "fr":"/service-reception-d-appels"
         }
