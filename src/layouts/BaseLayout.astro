@@ -71,14 +71,6 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 
-		<!--For home page, use service keywords for the title, including location for SEO.
-        Other pages should just include the page name.
-        
-        EXAMPLE:
-        Home page - House Painting Contractors | Painters and Co. | TestCity, WA
-        About Page - About us | Painters and Co.
-		
-        -->
 		
 		<link rel="preconnect" href="https://assets.calendly.com">
 		<title>
@@ -99,8 +91,20 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 		<!-- Dark / Light mode component -->
 		<!-- <ThemeProvider /> -->
 
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K84E9WWG28"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-K84E9WWG28');
+		</script>
+
 		<!-- Navigation script -->
-		<script src="@assets/js/nav.js"></script>
+		<script defer src="@assets/js/nav.js"></script>
+
 	</head>
 	<body>
 		<!--Screen reader skip main nav-->
@@ -116,10 +120,4 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 	</body>
 </html>
 
-{/* Inlined to avoid FOUC. Uses global scope from `ThemeProvider.astro` */}
-<!-- <script is:inline>
-	StarlightThemeProvider.getPreferredColorScheme();
-	StarlightThemeProvider.updatePickers();
 
-
-</script> -->
