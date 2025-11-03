@@ -2,7 +2,7 @@
 import {getLocalePath, t } from "i18n:astro";
 import dudeFull from "@assets/images/hero-100.webp" 
 import dudeMiddle from "@assets/images/hero-75.webp" 
-import dudeHalf from "@assets/images/hero-50.webp" 
+
 
 
 ---
@@ -134,6 +134,7 @@ import dudeHalf from "@assets/images/hero-50.webp"
       background: @primary-cta-color;
       color: #fff;
       animation-delay: 0.8s;
+      box-shadow:var(--shadow-elevation-low);
     }
 
     .btn-primary:hover {
@@ -145,6 +146,8 @@ import dudeHalf from "@assets/images/hero-50.webp"
       color: var(--primary);
       border: 2px solid var(--primary);
       animation-delay: 1.0s;
+      box-shadow:var(--shadow-elevation-low);
+
     }
 
     .btn-secondary:hover {

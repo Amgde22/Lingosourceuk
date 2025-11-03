@@ -18,8 +18,8 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
 <section class="how-it-works">
     <div class="container">
       <!-- Section Heading -->
-      <div class="heading">
-        <h2>{title}</h2>
+      <div class="heading ">
+        <h2 class="text-shadow-md">{title}</h2>
       </div>
   
       <!-- Steps Container -->
@@ -49,7 +49,7 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
                 <span>1</span>
               </div>
             </div>
-            <h3><a href={getLocalePath("/how-it-works#step1")}>{step1Title}</a></h3>
+            <h3><a class="text-shadow-md" href={getLocalePath("/how-it-works#step1")}>{step1Title}</a></h3>
             <p>{step1Description}</p>
           </div>
   
@@ -93,7 +93,7 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
                 <span>2</span>
               </div>
             </div>
-            <h3><a href={getLocalePath("/how-it-works#step3")}>{step2Title}</a></h3>
+            <h3><a class="text-shadow-md" href={getLocalePath("/how-it-works#step3")}>{step2Title}</a></h3>
 
             <p>{step2Description}</p>
           </div>
@@ -133,8 +133,8 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
                 <span>3</span>
               </div>
             </div>
-            <h3><a href={getLocalePath("/how-it-works#step4")}>{step3Title}</a></h3>
-            <p>{step3Description}</p>
+            <h3 class="text-shadow-md"><a class="text-shadow-md" href={getLocalePath("/how-it-works#step4")}>{step3Title}</a></h3>
+            <p >{step3Description}</p>
           </div>
         </div>
       </div>
@@ -509,6 +509,8 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
           transition: all 0.2s ease;
           opacity: 0;
           transform: translateY(30px);
+          box-shadow:var(--shadow-elevation-low);
+
 
           &:hover {
             transform: translateY(-2px);
