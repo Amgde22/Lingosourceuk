@@ -7,47 +7,157 @@ import mobileLandingImage from "@assets/images/hero.png";
 
 const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
 
-const policy = t("legal:privacyPolicy" , {returnObjects:true}); // whole object
+// Fetch the entire privacy policy object from the i18n JSON file
+const policy = t("legal:privacyPolicy", { returnObjects: true });
 ---
 
 <BaseLayout
   title={policy.title}
-  description={policy.introduction}
+  description={policy.introduction.paragraphs[0]}
   preloadedImage={optimizedMobileLandingImage}
 >
-<!-- keep this -->
-<div class="place-taker" ></div>
+  <!-- This is a placeholder for a fixed header, as requested in the original component -->
+  <div class="place-taker"></div>
 
   <main class="privacy-container">
+    <!-- Main Title and Dates -->
     <h1>{policy.title}</h1>
-    <p><em>{policy.effectiveDate}</em></p>
-    <p><em>{policy.lastUpdated}</em></p>
-    <p>{policy.introduction}</p>
-    <p>{policy.agreementNotice}</p>
-    <p>{policy.compliance}</p>
+    <p><em>{policy.effective_date}</em></p>
+    <p><em>{policy.last_updated}</em></p>
 
-    {Object.entries(policy.sections).map(([key, section]) => (
-      <section>
+    <!-- Introduction Section -->
+    <section id="introduction">
+      <h2>{policy.introduction.title}</h2>
+      {policy.introduction.paragraphs.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </section>
+
+    <!-- Loop through each main section of the policy -->
+    {policy.sections.map((section) => (
+      <section id={`section-${section.id}`}>
         <h2>{section.title}</h2>
 
-        {section.subsections ? (
-          section.subsections.map((sub) => (
-            <div>
-              <h3>{sub.title}</h3>
+        {/* Render introductory or general content for the section */}
+        {section.intro && <p>{section.intro}</p>}
+        {section.paragraphs && section.paragraphs.map((p) => <p>{p}</p>)}
+        {section.content && <p>{section.content}</p>}
+
+        {/* Render subsections if they exist */}
+        {section.subsections && section.subsections.map((sub) => (
+          <div class="subsection" id={`subsection-${sub.id}`}>
+            <h3>{sub.title}</h3>
+            {sub.intro && <p>{sub.intro}</p>}
+            {sub.content && <p>{sub.content}</p>}
+
+            {/* Render a list. Handles both simple string arrays and object arrays with term/definition */}
+            {sub.list && (
               <ul>
-                {sub.content.map((item) => (
-                  <li>{item}</li>
+                {sub.list.map((item) => (
+                  <li>
+                    {typeof item === 'string' ? (
+                      item
+                    ) : (
+                      <>
+                        <strong>{item.term}:</strong> {item.definition}
+                      </>
+                    )}
+                  </li>
                 ))}
               </ul>
-            </div>
-          ))
-        ) : (
-          <ul>
-            {section.content.map((item) => (
-              <li>{item}</li>
+            )}
+            
+            {/* Specific rendering for example lists (Section 1.1) */}
+            {sub.examples_intro && <p>{sub.examples_intro}</p>}
+            {sub.examples_list && (
+              <ul>
+                {sub.examples_list.map((item) => <li>{item}</li>)}
+              </ul>
+            )}
+
+            {/* Specific rendering for cookie types (Section 8.2) */}
+            {sub.cookie_types && sub.cookie_types.map(cookie => (
+              <div class="nested-block">
+                <h4>{cookie.name}</h4>
+                <p>{cookie.description}</p>
+                {cookie.list && <ul>{cookie.list.map(item => <li>{item}</li>)}</ul>}
+              </div>
             ))}
-          </ul>
-        )}
+            {sub.third_party_tracking && (
+              <div class="nested-block">
+                <h4>{sub.third_party_tracking.title}</h4>
+                <p>{sub.third_party_tracking.content}</p>
+              </div>
+            )}
+
+            {/* Specific rendering for cookie control methods (Section 8.3) */}
+            {sub.control_methods && sub.control_methods.map(method => (
+              <div class="nested-block">
+                <h4>{method.name}</h4>
+                {method.description && <p>{method.description}</p>}
+                {method.list && <ul>{method.list.map(item => <li>{item}</li>)}</ul>}
+              </div>
+            ))}
+            
+            {/* Specific rendering for security measures (Section 9.1) */}
+            {sub.measures && sub.measures.map(measure => (
+              <div class="nested-block">
+                <h4>{measure.name}</h4>
+                <p>{measure.description}</p>
+              </div>
+            ))}
+
+            {/* Specific rendering for data retention periods (Section 10.2) */}
+            {sub.periods && (
+              <ul>
+                {sub.periods.map(period => (
+                  <li><strong>{period.data}:</strong> {period.duration}</li>
+                ))}
+              </ul>
+            )}
+            
+            {/* Specific rendering for international transfer safeguards (Section 11.1) */}
+            {sub.safeguards && sub.safeguards.map(guard => (
+              <div class="nested-block">
+                <h4>{guard.name}</h4>
+                <p>{guard.description}</p>
+              </div>
+            ))}
+            
+            {/* Specific rendering for contact details (Section 14.1) */}
+            {sub.contact_details && (
+              <div class="contact-details">
+                <p><strong>Company Name:</strong> {sub.contact_details.company_name}</p>
+                <p><strong>Trading Names:</strong> {sub.contact_details.trading_names}</p>
+                <p><strong>Company Number:</strong> {sub.contact_details.company_number}</p>
+                <p><strong>Registered Address:</strong> {sub.contact_details.registered_address}</p>
+                <p><strong>Email:</strong> <a href={`mailto:${sub.contact_details.email}`}>{sub.contact_details.email}</a></p>
+                <p><strong>Phone:</strong> {sub.contact_details.phone}</p>
+                <p><strong>Hours:</strong> {sub.contact_details.hours}</p>
+              </div>
+            )}
+            
+            {/* Render any concluding note for the subsection */}
+            {sub.note && <p><em>{sub.note}</em></p>}
+          </div>
+        ))}
+        
+        {/* Specific rendering for itemized points (Section 6) */}
+        {section.points && section.points.map(point => (
+          <div class="nested-block">
+            <h4>{point.title}</h4>
+            <p>{point.content}</p>
+          </div>
+        ))}
+
+        {/* Specific rendering for transfer locations (Section 11) */}
+        {section.transfer_locations && section.transfer_locations.map(transfer => (
+          <div class="nested-block">
+            <h4>{transfer.location}</h4>
+            <p>{transfer.details}</p>
+          </div>
+        ))}
+
       </section>
     ))}
   </main>
@@ -56,7 +166,7 @@ const policy = t("legal:privacyPolicy" , {returnObjects:true}); // whole object
     .privacy-container {
       max-width: 800px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1rem 1.5rem;
       font-size: 1rem;
       line-height: 1.6;
     }
@@ -67,17 +177,30 @@ const policy = t("legal:privacyPolicy" , {returnObjects:true}); // whole object
     }
 
     h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
       font-size: 1.25rem;
       margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
 
-    h3 {
-      font-size: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 0.25rem;
+    h4 {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
     }
 
+    p {
+      margin-bottom: 1rem;
+    }
+    
     ul {
       padding-left: 1.25rem;
       list-style: disc;
@@ -85,7 +208,20 @@ const policy = t("legal:privacyPolicy" , {returnObjects:true}); // whole object
     }
 
     li {
+      margin-bottom: 0.5rem;
+    }
+
+    .subsection, .nested-block {
+      margin-bottom: 1.5rem;
+    }
+    
+    .contact-details p {
       margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
     }
   </style>
 </BaseLayout>

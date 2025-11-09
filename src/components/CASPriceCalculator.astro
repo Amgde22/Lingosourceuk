@@ -10,7 +10,7 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
   <!-- Wave SVG Separator -->
   <div class="wave-separator">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="var(--gray-400)" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,176C384,171,480,181,576,208C672,235,768,277,864,282.7C960,288,1056,256,1152,229.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      <path fill="var(--gray-300)" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,176C384,171,480,181,576,208C672,235,768,277,864,282.7C960,288,1056,256,1152,229.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
     </svg>
   </div>
 
@@ -65,6 +65,8 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
             onclick="openCalendlyDialog()"
             class="cta">
             {t("CAS:cta")}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M1 2h8.58l1.487 6.69l-1.86 1.86a14.1 14.1 0 0 0 4.243 4.242l1.86-1.859L22 14.42V23h-1a19.9 19.9 0 0 1-10.85-3.196a20.1 20.1 0 0 1-5.954-5.954A19.9 19.9 0 0 1 1 3z"/></svg>
+            
       </button>
       </div>
 
@@ -97,6 +99,7 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
       href={getLocalePath("/phone-answering-serive-pricing")}
       class=" cta-secondary">
       {t("CAS:pricingCalc.us.secondaryCta")}
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="currentColor" d="M53.213 10.786c-11.715-11.715-30.711-11.715-42.426 0c-11.716 11.717-11.716 30.711 0 42.428c11.715 11.715 30.711 11.715 42.426 0c11.716-11.717 11.716-30.711 0-42.428M45 41.132l-7.585-7.414l-13.458 13.281L17 39.954l13.218-13.391l-7.343-7.564H45z"/></svg>
     </a>
   </div>
 </section>
@@ -199,8 +202,8 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
   padding-top: 120px;
   background: linear-gradient(
     to bottom, 
-    var(--gray-400), 
-    color-mix(in srgb, var(--gray-400), black 25%)
+    var(--gray-300), 
+    color-mix(in srgb, var(--gray-300), black 10%)
   );
   color: var(--gray-700);
 
@@ -236,7 +239,7 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
     width: 100%;
     height: 150px;
     path {
-      fill: var(--gray-400);
+      fill: var(--gray-300);
     }
   }
 }
@@ -309,12 +312,12 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
     &::-webkit-slider-runnable-track {
       height: 10px;
       border-radius: 5px;
-      background: linear-gradient(to right, var(--primary) var(--slider-progress, 0%), var(--gray-300) var(--slider-progress, 0%));
+      background: linear-gradient(to right, var(--primary) var(--slider-progress, 0%), var(--gray-400) var(--slider-progress, 0%));
     }
     &::-moz-range-track {
       height: 10px;
       border-radius: 5px;
-      background: linear-gradient(to right, var(--primary) var(--slider-progress, 0%), var(--gray-300) var(--slider-progress, 0%));
+      background: linear-gradient(to right, var(--primary) var(--slider-progress, 0%), var(--gray-400) var(--slider-progress, 0%));
     }
     
     // Thumb Styling
@@ -470,7 +473,7 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
   }
 }
 .cta-secondary {
-    display: block;
+
     /* Remove: background: none; */
     max-width: 300px;
     margin: auto;
@@ -488,8 +491,19 @@ const data = t("CAS:pricingCalc", { returnObjects: true });
         background-color: var(--secondary-400);
         color: var(--gray-300);
     }
+
 }
 
+.cta , .cta-secondary {
+  display: flex;
+    justify-content:center;
+    gap:8px;
+    align-items:center;
+  & svg{
+      width:20px;
+      height:20px;
+    }
+}
 .competitor-card {
     padding-bottom:100px;
     background: var(--gray-100);
