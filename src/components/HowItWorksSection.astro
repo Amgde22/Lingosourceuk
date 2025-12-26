@@ -149,7 +149,6 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
   </section>
   
   <script>
-    import {section_scrolled_into_view} from "@utils/utils"
     document.addEventListener('DOMContentLoaded', () => {
       // Define animation classes
       const animationClasses = {
@@ -183,8 +182,12 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
           if (entry.isIntersecting) {
             const element = entry.target;
 
-            if (element.classList.contains('how-it-works')) {
-              console.log("how it works loaded !") 
+            if (element.classList.contains('how-it-works') && window.gtag) {
+              window.gtag('event', 'scroll_to_section', {
+                'event_category': 'engagement',
+                'event_label': 'how_it_works_section',
+                'section_name': 'How It Works'
+              });
             }
 
             // Add animation class based on element type

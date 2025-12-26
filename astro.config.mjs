@@ -5,6 +5,8 @@ import sitemap from "@astrojs/sitemap";
 
 import crittersRs from "@critters-rs/astro";
 
+
+
 export default defineConfig({
   image: {
     service: passthroughImageService(),
@@ -56,5 +58,7 @@ export default defineConfig({
         fr: 'fr-FR',
       },
     },
-  }), crittersRs()],
+  }), crittersRs()
+  // , partytown()
+],
 });
