@@ -2,7 +2,7 @@
 import { getLocalePath,t } from "i18n:astro";
 ---
 
-<section class="customer-support-section">
+<section class="customer-support-section why-us-home">
     <!-- Background Pattern -->
     <div class="background-pattern">
       <div class="pattern-overlay"></div>
@@ -202,6 +202,18 @@ import { getLocalePath,t } from "i18n:astro";
     // Create Intersection Observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+        if(entry.isIntersecting){
+          const element = entry.target
+          if (element.classList.contains('why-us-home') && window.gtag) {
+            console.log("tracking why us section")
+              window.gtag('event', 'scroll_to_section', {
+                'event_category': 'engagement',
+                'event_label': 'why-us-home_section',
+                'section_name': 'Why Us (homepage)'
+              });
+              observer.unobserve(element);
+            }
+        }
         if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
           // Get the card index for staggered animation
           const cardIndex = entry.target.dataset.cardIndex;
@@ -218,7 +230,10 @@ import { getLocalePath,t } from "i18n:astro";
     });
 
     // Observe all elements with animate-on-scroll class
-    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const animatedElements = [
+      ...document.querySelectorAll('.animate-on-scroll'),
+    document.querySelector(".why-us-home")
+    ]
     animatedElements.forEach((element) => {
       observer.observe(element);
     });

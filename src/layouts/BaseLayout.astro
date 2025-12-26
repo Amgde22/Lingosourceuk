@@ -93,8 +93,8 @@ const isLandingPage = Astro.url.pathname === "/" || trimmedLocales.includes(trim
 
 
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K84E9WWG28"></script>
-		<script>
+		<script async is:inline src="https://www.googletagmanager.com/gtag/js?id=G-K84E9WWG28"></script>
+		<script is:inline>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());

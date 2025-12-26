@@ -220,6 +220,25 @@ const pricingData = t('home:pricing', { returnObjects: true });
   function initializeAnimations() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+      const isHomePage = window.location.pathname === '/';
+      if (entry.isIntersecting && isHomePage) {
+            const element = entry.target;
+
+            // 2. Check if the ID includes 'pricing' and gtag exists
+            if (element.id.includes('pricing') && typeof window.gtag === 'function') {
+              console.log("tracking pricing");
+              
+              window.gtag('event', 'scroll_to_section', {
+                'event_category': 'engagement',
+                'event_label': 'pricing_section',
+                'section_name': 'Pricing'
+              });
+
+              // Optional: Stop observing after tracking once to prevent double-firing
+              observer.unobserve(element);
+            }
+          }
+
         if (entry.isIntersecting && !entry.target.classList.contains('animate-in')) {
           const delay = parseInt(entry.target.dataset.animationDelay) || 0;
           
@@ -239,6 +258,12 @@ const pricingData = t('home:pricing', { returnObjects: true });
     document.querySelectorAll('.animate-on-scroll').forEach(element => {
       observer.observe(element);
     });
+    const pricing_element = document.querySelector("#pricing")
+    if(pricing_element){
+      observer.observe(pricing_element);
+
+    }
+
 
     return observer;
   }
