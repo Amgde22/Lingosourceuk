@@ -30,3 +30,7 @@ export function trimArrSlashes(arr: string[]) {
 export function trimStringSlashes(arr: string) {
   return arr.replace(/^\/+|\/+$/g, "");
 }
+
+export function section_scrolled_into_view(section_name:string) {
+  console.log(gtag)
+}

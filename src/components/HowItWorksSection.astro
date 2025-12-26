@@ -149,6 +149,7 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
   </section>
   
   <script>
+    import {section_scrolled_into_view} from "@utils/utils"
     document.addEventListener('DOMContentLoaded', () => {
       // Define animation classes
       const animationClasses = {
@@ -181,7 +182,11 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const element = entry.target;
-            
+
+            if (element.classList.contains('how-it-works')) {
+              console.log("how it works loaded !") 
+            }
+
             // Add animation class based on element type
             if (element.classList.contains('heading')) {
               element.classList.add(animationClasses['heading']);
@@ -212,10 +217,11 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
 
       // Observe elements that should be animated
       const elementsToObserve = [
-        ...document.querySelectorAll('.heading'),
-        ...document.querySelectorAll('.step-item'),
-        ...document.querySelectorAll('.btn-primary-opacity'),
-        ...document.querySelectorAll('.btn-outline-gray')
+        ...document.querySelectorAll('.how-it-works'),
+        ...document.querySelectorAll('.how-it-works .heading'),
+        ...document.querySelectorAll('.how-it-works .step-item'),
+        ...document.querySelectorAll('.how-it-works .btn-primary-opacity'),
+        ...document.querySelectorAll('.how-it-works .btn-outline-gray')
       ];
 
       elementsToObserve.forEach(element => {
@@ -223,7 +229,8 @@ const secondaryCta = t('home:howItWorks.secondaryCta');
       });
     });
   </script>
-  
+
+
   <style lang="less">
     // Animation variables
     @title-delay: 0.2s;
