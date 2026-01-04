@@ -1,5 +1,7 @@
 ---
 import { getLocalePath,t } from "i18n:astro";
+import moneySaved from "@assets/images/money-saved-100.webp"
+
 ---
 
 <section class="customer-support-section why-us-home">
@@ -18,24 +20,32 @@ import { getLocalePath,t } from "i18n:astro";
   
   <div class="container">
     <!-- Headline & Intro (from i18n) -->
-    <div class="intro-text animate-on-scroll">
-      <h1 class="headline" set:html={t('home:whyUs.title')}></h1>
-      <h1 class="subtitle" set:html={t('home:whyUs.subtitle')}></h1>
-      <div class="intro-paragraphs">
-        <p set:html={t('home:whyUs.intro') }></p>
-        <p class="list-item" >
-          <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
-          { t('home:whyUs.choice1')}
-        </p>
-        <p class="list-item" >
-          <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
-          {t('home:whyUs.choice2') }
-        </p>
-
-        <p set:html={ t('home:whyUs.outro')}></p>
+    <div class="intro-container">
+      <div class="intro-text animate-on-scroll">
+        <h1 class="headline" set:html={t('home:whyUs.title')}></h1>
+        <h1 class="subtitle" set:html={t('home:whyUs.subtitle')}></h1>
+        <div class="intro-paragraphs">
+          <p set:html={t('home:whyUs.intro') }></p>
+          <p class="list-item" >
+            <span>
+              { t('home:whyUs.choice1')}
+              <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
+            </span>
+          </p>
+          <p class="list-item" >
+            <span>
+              {t('home:whyUs.choice2') }
+              <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
+              <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M15.854 12.854L11 8l4.854-4.854a.503.503 0 0 0 0-.707L13.561.146a.5.5 0 0 0-.707 0L8 5L3.146.146a.5.5 0 0 0-.707 0L.146 2.439a.5.5 0 0 0 0 .707L5 8L.146 12.854a.5.5 0 0 0 0 .707l2.293 2.293a.5.5 0 0 0 .707 0L8 11l4.854 4.854a.5.5 0 0 0 .707 0l2.293-2.293a.5.5 0 0 0 0-.707"/></svg>
+            </span>
+          </p>
+          <p set:html={ t('home:whyUs.outro')}></p>
+        </div>
+      </div>
+      <div class="intro-image-container">
+        <img class="intro-image" src={moneySaved.src} />
       </div>
     </div>
-
     <div class="features-list">
       <!-- Card 1 -->
       <div class="card animate-on-scroll slide-left" data-card-index="0">
@@ -285,8 +295,11 @@ import { getLocalePath,t } from "i18n:astro";
     min-height: 100vh;
     overflow: hidden;
     background-color: @primary-900;
-    padding: calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
-
+    padding: var( --spacing-xl)  calc(1.25rem + (.5) * (100vw - 400px) / (1024 - 400));
+    @media(min-width:1024px){
+      padding: 128px  var(--spacing-2xl);
+    }
+    font-size:.9rem;
   }
 
   .container {
@@ -322,26 +335,65 @@ import { getLocalePath,t } from "i18n:astro";
   }
 
   /* Intro */
+  .intro-container{
+    display:grid;
+    grid-template-columns:1fr;
+    @media(min-width:768px){
+      grid-template-columns:1fr 1fr;
+    }
+
+    margin-bottom:var(--spacing-2xl);
+  }
+  .intro-image-container{
+    display:block;
+    width:clamp(200px , 100%, 600px);
+    filter: 
+    drop-shadow(8px 15px 0 var(--primary-600))
+    drop-shadow(8px 15px 0 var(--primary-800));
+
+  }
+  .intro-image{
+    display:block;object-fit:cover;margin:auto;
+    max-height:450px;
+    width:100%;
+
+/* An 8-point polygon that cuts the corners off */
+clip-path: polygon(
+    /* Top Left Corner */
+    26% 0%, 
+    /* Top Right Corner */
+    98% 0%, 100% 3%, 
+    /* Bottom Right Corner */
+    84% 97%, 81% 100%, 
+    /* Bottom Left Corner */
+    2% 100%, 0% 97%, 
+    /* Closing Top Left */
+    24% 3%
+);
+    
+
+  }
+
   .intro-text {
     margin-bottom: 3.25rem;
   }
 
   .headline {
-    font-size: calc(36px + (10) * (100vw - 400px) / (1024 - 400));
+    font-size: calc(2.5em + (0.6) * (100vw - 400px) / (1024 - 400));
     font-weight: 700;
-    color: @gray-300;
+    color: @gray-500;
     margin-bottom: 0.75rem;
     text-wrap: balance;
     margin-bottom: .5em;
     width: fit-content;
-    padding: 0.125em .5em;
+
     border-radius: .5em;
   }
 
   .subtitle {
-    font-size: calc(24px + (5) * (100vw - 400px) / (1024 - 400));
+    font-size: calc(1.5em + (.3) * (100vw - 400px) / (1024 - 400));
     font-weight: 700;
-    color: @gray-100;
+    color: @gray-300;
     margin-bottom: 0.5rem;
   }
 
@@ -350,12 +402,12 @@ import { getLocalePath,t } from "i18n:astro";
     margin-top: var(--spacing-lg);
 
     p {
-      font-size: 1rem;
+      font-size: 1em;
       line-height: 1.6;
       color: @gray-400;
       margin-bottom: var(--spacing-md);
       @media (min-width: 768px) {
-        font-size: 1.0625rem;
+        font-size: 1.0625em;
       }
     }
 
@@ -366,8 +418,9 @@ import { getLocalePath,t } from "i18n:astro";
       
       .list-item-icon {
         display: inline-block;
-        margin-inline: 8px;
-        transform:translateY(6px);
+        margin-inline: 4px;
+        transform:translateY(4px);
+        color:var(--secondary);
       }
 
       &:not(:has(.list-item-icon)) {
