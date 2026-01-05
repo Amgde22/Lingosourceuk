@@ -8,6 +8,7 @@ import contactImageMiddleQuality from "@assets/images/money-saved-80.webp"
 
 
 
+
 const {email, phoneForTel , phoneFormatted} = clientData
 ---
 
@@ -87,6 +88,7 @@ const {email, phoneForTel , phoneFormatted} = clientData
                 <textarea class="cs-input cs-textarea" required name="Message" id="message-1441" placeholder={t('home:contact.message')}></textarea>
             </label>
             <button class="cs-button-solid cs-submit" type="submit">{t('home:contact.sendButton') || 'Send Message'}</button>
+            <p class="fineprint">{t('home:contact.fineprint')} </p>
         </form>
     </div>
 </section>
@@ -411,6 +413,10 @@ const {email, phoneForTel , phoneFormatted} = clientData
                 margin: 0;
                 font-size: (16/16rem);
             }
+        }
+        .fineprint{
+            font-size:.8em;
+            color:var(--gray-500);
         }
 
         @keyframes slideDown {

@@ -248,6 +248,11 @@
                 "id": "3.5",
                 "title": "Données agrégées et non personnelles",
                 "content": "Nous pouvons partager des données dépersonnalisées, agrégées ou statistiques (qui ne peuvent raisonnablement pas être utilisées pour vous identifier) avec des partenaires commerciaux, des chercheurs du secteur ou à des fins de rapports internes pour améliorer les services et analyser les tendances."
+              },
+              {
+                "id": "3.6",
+                "title": "Informations mobiles et messagerie texte",
+                "content": "Les informations mobiles ne seront pas partagées avec des tiers ou des sociétés affiliées à des fins de marketing ou de promotion. Toutes les catégories susmentionnées excluent les données d'inscription et le consentement de l'expéditeur de messagerie texte ; ces informations ne seront partagées avec aucun tiers."
               }
             ]
           },

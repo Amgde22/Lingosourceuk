@@ -250,6 +250,11 @@
                   "id": "3.5",
                   "title": "Aggregated and Non-Personal Data",
                   "content": "We may share de-identified, aggregated, or statistical data (which cannot reasonably be used to identify you) with business partners, industry researchers, or for internal reporting to improve services and analyze trends."
+                },
+                {
+                  "id": "3.6",
+                  "title": "Mobile Information and Text Messaging",
+                  "content": "Mobile information will not be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
                 }
               ]
             },

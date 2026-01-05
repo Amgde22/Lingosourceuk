@@ -321,6 +321,7 @@
     "sendButton":"Send message",
     "successTitle" :"message has been sent",
     "successMessage":"We will be contacting you through email very soon",
-    "errorMessage" :"something went wrong : please contact us through email or phone"
+    "errorMessage" :"something went wrong : please contact us through email or phone",
+    "fineprint":"I acknowledge that by submitting this contact request, this will not Opt-in my contact number for SMS communications with Lingosource. To Opt-in please contact customer service at contact@lingosource.uk and request SMS communications."
   }
 }

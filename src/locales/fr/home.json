@@ -323,6 +323,7 @@
     "sendButton": "Envoyer le message",
     "successTitle": "Le message a été envoyé",
     "successMessage": "Nous vous contacterons par e-mail très prochainement",
-    "errorMessage": "Une erreur s'est produite : veuillez nous contacter par e-mail ou par téléphone"
+    "errorMessage": "Une erreur s'est produite : veuillez nous contacter par e-mail ou par téléphone",
+    "fineprint": "Je reconnais que l'envoi de cette demande de contact ne m'inscrit pas aux communications SMS de Lingosource. Pour vous inscrire, veuillez contacter le service client à l'adresse contact@lingosource.uk afin de demander l'activation des communications par SMS."
   }
 }
