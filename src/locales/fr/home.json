@@ -314,7 +314,7 @@
       "description": "Contactez-nous et nous sélectionnerons les meilleurs agents pour vos besoins spécifiques"
     },
     "intro": "Contactez-nous",
-    "title": "Recruter un support client",
+    "title": "Recrutez votre agent de support client dès aujourd'hui !",
     "customerName": "Nom",
     "companyName": "Nom de l'entreprise",
     "phoneNumber": "Téléphone",
@@ -324,6 +324,7 @@
     "successTitle": "Le message a été envoyé",
     "successMessage": "Nous vous contacterons par e-mail très prochainement",
     "errorMessage": "Une erreur s'est produite : veuillez nous contacter par e-mail ou par téléphone",
-    "fineprint": "L'envoi de ce formulaire ne vous inscrit pas aux communications par SMS."
+    "fineprint": "L'envoi de ce formulaire ne vous inscrit pas aux communications par SMS.",
+    "fineprint2":"Ce formulaire est exclusivement réservé aux demandes de service client. Aucun message relatif au recrutement, à l'embauche ou à l'emploi ne sera traité par ce biais."
   }
 }

@@ -312,7 +312,7 @@
       "description":"Contact us and we will hand-pick the best agents for your specific needs"
     },
     "intro":"contact us",
-    "title":"Hire customer support ",
+    "title":"Hire your customer support agent today !",
     "customerName":"name",
     "companyName":"company name",
     "phoneNumber":"phone",
@@ -322,6 +322,8 @@
     "successTitle" :"message has been sent",
     "successMessage":"We will be contacting you through email very soon",
     "errorMessage" :"something went wrong : please contact us through email or phone",
-    "fineprint":"Submitting this form does not enroll you in SMS communications."
+    "fineprint":"Submitting this form does not enroll you in SMS communications.",
+    "fineprint2":"This form is for customer service inquiries only. No recruiting, hiring, or employment-related messaging is conducted."
+
   }
 }
