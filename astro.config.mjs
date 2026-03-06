@@ -47,6 +47,9 @@ export default defineConfig({
       },
       "/call-answering-service":{
         "fr":"/service-reception-d-appels"
+      },
+      "/brands":{
+        "fr":"/partenariats"
       }
     }
   }), sitemap({

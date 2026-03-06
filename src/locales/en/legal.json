@@ -1458,7 +1458,48 @@
             "closingStatement": "For questions about these Terms of Service, please contact us using the information above."
           }
         ]
+    },
+  "brandDisclosure": {
+    "meta": {
+      "title": "Horizon Answering – A Brand of LingoSource Ltd",
+      "description": "Horizon Answering is a customer communication service operated by LingoSource Ltd."
+    },
+    "hero": {
+      "title": "Horizon Answering",
+      "subtitle": "A Brand Operated by LingoSource Ltd"
+    },
+    "introduction": {
+      "paragraph1": "Horizon Answering is a customer communication and answering service operated and managed by LingoSource Ltd.",
+      "paragraph2": "LingoSource Ltd is the legal entity responsible for the operation, management, and customer communications provided under the Horizon Answering brand."
+    },
+    "brandRelationship": {
+      "title": "Brand Relationship",
+      "description": "Horizon Answering operates as a brand under LingoSource Ltd. All services, communications, and operations associated with the Horizon Answering brand are managed by LingoSource Ltd."
+    },
+    "smsCompliance": {
+      "title": "SMS and Communication Compliance",
+      "paragraph1": "SMS communications sent from Horizon Answering are operated and managed by LingoSource Ltd.",
+      "paragraph2": "Recipients of SMS communications from Horizon Answering have provided consent through opt-in mechanisms available on Horizon Answering websites or services.",
+      "paragraph3": "Message frequency may vary. Standard message and data rates may apply."
+    },
+    "companyDetails": {
+      "title": "Company Details",
+      "legalEntityLabel": "Legal Entity",
+      "legalEntity": "LingoSource Ltd",
+      "registeredCountryLabel": "Registered Country",
+      "registeredCountry": "United Kingdom",
+      "brandLabel": "Brand",
+      "brandName": "Horizon Answering",
+      "brandWebsiteLabel": "Brand Website",
+      "brandWebsite": "https://horizonanswering.com",
+      "companyWebsiteLabel": "Company Website",
+      "companyWebsite": "https://lingosource.uk"
+    },
+    "contact": {
+      "title": "Contact",
+      "paragraph": "For inquiries regarding services provided under the Horizon Answering brand or communications sent by this brand, please contact LingoSource Ltd through the official company website."
     }
+  }
 
 }
 
