@@ -12,6 +12,7 @@ import Settings from "./TemplateComponents/Settings.astro";
     <!--Nav Logo-->
     <a href={getLocalePath("/")} class="cs-logo" aria-label="back to home">
       <img
+      class="logo-image"
         src="/assets/svgs/logo-full.svg"
         alt="logo"
         width="210"
@@ -179,6 +180,11 @@ import Settings from "./TemplateComponents/Settings.astro";
       }
     }
 
+    .logo-image{
+      @media(min-width:720px){
+        padding:16px !important;
+      }
+    }
     #cs-navigation {
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
       font-family: "Roboto", "Arial", sans-serif;
