@@ -30,21 +30,21 @@
     "point1": {
       "title": "Unbeatable Prices",
       "subtitle":"No Quality Compromise",
-      "body": "Your customer support department should be a growth engine, not a cost center. While competitors and freelance platforms charge upwards of  2000$/Month <strong>PER AGENT</strong>, our model allows us to provide elite , hand-picked talents starting at just <strong>6$/hour</strong> , This isn't about cutting corners… it's about giving you a smarter financial advantage to reinvest in your business.",
+      "body": "at lingosource we understand that customer support should be a growth engine, not a revenue leak. While competitors and freelance platforms charge upwards of  2000$/Month <strong>PER AGENT</strong>, our model allows us to provide elite , hand-picked talents starting at just <strong>6$/hour</strong> , no cutting corners… just giving you a smarter financial advantage to reinvest in your business.",
       "highlight":{
         "title":"Save 50% More",
         "subtitle":"vs. traditional outsourcing"
       },
       "features": [
-        "Slash operational costs by over 50% compared to other outsourcing solutions",
+        "Slash operational costs by over 50% compared to similar outsourcing solutions",
         "No hidden fees or long-term contracts",
-        "Predictable, transparent pricing"
+        "Completely predictable, transparent pricing"
       ]
     },
     "point2": {
       "title": "Elite Talent",
       "subtitle":"Hand-Picked for you",
-      "body": "The biggest fear of outsourcing is a drop in quality. We solve this with our intensive, multi-stage selection process, We only hire communicative, empathetic problem-solvers who can represent your brand professionally , <strong>Our standards are so high, we even pay for their training.</strong>",
+      "body": "The biggest fear of outsourcing is a drop in quality. We solve this with our intensive, multi-stage selection process, We only hire communicative, empathetic problem-solvers who can represent your brand professionally , <strong>Our standards are so high, we even pay for their training on your behalf.</strong>",
         "highlight":{
           "title":"Save 50% More",
           "subtitle":"vs. traditional outsourcing"
@@ -52,8 +52,8 @@
       "audio_proof":{
           "title" : "Don't take our word for it. Hear the difference:",
           "french_sample":{
-            "title":"Near-Native French Speakers :",
-            "body":"Unmatched fluency. no accent."
+            "title":"French support agents with native-level fluency :",
+            "body":"0 accent."
           },
           "english":{
             "title":"Clear, Professional English :",
@@ -64,7 +64,7 @@
     "point3": {
       "title": "Flexible Scaling",
       "subtitle":"With Your On-Demand Team.",
-      "body": "Traditional outsourcing locks you into rigid, long-term contracts for a fixed number of agents. This forces you to pay for idle time during your quiet periods, leading to wasted budget and inefficiency.\nOur model is different. We believe support should breathe with your business. We provide a flexible, scalable team that adapts to your needs in real-time, ensuring you only ever pay for what you actually use.",
+      "body": "Traditional outsourcing locks you into long-term contracts for a fixed number of agents. This forces you to pay for idle time during your quiet periods, leading to wasted budget and inefficiency.\nOur model is different. We believe support should breathe with your business. We provide a flexible, scalable team that adapts to your needs in real-time, ensuring you only ever pay for what you actually use.",
       "highlight":{
         "title":"1 to 10+ agents",
         "subtitle":"in an instant"
@@ -92,11 +92,11 @@
           "billingText": "Billed monthly",
           "spokenLanguages": "1 spoken language",
           "features": [
-            "One Dedicated Agent",
-            "Monolingual Level C1",
+            "a Dedicated Agent",
+            "Monolingual",
             "37 Hours Weekly",
             "2 Channel Support",
-            "Basic Customer Service Only"
+            "Handles Customer Service"
           ],
           "buttonText": "Get Started Today"
         },
@@ -114,10 +114,10 @@
           },
           "features": [
             "One Dedicated Agent",
-            "Bilingual Level C1 ",
+            "Bilingual",
             "40 Hours Weekly",
             "3 Channels support",
-            "Basic Customer Service + Sales"
+            "Handles Customer Service + Sales"
           ],
           "buttonText": "Get Started Today"
         },
@@ -129,7 +129,7 @@
           "spokenLanguages": "multilingual agent",
           "features": [
             "Tailor Made Teams",
-            "Multilingual Level C1 ",
+            "Multilingual ",
             "40 Hours Weekly",
             "Omni Channel Support",
             "Advanced Technical Teams"
@@ -185,7 +185,7 @@
         "answer": "You provide the licenses and train agents on your systems and processes. We pay their full salary during training, so integration costs you nothing."
       },
       {
-        "question": "where are we based ?",
+        "question": "Where are we based ?",
         "answer": "Our entire team is strategically based in Algeria. This gives us access to a deep pool of highly-educated, multilingual talent . especially for accent-free French and English , allowing us to deliver world-class quality at a fraction of the cost of other outsourcing locations."
       }
     ]

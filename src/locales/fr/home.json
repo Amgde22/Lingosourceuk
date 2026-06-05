@@ -5,74 +5,74 @@
   "hero": {
     "layout": {
       "title": "Accueil",
-      "description": "Lingosource, des agents de support client de la meilleure qualité au meilleur prix"
+      "description": "Lingosource, le meilleur service client au meilleur prix"
     },
-    "heading_line1": "Support Client 2x Moins Cher.",
-    "heading_line2": "Sans Perte de Qualité.",
-    "body": "Fini les tracas de recrutement ou les compromis sur la qualité pour économiser. Obtenez nos agents de support d'élite et multilingues dès <strong>6 $/heure.</strong> Ils gèrent les appels, chats et e-mails 24/7.",
-    "primaryCta": "Devis Gratuit",
-    "smallText": "Démarrez sans risque, la formation et le salaire d'intégration de l'agent sont à notre charge !!!",
-    "secondaryCta": "Comment Ca Marche"
+    "heading_line1": "Un service client 2x moins cher. ",
+    "heading_line2": "Sans compromis sur la qualité.",
+    "body": "Fini les casse-têtes de recrutement ou le support bas de gamme juste pour faire des économies. Obtenez nos agents d'élite multilingues à partir de <strong>6 $/heure.</strong> Ils gèrent vos appels, chats et e-mails 24h/24 et 7j/7.",
+    "primaryCta": "Devis gratuit",
+    "smallText": "Commencez sans risque. La formation et l'intégration des agents sont à notre charge !!!",
+    "secondaryCta": "Comment nous vous faisons économiser"
   },
   "testimonials": {
     "title": "Nos clients nous adorent",
-    "caseStudyTitle": "Comment nous leur avons fait économiser 7500$ les 90 premiers jours",
+    "caseStudyTitle": "Comment nous leur avons fait économiser 7 500 $ les 90 premiers jours",
     "cta": "Contactez-nous",
     "cta2": "Voir l'étude de cas"
   },
   "whyUs": {
     "title": "Pourquoi nous",
-    "subtitle": "La Fin du Support Client Hors de Prix",
-    "intro": "Pendant trop longtemps, les entreprises en croissance ont fait face à un choix impossible :",
-    "choice1": "Recruter une équipe interne coûteuse.",
-    "choice2": "Risquer votre image de marque avec une externalisation bas de gamme.",
-    "outro": "Nous croyons que vous méritez un <strong>support de classe mondiale</strong> sans le <strong>prix</strong> qui va avec. Voici comment nous transformons cela en réalité.",
+    "subtitle": "La fin du support client hors de prix",
+    "intro": "Pendant trop longtemps, les entreprises en pleine croissance ont fait face à un choix impossible : ",
+    "choice1": "Embaucher une équipe interne coûteuse. ",
+    "choice2": "Risquer l'image de marque avec une externalisation bas de gamme.",
+    "outro": "Nous pensons que vous méritez un <strong>support de classe mondiale</strong> sans le <strong>prix exorbitant</strong>. Voici comment nous rendons cela possible.",
     "point1": {
-      "title": "Prix Imbattables",
-      "subtitle": "Sans Compromis sur la Qualité",
-      "body": "Votre service client devrait être un moteur de croissance, pas un centre de coût. Alors que les concurrents et les plateformes de freelances facturent plus de 2000 $/mois <strong>PAR AGENT</strong>, notre modèle nous permet de fournir des talents d'élite, triés sur le volet, à partir de seulement <strong>6 $/heure</strong>. Il ne s'agit pas de faire des économies de bouts de chandelle... mais de vous donner un avantage financier intelligent à réinvestir dans votre entreprise.",
+      "title": "Des prix imbattables",
+      "subtitle": "Aucun compromis sur la qualité",
+      "body": "Chez Lingosource, nous savons que le support client doit être un moteur de croissance, pas une fuite de revenus. Alors que nos concurrents et les plateformes de freelances facturent plus de 2 000 $/mois <strong>PAR AGENT</strong>, notre modèle nous permet de fournir des talents d'élite triés sur le volet à partir de <strong>6 $/heure</strong>. On ne rogne pas sur la qualité... on vous donne juste un avantage financier pour réinvestir dans votre entreprise.",
       "highlight": {
-        "title": "Économisez 50% de Plus",
-        "subtitle": "vs. l'externalisation traditionnelle"
+        "title": "Économisez 50 % de plus",
+        "subtitle": "vs. l'externalisation classique"
       },
       "features": [
-        "Réduisez les coûts opérationnels de plus de 50% par rapport à d'autres solutions d'externalisation",
+        "Réduisez les coûts opérationnels de plus de 50 % par rapport aux solutions similaires",
         "Aucun frais caché ni contrat à long terme",
-        "Une tarification prévisible et transparente"
+        "Une tarification 100 % prévisible et transparente"
       ]
     },
     "point2": {
-      "title": "Talents d'Élite",
-      "subtitle": "Triés sur le Volet pour Vous",
-      "body": "La plus grande crainte de l'externalisation est une baisse de qualité. Nous résolvons ce problème avec notre processus de sélection intensif en plusieurs étapes. Nous n'engageons que des communicateurs empathiques et efficaces qui peuvent représenter votre marque avec professionnalisme. <strong>Nos standards sont si élevés que nous payons même pour leur formation.</strong>",
+      "title": "Des talents d'élite",
+      "subtitle": "Triés sur le volet pour vous",
+      "body": "La plus grande peur de l'externalisation est la baisse de qualité. Nous réglons ça avec un processus de sélection rigoureux à plusieurs étapes. Nous n'embauchons que des experts empathiques et communicatifs, capables de représenter votre marque avec professionnalisme. <strong>Nos standards sont si élevés que nous payons même leur formation pour vous.</strong>",
       "highlight": {
-        "title": "Économisez 50% de Plus",
-        "subtitle": "vs. l'externalisation traditionnelle"
+        "title": "Économisez 50 % de plus",
+        "subtitle": "vs. l'externalisation classique"
       },
       "audio_proof": {
         "title": "Ne nous croyez pas sur parole. Écoutez la différence :",
         "french_sample": {
-          "title": "Francophones Quasi-Natifs :",
-          "body": "Fluidité inégalée, sans accent."
+          "title": "Des agents francophones avec une fluidité native :",
+          "body": "0 accent."
         },
         "english": {
-          "title": "Anglais Clair et Professionnel :",
-          "body": "Accent minimal."
+          "title": "Un anglais clair et professionnel :",
+          "body": "Accent minime."
         }
       }
     },
     "point3": {
-      "title": "Évolutivité Flexible",
-      "subtitle": "Avec Votre Équipe à la Demande.",
-      "body": "L'externalisation traditionnelle vous enferme dans des contrats rigides et à long terme pour un nombre fixe d'agents. Cela vous oblige à payer pour du temps inactif pendant vos périodes creuses, entraînant un gaspillage de budget et de l'inefficacité.\nNotre modèle est différent. Nous croyons que le support doit respirer avec votre entreprise. Nous fournissons une équipe flexible et évolutive qui s'adapte à vos besoins en temps réel, vous assurant de ne payer que pour ce que vous utilisez réellement.",
+      "title": "Évolutivité flexible",
+      "subtitle": "Avec votre équipe à la demande.",
+      "body": "L'externalisation classique vous bloque avec des contrats longs pour un nombre fixe d'agents. Vous finissez par payer pour des heures creuses, gaspillant ainsi votre budget.\nNotre modèle est différent. Nous pensons que le support doit respirer avec votre activité. Nous fournissons une équipe flexible et évolutive qui s'adapte à vos besoins en temps réel. Vous ne payez que ce que vous utilisez.",
       "highlight": {
         "title": "1 à 10+ agents",
         "subtitle": "en un instant"
       },
       "examples": [
-        "<strong>Vous débutez ?</strong> : Engagez un seul agent pour gérer les premières demandes.",
-        "<strong>Pics saisonniers en vue ?</strong> : Ajoutez plus d'agents pour le rush des fêtes.",
-        "<strong>Lancement de produit ?</strong> : Déployez une équipe dédiée pour la semaine de lancement afin de gérer l'afflux."
+        "<strong>Vous venez de vous lancer ?</strong> : Embauchez un seul agent pour les premières demandes.",
+        "<strong>Des pics saisonniers ?</strong> : Ajoutez des agents pour le rush des fêtes.",
+        "<strong>Lancement d'un nouveau produit ?</strong> : Déployez une équipe dédiée pour la semaine de lancement afin de gérer le pic d'activité."
       ]
     },
     "cta": "Commencez maintenant !"
@@ -80,56 +80,56 @@
   "pricing": {
     "layout": {
       "title": "Tarifs",
-      "description": "Découvrez notre modèle tarifaire ici !"
+      "description": "Découvrez nos offres tarifaires ici !"
     },
     "title": "Tarifs",
-    "subtitle": "Choisissez le plan qui correspond à <span class=\"highlight\">vos</span> besoins",
+    "subtitle": "Choisissez le forfait qui correspond à <span class=\"highlight\">vos</span> besoins",
     "plans": {
       "flex": {
         "name": "Flex",
-        "description": "Pour les solopreneurs ou petites entreprises à budget limité.",
+        "description": "Pour les solopreneurs ou les petites entreprises avec un budget limité.",
         "price": "980 $",
         "billingText": "Facturé mensuellement",
         "spokenLanguages": "1 langue parlée",
         "features": [
           "Un agent dédié",
-          "Monolingue Niveau C1",
+          "Monolingue",
           "37 heures par semaine",
           "Support sur 2 canaux",
-          "Service client de base uniquement"
+          "Gère le service client"
         ],
         "buttonText": "Commencez dès aujourd'hui"
       },
       "talent": {
         "name": "Talent",
-        "description": "Pour les PME ou startups à budget limité.",
-        "price": "1300 $",
-        "billingText": "Facturé <span id=\"billed-suffix\">mensuellement</spand>",
+        "description": "Pour les petites entreprises ou les startups avec un budget limité.",
+        "price": "1 300 $",
+        "billingText": "Facturé <span id=\"billed-suffix\">mensuellement</span>",
         "spokenLanguages": "2 langues parlées",
         "popularBadge": "Le plus populaire",
-        "savingsBadge": "Économisez <span id=\"savings-percent\">0</span>%",
+        "savingsBadge": "Économisez <span id=\"savings-percent\">0</span> %",
         "billingTabs": {
-          "monthly": "mensuel",
-          "annually": "annuel"
+          "monthly": "Mensuel",
+          "annually": "Annuel"
         },
         "features": [
           "Un agent dédié",
-          "Bilingue Niveau C1",
+          "Bilingue",
           "40 heures par semaine",
           "Support sur 3 canaux",
-          "Service client de base + Ventes"
+          "Gère le service client + Ventes"
         ],
         "buttonText": "Commencez dès aujourd'hui"
       },
       "business": {
         "name": "Business",
-        "description": "Pour les grandes entreprises ou startups avec des budgets confortables.",
-        "price": "Prix Personnalisé",
+        "description": "Pour les grandes entreprises ou startups avec un budget confortable.",
+        "price": "Sur mesure",
         "billingText": "Évoluez avec un plan sur mesure",
         "spokenLanguages": "Agent multilingue",
         "features": [
           "Équipes sur mesure",
-          "Multilingue Niveau C1",
+          "Multilingue",
           "40 heures par semaine",
           "Support omnicanal",
           "Équipes techniques avancées"
@@ -159,17 +159,17 @@
         "fr": "FR",
         "es": "ES",
         "ar": "AR",
-        "custom": "Custom"
+        "custom": "Sur mesure"
       }
     }
   },
   "faq": {
-    "title": "Questions fréquentes",
+    "title": "Foire aux questions",
     "body": "Si vous avez d'autres questions, n'hésitez pas à nous envoyer un e-mail à :",
     "questions": [
       {
         "question": "Combien coûte ce service ?",
-        "answer": "À titre de référence, un contrat à temps plein (37 - 40 heures/semaine) pour l'un de nos agents d'élite, sans accent et quasi-natif, commence à environ 950 $ US par mois. Le devis final est adapté à vos besoins spécifiques, tels que le nombre d'agents ou les langues requises."
+        "answer": "À titre indicatif, un contrat à temps plein (37 à 40 heures/semaine) pour l'un de nos agents d'élite, quasi-natifs et sans accent, commence à environ 950 $ US par mois. Le devis final est adapté à vos besoins spécifiques, comme le nombre d'agents ou les langues requises."
       },
       {
         "question": "Quelles langues parlent vos agents ?",
@@ -183,15 +183,15 @@
       },
       {
         "question": "Y a-t-il des frais cachés ?",
-        "answer": "Non. Le tarif mensuel que nous proposons est tout compris pour une semaine de travail standard. Il n'y a pas de frais de mise en place ou de gestion cachés. Les exigences supplémentaires telles que les heures supplémentaires sont facturées séparément à un tarif horaire convenu à l'avance."
+        "answer": "Non. Le tarif mensuel indiqué est tout compris pour une semaine de travail standard. Il n'y a aucun frais de configuration ni de frais de gestion cachés. Les exigences supplémentaires, comme les heures supplémentaires, sont facturées séparément à un taux horaire convenu à l'avance."
       },
       {
         "question": "Qui fournit et forme sur les logiciels nécessaires (CRM, helpdesk, etc.) ?",
-        "answer": "Vous fournissez les licences et formez les agents sur vos systèmes et processus. Nous payons leur salaire intégral pendant la formation, l'intégration ne vous coûte donc rien."
+        "answer": "Vous fournissez les licences et formez les agents sur vos propres systèmes et processus. Nous payons l'intégralité de leur salaire pendant la formation, l'intégration ne vous coûte donc rien."
       },
       {
-        "question": "Où sommes-nous basés ?",
-        "answer": "Toute notre équipe est stratégiquement basée en Algérie. Cela nous donne accès à un vaste bassin de talents hautement qualifiés et multilingues, en particulier pour le français et l'anglais sans accent, nous permettant de fournir une qualité de classe mondiale à une fraction du coût d'autres sites d'externalisation."
+        "question": "Où êtes-vous basés ?",
+        "answer": "Toute notre équipe est stratégiquement basée en Algérie. Cela nous donne accès à un vaste vivier de talents multilingues très instruits, particulièrement pour un français et un anglais sans accent, nous permettant d'offrir une qualité de classe mondiale à une fraction du coût des autres destinations d'externalisation."
       }
     ]
   },
@@ -200,26 +200,25 @@
       "title": "À propos",
       "description": "En savoir plus sur Lingosource UK et son fondateur"
     },
-    "label": "à propos de Lingosource",
-    "missionTitle": "Notre Mission : Un Support de Classe Mondiale ne Devrait Pas Coûter une Fortune",
+    "label": "À propos de Lingosource",
+    "missionTitle": "Notre mission : Un support de classe mondiale ne devrait pas coûter une fortune",
     "backstory": [
-      "Je m'appelle Guendil Zine-Eddine, et j'ai lancé cette entreprise début 2025 par pure frustration. Ayant travaillé 3 ans dans le secteur des centres d'appels et du service client, j'ai vu de mes propres yeux comment toutes les entreprises en croissance sont piégées dans le même choix impossible : payer des frais astronomiques pour une équipe de support interne de qualité, ou se contenter d'une externalisation où les tarifs autrefois abordables ont disparu, mais où les problèmes de qualité persistent.",
-      "C'était un compromis dans tous les cas. Soit vous sacrifiez votre budget, soit vous sacrifiez la réputation de votre marque.",
-      "Je savais qu'il devait y avoir une troisième option. J'ai donc pris l'initiative de construire un modèle économique basé sur une qualité sans compromis et des prix imbattables, offrant aux entreprises en croissance le support puissant qu'elles méritent sans le coût paralysant...",
-      "<strong>C'est pourquoi cette entreprise a été fondée :</strong> pour offrir la qualité authentique et les prix justes qui, selon moi, manquaient cruellement au secteur."
+      "Je m'appelle Guendil Zine-Eddine, et j'ai lancé cette entreprise début 2025 par pure frustration. Après avoir travaillé 3 ans dans le secteur des centres d'appels et du service client, j'ai vu de mes propres yeux comment les entreprises en croissance sont toutes piégées face au même choix impossible : payer des frais astronomiques pour une équipe interne de qualité, ou se contenter de l'externalisation où les tarifs autrefois abordables ont disparu, mais où les problèmes de qualité persistent.",
+      "Dans les deux cas, cela ressemblait à un compromis. Soit vous sacrifiiez votre budget, soit vous sacrifiiez la réputation de votre marque.",
+      "Je savais qu'il devait y avoir une troisième option. J'ai donc pris l'initiative de créer un modèle économique axé sur une qualité irréprochable et une rentabilité imbattable, offrant aux entreprises en croissance le support performant qu'elles méritent, sans les coûts paralysants...",
+      "<strong>C'est pourquoi cette entreprise a été fondée :</strong> pour offrir la véritable qualité et les prix justes que je voyais manquer de l'intérieur."
     ],
-  
     "difference": {
-      "title": "Notre Différence, C'est Notre Approche",
-      "intro": "Nous ne sommes pas une énorme société déconnectée ; nous sommes une équipe de professionnels sélectionnés, obsédés par la qualité et les résultats. Alors que les externalisateurs traditionnels se concentrent sur le volume, nous nous concentrons sur la valeur. Notre modèle entier est construit sur une philosophie de partenariat, pas seulement de prestation de services.",
+      "title": "Notre approche fait toute la différence",
+      "intro": "Nous ne sommes pas une énorme entreprise déconnectée ; nous sommes une équipe de professionnels triés sur le volet, obsédés par la qualité et les résultats. Là où les prestataires traditionnels misent sur le volume, nous misons sur la valeur. Tout notre modèle repose sur une philosophie de partenariat, et pas seulement de prestation de services.",
       "points": [
         {
-          "title": "Nous Investissons dans Nos Équipes :",
-          "body": "Nous avons un processus de sélection intensif pour trouver les meilleurs talents. Mais nous ne nous arrêtons pas là. Nous couvrons l'intégralité des coûts de formation de nos agents sur votre marque et vos processus, garantissant qu'ils s'intègrent parfaitement à votre propre équipe dès le premier jour."
+          "title": "Nous investissons dans nos collaborateurs :",
+          "body": "Nous avons un processus de sélection rigoureux pour dénicher les meilleurs talents. Mais nous ne nous arrêtons pas là. Nous couvrons l'intégralité des coûts de formation de nos agents sur votre marque et vos processus, afin de nous assurer qu'ils s'intègrent comme une extension naturelle de votre propre équipe dès le premier jour."
         },
         {
-          "title": "La Preuve par le Partenariat :",
-          "body": "Nous croyons que la confiance se gagne par des résultats tangibles. Pour l'un de nos premiers partenaires, une entreprise SaaS en pleine croissance, nous avons généré un retour sur investissement significatif en seulement 90 jours :",
+          "title": "La preuve par le partenariat :",
+          "body": "Nous croyons que la confiance se gagne grâce à des résultats tangibles. Pour l'un de nos premiers partenaires, une entreprise SaaS en pleine croissance, nous avons généré un retour sur investissement significatif en seulement 90 jours :",
           "subpoints": [
             "7 500 $ d'économies opérationnelles",
             "Avec une petite équipe de départ de seulement 3 agents",
@@ -229,12 +228,12 @@
         }
       ]
     },
-    "readyTitle": "Prêt à Voir Comment Nous Pouvons Vous Aider ?",
-    "readyBody": "Nous pensons que notre modèle est le moyen le plus intelligent pour les entreprises de faire évoluer leur support. Mais vous n'avez pas à nous croire sur parole. Laissez-nous vous montrer les chiffres.\nObtenez un devis clair et sans engagement et voyez exactement combien vous pouvez économiser sans jamais faire de compromis sur la qualité.",
-    "cta": "Obtenir Mon Devis Gratuit"
+    "readyTitle": "Prêt à voir comment nous pouvons vous aider ?",
+    "readyBody": "Nous sommes convaincus que notre modèle est la méthode la plus intelligente pour faire évoluer le support client de votre entreprise. Mais ne nous croyez pas sur parole. Laissez-nous vous montrer les chiffres.\nObtenez un devis clair et sans engagement, et découvrez exactement combien vous pouvez économiser sans jamais faire de compromis sur la qualité.",
+    "cta": "Obtenir mon devis gratuit"
   },
   "howItWorks": {
-    "title": "Notre service de gestion des appels",
+    "title": "Comment fonctionne notre service d'externalisation",
     "steps": {
       "step1": {
         "title": "Soumettez votre formulaire",
@@ -250,81 +249,82 @@
       }
     },
     "primaryCta": "Aller au formulaire",
-    "secondaryCta": "Découvrez notre méthode"
+    "secondaryCta": "Voir comment nous procédons"
   },
   "howItWorksPage": {
     "layout": {
       "title": "Comment ça marche",
-      "description": "Découvrez notre méthode, vos avantages et la simplicité du processus."
+      "description": "Découvrez comment fonctionne notre processus, ce que vous obtenez et pourquoi c'est avantageux."
     },
     "title": "Comment ça marche",
-    "subheading": "Votre équipe de support en 3 étapes simples",
+    "subheading": "Votre équipe de support, prête en 3 étapes simples",
     "intro": [
-      "L’externalisation n’a pas besoin d’être lente ou compliquée.",
-      "Avec notre méthode, vous disposez d’une équipe opérationnelle en moins d’une semaine."
+      "L'externalisation n'a pas à être lente ou compliquée.",
+      "Notre processus vous offre une équipe de support qualifiée en moins d'une semaine."
     ],
     "step1": {
-      "title": "Étape 1 : Envoyez votre demande",
+      "title": "Étape 1 : Soumettez votre formulaire",
       "body": [
         "Remplissez le formulaire.",
-        "Nous vous contactons rapidement pour fixer un appel découverte.",
-        "Cet échange nous permet de cerner vos besoins."
+        "Nous vous contacterons pour planifier un court appel.",
+        "Cet appel nous aide à comprendre vos besoins."
       ]
     },
     "step2": {
-      "title": "Étape 2 : L’appel stratégique",
+      "title": "Étape 2 : Votre appel stratégique sur mesure",
       "body": [
-        "Nous organisons un appel gratuit de 15 minutes.",
-        "Ensemble, nous passons en revue vos besoins, votre ton de marque et vos objectifs clés.",
-        "À la fin, vous repartez avec un plan clair et personnalisé.",
-        "Nous vous remettons aussi un devis précis montrant vos économies.",
-        "<strong>Pas de frais cachés. Pas de surprises.</strong>"
+        "Nous commençons par un court appel stratégique gratuit de 15 minutes.",
+        "Ensemble, nous examinons les besoins de votre entreprise, le style de votre marque et vos indicateurs de réussite.",
+        "Après l'appel, vous recevez un plan clair et personnalisé.",
+        "Vous obtenez également un devis tout compris qui montre exactement combien vous économisez.",
+        "<strong>Aucun frais caché. Aucune surprise.</strong>"
       ]
     },
     "step3": {
-      "title": "Étape 3 : Formation de votre équipe (offerte)",
+      "title": "Étape 3 : Formez votre équipe (À nos frais)",
       "body": [
-        "<strong>Nous prenons en charge 100 % des coûts de formation.</strong>",
-        "Nous sélectionnons des agents qualifiés pour vous.",
-        "Vous leur présentez vos produits et vos outils.",
-        "Nous couvrons leur salaire durant toute la période d’apprentissage.",
-        "Résultat : une équipe prête à agir comme si elle faisait partie de votre entreprise."
+        "<strong>Nous couvrons la totalité des coûts de formation. Aucun frais supplémentaire.</strong>",
+        "Nous sélectionnons pour vous des agents qualifiés.",
+        "Vous leur présentez vos produits et systèmes.",
+        "Nous payons leur salaire pendant la formation.",
+        "<strong>Le résultat</strong> : une équipe formée qui donne l'impression de faire partie de votre propre entreprise."
       ]
     },
     "step4": {
-      "title": "Étape 4 : Mise en service et clients satisfaits",
+      "title": "Étape 4 : Lancement et satisfaction client",
       "body": [
-        "Votre équipe formée est prête à répondre à vos clients.",
-        "Elle assure des réponses rapides et des solutions fluides.",
-        "Vous gérez le quotidien, nous gérons RH, contrats et paie.",
-        "<strong>Résultat</strong> : des clients plus heureux, des coûts réduits et plus de temps pour développer votre activité."
+        "Votre équipe formée est prête à servir vos clients.",
+        "Ils offrent des réponses plus rapides et des solutions plus fluides.",
+        "Vous gérez les agents au quotidien.",
+        "Nous nous occupons des RH, des contrats et de la paie.",
+        "<strong>Le résultat</strong> : des clients heureux, des coûts réduits et plus de temps pour vous développer."
       ]
     },
     "ready": [
-      "Prêt à lancer votre plan sur mesure ?",
-      "La première étape est un simple échange.",
-      "Nous vous montrons à quel point un support de qualité peut être simple et abordable."
+      "Prêt à démarrer votre plan sur mesure ?",
+      "La première étape est un simple appel.",
+      "Nous vous montrerons à quel point un support de qualité supérieure peut être facile et abordable."
     ],
     "cta": "Réserver mon appel stratégique gratuit",
-    "noCommitment": "Sans engagement. Sans pression. Juste un plan clair pour économiser."
-  },  
+    "noCommitment": "Aucune pression. Aucun risque. Juste un chemin clair vers les économies."
+  },
   "contact": {
     "layout": {
       "title": "Contact",
       "description": "Contactez-nous et nous sélectionnerons les meilleurs agents pour vos besoins spécifiques"
     },
     "intro": "Contactez-nous",
-    "title": "Recrutez votre agent de support client dès aujourd'hui !",
+    "title": "Embauchez votre agent de support client dès aujourd'hui !",
     "customerName": "Nom",
     "companyName": "Nom de l'entreprise",
     "phoneNumber": "Téléphone",
     "email": "E-mail",
     "message": "Message",
     "sendButton": "Envoyer le message",
-    "successTitle": "Le message a été envoyé",
+    "successTitle": "Message envoyé",
     "successMessage": "Nous vous contacterons par e-mail très prochainement",
-    "errorMessage": "Une erreur s'est produite : veuillez nous contacter par e-mail ou par téléphone",
-    "fineprint": "L'envoi de ce formulaire ne vous inscrit pas aux communications par SMS.",
-    "fineprint2":"Ce formulaire est exclusivement réservé aux demandes de service client. Aucun message relatif au recrutement, à l'embauche ou à l'emploi ne sera traité par ce biais."
+    "errorMessage": "Un problème est survenu : veuillez nous contacter par e-mail ou par téléphone",
+    "fineprint": "La soumission de ce formulaire ne vous inscrit pas aux communications par SMS.",
+    "fineprint2": "Ce formulaire est réservé aux demandes de service client. Aucun message lié au recrutement, à l'embauche ou à l'emploi n'est traité ici."
   }
 }
