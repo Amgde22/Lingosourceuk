@@ -20,7 +20,7 @@ Most businesses make that call on instinct. "Outsourcing feels cheap and risky."
 
 A single in-house support agent in the UK costs closer to £48,556 per year once salary, taxes, benefits, office space, software, and turnover are fully accounted for. The same coverage through a nearshore provider runs about £22,182 at market rates, or as low as £8,318 with LingoSource at $6.00/hr. For a 20-agent team, that difference is worth more than £800,000 a year. The rest of this article shows exactly how those numbers are built.
 
-![an image comparing prices between hiring an in-house team and outsourcing customer service in terms of price for businesses in the uk and france](src/assets/images/blog/screen-shot-2026-07-07-at-13.14.25.png "In-house vs outsourced customer support full price comparison ")
+![an image comparing prices between hiring an in-house team and outsourcing customer service in terms of price for businesses in the uk and france](src/assets/images/blog/in-house-vs-outsourced-customer-support-a-true-cost-breakdown-for-2026.png "In-house vs outsourced customer support full price comparison ")
 
 - - -
 
